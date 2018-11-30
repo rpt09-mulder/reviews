@@ -3,7 +3,7 @@ const db = require('../helpers');
 
 const reviews = [];
 
-for (let i = 0; i < 100; i++) {
+for (let i = 1; i < 101; i++) {
   reviews.push({
     property_id: 1,
     user_id: i,
