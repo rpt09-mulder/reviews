@@ -1,2 +1,6 @@
 const pg = require('..db');
-const faker = require('faker');
+const reviews = require('../dummydata');
+
+module.exports = {
+  
+}
