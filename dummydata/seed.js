@@ -3,7 +3,7 @@ const reviews = require('./index');
 
 const insertOne = (query) => {
   return new Promise((resolve, reject) => {
-    db.query(query, (err, res) => {
+    db.client.query(query, (err, res) => {
       if (err) {
         reject(err);
       } else {
@@ -32,8 +32,7 @@ const insertAll = (reviews) => {
     };
 
     const review_id = review.review.review_id;
-    const { accuracy_rating, communication_rating, cleanliness_rating, 
-      location_rating, checkin_rating, value_rating} = review.ratings;
+    const { accuracy_rating, communication_rating, cleanliness_rating, location_rating, checkin_rating, value_rating} = review.ratings;
     const average_rating = (accuracy_rating + communication_rating + cleanliness_rating + location_rating + checkin_rating + value_rating) / 6
     const queryRatings = {
       name: 'insertRatings',
@@ -48,7 +47,7 @@ const insertAll = (reviews) => {
       const insertReview = await insertOne(queryReview);
       const insertRating = await insertOne(queryRatings);
     } catch(err) {
-      console.log('error occured in inserting users: ', err);
+      db.dbDebugger('error occured in inserting users: ', err);
     }
   });
 }
