@@ -9,6 +9,7 @@ for (let i = 1; i < 101; i++) {
     property_id: 1,
     user: {
       user_id: i,
+      user_avatar: faker.image.imageUrl(),
       user_first: faker.name.firstName(),
       date: faker.date.past(),
     },

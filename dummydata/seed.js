@@ -19,8 +19,8 @@ const insertAll = (reviews) => {
     // console.log('review: ', review);
     const queryUser = {
       name: 'insertUser',
-      text: 'insert into users(first) values ($1)',
-      values: [review.user.user_first]
+      text: 'insert into users(first, avatar) values ($1, $2)',
+      values: [review.user.user_first, review.user.user_avatar]
     };
     const prop_id = review.property_id;
     const {user_id, date} = review.user;
