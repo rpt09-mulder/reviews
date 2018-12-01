@@ -4,6 +4,7 @@ const db = require('../helpers');
 const reviews = [];
 
 for (let i = 1; i < 101; i++) {
+  let replied = Math.round(Math.random());
   reviews.push({
     property_id: 1,
     user: {
@@ -14,6 +15,7 @@ for (let i = 1; i < 101; i++) {
     review: {
       review_id: i,
       review_text: faker.lorem.paragraph(),
+      reply_text: replied ? faker.lorem.paragraph() : '',
     },
     ratings: {
       accuracy_rating: faker.random.number({min: 1, max: 5}),

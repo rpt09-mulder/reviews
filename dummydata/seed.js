@@ -24,11 +24,11 @@ const insertAll = (reviews) => {
     };
     const prop_id = review.property_id;
     const {user_id, date} = review.user;
-    const review_text = review.review.review_text;
+    const {review_text, reply_text} = review.review
     const queryReview = {
       name: 'insertReview',
-      text: 'insert into reviews(property_id, user_id, date, review) values ($1, $2, $3, $4)',
-      values: [prop_id, user_id, date, review_text]
+      text: 'insert into reviews(property_id, user_id, date, review, reply) values ($1, $2, $3, $4, $5)',
+      values: [prop_id, user_id, date, review_text, reply_text]
     };
 
     const review_id = review.review.review_id;
