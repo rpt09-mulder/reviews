@@ -20,18 +20,20 @@ const insertAll = (reviews) => {
     const queryUser = {
       name: 'insertUser',
       text: 'insert into users(first) values ($1)',
-      values: [review.user_first]
+      values: [review.user.user_first]
     };
-
-    const {property_id, user_id, date, review_text} = review;
+    const prop_id = review.property_id;
+    const {user_id, date} = review.user;
+    const review_text = review.review.review_text;
     const queryReview = {
       name: 'insertReview',
       text: 'insert into reviews(property_id, user_id, date, review) values ($1, $2, $3, $4)',
-      values: [property_id, user_id, date, review_text]
+      values: [prop_id, user_id, date, review_text]
     };
 
-    const {review_id, accuracy_rating, communication_rating, cleanliness_rating, 
-      location_rating, checkin_rating, value_rating} = review;
+    const review_id = review.review.review_id;
+    const { accuracy_rating, communication_rating, cleanliness_rating, 
+      location_rating, checkin_rating, value_rating} = review.ratings;
     const average_rating = (accuracy_rating + communication_rating + cleanliness_rating + location_rating + checkin_rating + value_rating) / 6
     const queryRatings = {
       name: 'insertRatings',
