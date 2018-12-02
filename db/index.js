@@ -23,7 +23,7 @@ module.exports = {
   dbDebugger,
   queryDB: function(query) {
     return new Promise((resolve, reject) => {
-      db.client.query(query, (err, res) => {
+      client.query(query, (err, res) => {
         if (err) {
           reject(err);
         } else {

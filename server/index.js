@@ -17,6 +17,8 @@ app.use(express.static(__dirname + '../client/dist'));
 app.use('/reviews', reviews);
 
 const port = process.env.PORT || 3003;
-app.listen(port, () => {
+const server = app.listen(port, () => {
   console.log(`listening on port ${port}`);
 });
+
+module.exports = server;
