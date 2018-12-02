@@ -1,4 +1,4 @@
-const { Client }= require('pg');
+const { Client } = require('pg');
 require('dotenv').config();
 const dbDebugger = require('debug')('app:db');
 

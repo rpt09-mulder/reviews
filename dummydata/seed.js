@@ -33,7 +33,7 @@ const insertAll = (reviews) => {
 
     const review_id = review.review.review_id;
     const { accuracy_rating, communication_rating, cleanliness_rating, location_rating, checkin_rating, value_rating} = review.ratings;
-    const average_rating = (accuracy_rating + communication_rating + cleanliness_rating + location_rating + checkin_rating + value_rating) / 6
+    const average_rating = ((accuracy_rating + communication_rating + cleanliness_rating + location_rating + checkin_rating + value_rating) / 6).toFixed(2);
     const queryRatings = {
       name: 'insertRatings',
       text: 'insert into ratings(review_id, average, accuracy, communication, cleanliness, location, \
