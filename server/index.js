@@ -4,23 +4,19 @@ const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const db = require('../db');
 const startupDebugger = require('debug')('app:startup');
+const reviews = require('../router');
 require('dotenv').config();
 
 //Middleware
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(morgan('tiny'));
+app.use(express.static(__dirname + '../client/dist'));
 
-//REST
-app.get('/reviews', (req, res) => {
-  console.log('inside get');
-});
+//Routing
+app.use('/reviews', reviews);
 
-app.post('/reviews', (req, res) => {
-
-});
-
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3003;
 app.listen(port, () => {
   console.log(`listening on port ${port}`);
 });
