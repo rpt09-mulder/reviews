@@ -32,6 +32,18 @@ module.exports = {
       });
     });
   },
+  clearRecords: function(tableNames) {
+    return new Promise((resolve) => {
+      tableNames.forEach((table, index) => {
+        let queryStr = `DELETE FROM ${table} RETURNING *`;
+        this.queryDB(queryStr);
+        if (index === tableNames.length - 1) {
+          resolve();
+        }
+      });
+
+    });
+  },
   getReviews: function() {
     const queryStr = 'select users.first as first, users.avatar as avatar, \
     reviews.date as date, reviews.review as review, reviews.reply as reply, \
