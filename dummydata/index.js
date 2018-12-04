@@ -1,5 +1,5 @@
 const faker = require('faker');
-const db = require('../helpers');
+const db = require('../db');
 
 const reviews = [];
 
