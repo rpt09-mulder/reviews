@@ -5,14 +5,7 @@ const request = supertest(app);
 const db = require('../db');
 jest.mock('../db');
 
-describe('/reviews', () => {
-  test('should respond to GET request with status 200', (done) => {
-    request.get('/reviews').then((res) => {
-      expect(res.status).toBe(200);
-      done();
-    });
-  });
-  
+describe('database testing', () => {
   test('should contain data in the response with property reviews', (done) => {
     const data = {
       reviews: [{review: true}]
