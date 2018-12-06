@@ -8,7 +8,7 @@
     "node": ">=10.13.0"
   },
   "scripts": {
-    "start": "nodemon server/index.js",
+    "start": "nodemon startup/server.js",
     "seed-database": "node ./dummydata/seed.js",
     "test": "jest --watchAll --verbose"
   },
