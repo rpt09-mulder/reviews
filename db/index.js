@@ -30,8 +30,8 @@ module.exports = {
 
     });
   },
-  getReviews: function() {
-    const queryStr = 'select users.first as first, users.avatar as avatar, \
+  getReviewsById: function(id) {
+    const queryStr = `select users.first as first, users.avatar as avatar, \
     reviews.date as date, reviews.review as review, reviews.reply as reply, \
     ratings.average as avgRate, ratings.accuracy as acc_rate, ratings.communication as commRate, \
     ratings.cleanliness as cleanRate, ratings.location as locRate, ratings.checkin as checkinRate, \
@@ -39,7 +39,8 @@ module.exports = {
     join reviews \
     on users.id = reviews.user_id \
     join ratings \
-    on ratings.review_id = reviews.id';
+    on ratings.review_id = reviews.id \
+    where reviews.property_id = ${id}`;
     const query = {
       name: 'getReviews',
       text: queryStr

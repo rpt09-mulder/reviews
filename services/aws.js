@@ -14,18 +14,35 @@ aws.config.update({
 
 const s3 = new aws.S3();
 
-const upload = multer({
-  storage: multerS3({
-    s3: s3,
-    bucket: 'kento-firebnb',
-    acl: 'public-read',
-    metadata: function (req, file, cb) {
-      cb(null, {fieldName: file.fieldname});
-    },
-    key: function (req, file, cb) {
-      cb(null, Date.now().toString())
-    }
-  })
-})
+// const upload = multer({
+//   storage: multerS3({
+//     s3: s3,
+//     bucket: 'kento-firebnb',
+//     acl: 'public-read',
+//     metadata: function (req, file, cb) {
+//       cb(null, {fieldName: file.fieldname});
+//     },
+//     key: function (req, file, cb) {
+//       cb(null, Date.now().toString())
+//     }
+//   })
+// })
+
+const filepath = '../images/88.jpg'
+let params = {
+  Bucket: 'kento-firebnb',
+  Body: fs.createReadStream(filepath),
+  Key: 'folder/' + Date.now() + '_' + path.basename(filepath)
+}
+
+s3.upload(params, (err, data) => {
+  if (err) {
+    console.log('error: ', err);
+  }
+
+  if (data) {
+    console.log('upload in: ', data.location);
+  }
+});
 
 module.exports = upload;
