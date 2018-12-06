@@ -21,4 +21,10 @@ describe('/reviews', () => {
     request.get('/')
       .expect(404, done);
   });
+  test('should not allow requests other than get requests', (done) => {
+    request.post('/reviews/1').then((res) => {
+      expect(res.status).toBe(404);
+      done();
+    });
+  })
 });
