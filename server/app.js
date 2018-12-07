@@ -14,12 +14,14 @@ app.use(express.static(__dirname + '../client/dist'));
 
 //Routing
 // app.use('/reviews', reviews);
-app.get('/reviews/:id', async(req, res) => {
-  const id = req.params.id;
+app.get('/rooms/:id/reviews', async(req, res) => {
+  const id = JSON.parse(req.params.id);
+  console.log('id: ', id);
   try {
     const reviews = await db.getReviewsById(id);
     res.status(200).json({reviews: reviews});
   } catch(err) {
+    console.log('err: ', err);
     res.status(404).json({error: `ID ${id} does not exist`});
   }
 });

@@ -11,3 +11,5 @@ const client = new Client(connectionString);
 client.connect(() => {
   dbDebugger('connected to db!');
 });
+
+module.exports = client;
