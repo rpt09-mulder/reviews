@@ -1,0 +1,5013 @@
+{
+  "ratings": {
+    "avg": 3,
+    "acc": 3,
+    "com": 3,
+    "cle": 3,
+    "loc": 3,
+    "che": 3,
+    "val": 3
+  },
+  "reviews": [
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 1,
+          "name": "Zachery",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 1,
+          "review": "Quae minima non et omnis odio id odit id non. Et rerum enim. Nobis enim non. Ducimus omnis mollitia aut nobis officiis nesciunt.",
+          "date": "2018-04-22T04:50:00.384-04:00",
+          "reply": "Cumque doloribus blanditiis similique sapiente provident dicta ut sed animi. Cumque quam iusto velit dolorem voluptatum dolorem officia cupiditate voluptatem. Quam quos sint qui voluptas et perspiciatis maxime. Soluta dolorum aspernatur minima pariatur quia id magnam enim.",
+          "rating": {
+            "avg": 3,
+            "acc": 1,
+            "com": 4,
+            "cle": 1,
+            "loc": 4,
+            "che": 4,
+            "val": 3
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 2,
+          "name": "Malvina",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 2,
+          "review": "Quidem totam in temporibus aliquid quia possimus facere rerum laudantium. Similique totam officiis non illo ut autem aliquam dicta rerum. Illo nulla rerum repudiandae impedit deleniti porro ab. Sint reprehenderit distinctio qui numquam enim et. Eius aut incidunt exercitationem laboriosam similique dolor.",
+          "date": "2018-06-12T21:34:24.353-04:00",
+          "reply": "",
+          "rating": {
+            "avg": 3.5,
+            "acc": 5,
+            "com": 4,
+            "cle": 1,
+            "loc": 1,
+            "che": 4,
+            "val": 5
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 3,
+          "name": "Lennie",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 3,
+          "review": "Ut nostrum officiis earum facere placeat totam. Quos et perspiciatis repellendus sint. Totam quos ut neque sunt est optio ut quia. Nostrum quo minima quisquam. Recusandae nam aut facere architecto in dolorem eum officia. Excepturi cumque esse dolor ut dicta enim hic.",
+          "date": "2018-02-16T12:27:28.873-05:00",
+          "reply": "Ut asperiores et aut explicabo voluptas aut. Eius ipsum est reprehenderit rerum vero rem qui. Reiciendis quis quos. Repudiandae repellat quis ex nesciunt iure officiis.",
+          "rating": {
+            "avg": 3.5,
+            "acc": 1,
+            "com": 1,
+            "cle": 4,
+            "loc": 5,
+            "che": 5,
+            "val": 4
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 4,
+          "name": "Hilbert",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 4,
+          "review": "Assumenda voluptatem at sit porro adipisci. Enim architecto nostrum dolor accusamus molestiae molestiae non. Ut iste dolor consequatur iusto quaerat in.",
+          "date": "2018-07-18T17:46:36.671-04:00",
+          "reply": "Cum quae illo aut neque nihil. Ab ipsum id. Labore quia architecto molestiae ea sed non neque.",
+          "rating": {
+            "avg": 3.5,
+            "acc": 5,
+            "com": 3,
+            "cle": 2,
+            "loc": 3,
+            "che": 3,
+            "val": 5
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 5,
+          "name": "Rosalia",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 5,
+          "review": "Voluptatem iste voluptas est ex. Dolore reprehenderit delectus. Maxime voluptatem quis sint vitae voluptatibus quos. Rem rem qui voluptatem repellendus. Molestiae omnis quos nam quos. Similique hic iure non.",
+          "date": "2018-03-14T12:04:06.546-04:00",
+          "reply": "Commodi cupiditate enim. Est numquam voluptatum. Dolore reprehenderit voluptas quia amet illum et. Ut porro qui rerum tempora ut iste exercitationem quis. Et reprehenderit hic et ipsa.",
+          "rating": {
+            "avg": 3.5,
+            "acc": 4,
+            "com": 2,
+            "cle": 2,
+            "loc": 5,
+            "che": 4,
+            "val": 4
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 6,
+          "name": "Kathlyn",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 6,
+          "review": "Quibusdam veritatis harum porro et et doloremque. Ut sunt dolore necessitatibus ut optio dolores. Aut officia dolorem.",
+          "date": "2018-09-01T03:22:26.029-04:00",
+          "reply": "",
+          "rating": {
+            "avg": 2.5,
+            "acc": 2,
+            "com": 2,
+            "cle": 2,
+            "loc": 2,
+            "che": 2,
+            "val": 4
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 7,
+          "name": "Hertha",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 7,
+          "review": "Corporis tempore doloremque labore at nihil. Vel sunt voluptatem dolores et expedita iste corrupti et dignissimos. Sed omnis vel soluta molestias sit et.",
+          "date": "2018-06-15T16:52:13.180-04:00",
+          "reply": "",
+          "rating": {
+            "avg": 3.5,
+            "acc": 5,
+            "com": 3,
+            "cle": 2,
+            "loc": 4,
+            "che": 5,
+            "val": 1
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 8,
+          "name": "Jefferey",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 8,
+          "review": "Unde deleniti voluptas. Culpa possimus et ad. Omnis commodi soluta et quas ut rem totam. Error nostrum quia ipsum voluptate possimus reiciendis.",
+          "date": "2018-02-09T02:49:02.889-05:00",
+          "reply": "Facere voluptas eligendi. At quis est. Optio voluptatem et molestiae quia voluptates et rerum distinctio.",
+          "rating": {
+            "avg": 2.5,
+            "acc": 2,
+            "com": 1,
+            "cle": 3,
+            "loc": 4,
+            "che": 3,
+            "val": 1
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 9,
+          "name": "Zena",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 9,
+          "review": "Natus aperiam quia id natus ut nihil maiores aspernatur quidem. Quas qui rerum est et modi corrupti culpa. Ducimus expedita sit et numquam suscipit quisquam cupiditate.",
+          "date": "2018-03-10T22:03:57.591-05:00",
+          "reply": "",
+          "rating": {
+            "avg": 3.5,
+            "acc": 4,
+            "com": 4,
+            "cle": 4,
+            "loc": 2,
+            "che": 2,
+            "val": 5
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 10,
+          "name": "Theresa",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 10,
+          "review": "Id quae impedit facilis delectus itaque culpa laboriosam in. Ut rerum ea laborum fuga veniam maxime ex. Et veniam voluptatibus excepturi reprehenderit praesentium quis provident voluptatibus placeat.",
+          "date": "2018-07-30T05:33:29.252-04:00",
+          "reply": "",
+          "rating": {
+            "avg": 3.5,
+            "acc": 4,
+            "com": 4,
+            "cle": 3,
+            "loc": 3,
+            "che": 2,
+            "val": 5
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 11,
+          "name": "Chase",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 11,
+          "review": "Maxime cupiditate laboriosam qui eius. Et deleniti ut soluta aut consectetur quo. Provident rerum aut saepe repellendus et aut rerum dolorem. Culpa dolore voluptas et.",
+          "date": "2018-04-16T18:18:31.245-04:00",
+          "reply": "",
+          "rating": {
+            "avg": 4,
+            "acc": 1,
+            "com": 5,
+            "cle": 5,
+            "loc": 3,
+            "che": 5,
+            "val": 5
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 12,
+          "name": "Consuelo",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 12,
+          "review": "Eum voluptatem dolor officiis aspernatur perferendis voluptatem incidunt accusamus qui. Sit nobis voluptatem consequatur ut veniam aut. Officia explicabo velit id. Similique dolores vel dolorum consequatur. Dicta eum reprehenderit voluptatum nam.",
+          "date": "2018-03-09T16:44:54.632-05:00",
+          "reply": "",
+          "rating": {
+            "avg": 3,
+            "acc": 3,
+            "com": 2,
+            "cle": 2,
+            "loc": 3,
+            "che": 3,
+            "val": 5
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 13,
+          "name": "Quinten",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 13,
+          "review": "Consequatur in sunt quas. Eveniet veniam aut natus et ut. Quas voluptas temporibus at consequuntur. Est est ut repellendus quibusdam tempore.",
+          "date": "2018-11-23T21:59:27.587-05:00",
+          "reply": "",
+          "rating": {
+            "avg": 4,
+            "acc": 5,
+            "com": 2,
+            "cle": 4,
+            "loc": 5,
+            "che": 5,
+            "val": 2
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 14,
+          "name": "Omari",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 14,
+          "review": "Et aut voluptas reprehenderit. Ea atque sit. Aperiam quod quae aut amet doloremque nisi error maiores mollitia.",
+          "date": "2018-10-19T23:56:04.536-04:00",
+          "reply": "",
+          "rating": {
+            "avg": 3.5,
+            "acc": 4,
+            "com": 3,
+            "cle": 5,
+            "loc": 5,
+            "che": 1,
+            "val": 4
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 15,
+          "name": "Alana",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 15,
+          "review": "Fugiat cupiditate error nam et voluptas. Magnam ratione quo consequatur. Rerum quam qui sint.",
+          "date": "2018-11-06T11:52:10.631-05:00",
+          "reply": "Odio ea consequatur corporis dolores asperiores tenetur. Officiis repellendus non deserunt qui dolor aliquam. Libero voluptatem laborum ut molestiae consequatur labore dolor ea. Alias in vel totam ut omnis mollitia ut.",
+          "rating": {
+            "avg": 2.5,
+            "acc": 2,
+            "com": 1,
+            "cle": 2,
+            "loc": 4,
+            "che": 2,
+            "val": 3
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 16,
+          "name": "Alvis",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 16,
+          "review": "Sed dolorem eligendi maiores animi. Eius voluptatem voluptates recusandae aut rerum maiores. Consequatur voluptas vel voluptates non a omnis. Ratione commodi tenetur in ad ex consequatur ut nemo beatae. Sint consectetur dolor ullam quia libero dolores itaque. Odit ipsa hic veritatis.",
+          "date": "2018-11-16T00:09:34.788-05:00",
+          "reply": "Sunt cumque saepe nemo saepe voluptas enim deserunt. Voluptatem et placeat velit nihil ut sit. Earum quo fugit non natus animi voluptatem aperiam laudantium. Vitae tenetur vel enim omnis dolores sed ratione. Neque qui aperiam ut vel ut deleniti. Et voluptatum omnis et velit totam dolor qui suscipit.",
+          "rating": {
+            "avg": 3.5,
+            "acc": 4,
+            "com": 1,
+            "cle": 4,
+            "loc": 3,
+            "che": 3,
+            "val": 5
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 17,
+          "name": "Britney",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 17,
+          "review": "Et aut fuga et consequatur. Animi quas consequatur itaque qui. Dignissimos corporis iure. Dolores est et omnis officiis earum modi vel dolorum corrupti. Enim est beatae est eius impedit. Ipsa harum et enim voluptate maiores ea.",
+          "date": "2018-01-16T05:37:26.943-05:00",
+          "reply": "Nulla qui sit quos id delectus doloremque aut porro. Qui ducimus unde qui molestiae non qui. Fugiat rem eum laudantium sed architecto doloremque. Eligendi aut ea rem deserunt quod consequatur et aspernatur.",
+          "rating": {
+            "avg": 2.5,
+            "acc": 2,
+            "com": 1,
+            "cle": 2,
+            "loc": 5,
+            "che": 2,
+            "val": 2
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 18,
+          "name": "Mariela",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 18,
+          "review": "Neque placeat quaerat dolores ex. Rem maxime est nostrum modi magnam occaecati. Ipsa laborum suscipit expedita qui optio ut. Veniam quod placeat iste sit sit non minima. Tenetur ut veniam vel. Tenetur et aperiam.",
+          "date": "2018-03-17T06:30:46.777-04:00",
+          "reply": "",
+          "rating": {
+            "avg": 2.5,
+            "acc": 2,
+            "com": 5,
+            "cle": 3,
+            "loc": 2,
+            "che": 1,
+            "val": 3
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 19,
+          "name": "Delaney",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 19,
+          "review": "Non non qui officiis expedita qui qui quia alias et. Quia cum eligendi. Quia eveniet repellendus ut est et.",
+          "date": "2018-07-02T09:55:10.435-04:00",
+          "reply": "Iure aliquam sapiente doloremque aliquid. Qui possimus itaque delectus dolorem. Saepe qui eaque cum consectetur cum ut dolores. Dolorum voluptatem unde nobis ducimus.",
+          "rating": {
+            "avg": 2,
+            "acc": 4,
+            "com": 1,
+            "cle": 4,
+            "loc": 1,
+            "che": 1,
+            "val": 2
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 20,
+          "name": "Jaclyn",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 20,
+          "review": "Assumenda consequatur molestiae eum voluptatem ea omnis at. Corrupti voluptatem ducimus ea et est vel. Laborum reiciendis animi eligendi ea. Praesentium in perspiciatis distinctio beatae.",
+          "date": "2018-09-01T00:31:38.911-04:00",
+          "reply": "Inventore neque et et repellat. Voluptas odio id consectetur ut eum et iste. Nisi qui fugiat.",
+          "rating": {
+            "avg": 3.5,
+            "acc": 5,
+            "com": 4,
+            "cle": 3,
+            "loc": 3,
+            "che": 2,
+            "val": 4
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 21,
+          "name": "Marjolaine",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 21,
+          "review": "Adipisci et velit fugit nihil placeat dicta. Expedita est blanditiis aliquid culpa. Eligendi aspernatur aspernatur provident quam possimus sit quam. Doloremque quo aut quibusdam eius ut non nobis.",
+          "date": "2018-03-15T05:11:33.499-04:00",
+          "reply": "Praesentium deleniti sed dicta eum nobis. Sint velit eum in. Ab porro quam occaecati est id.",
+          "rating": {
+            "avg": 4,
+            "acc": 3,
+            "com": 5,
+            "cle": 5,
+            "loc": 3,
+            "che": 5,
+            "val": 4
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 22,
+          "name": "Benedict",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 22,
+          "review": "Vel rerum nostrum iusto dolorem itaque. Laboriosam placeat et voluptatem ipsam enim. Et ducimus tempore nobis qui suscipit. Non hic omnis. Quo autem similique cumque maxime molestias.",
+          "date": "2018-04-26T10:17:28.762-04:00",
+          "reply": "",
+          "rating": {
+            "avg": 2.5,
+            "acc": 2,
+            "com": 5,
+            "cle": 1,
+            "loc": 3,
+            "che": 3,
+            "val": 2
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 23,
+          "name": "Shawna",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 23,
+          "review": "Consequatur rerum fugiat sed ipsam vitae odit in ipsa. Et fugiat non. Nemo officiis voluptatem minima doloribus suscipit ullam aut numquam distinctio.",
+          "date": "2018-01-18T04:09:38.856-05:00",
+          "reply": "A ad nobis ullam consequatur distinctio blanditiis quam eveniet dolores. Adipisci consequatur omnis dolorum aut ab perspiciatis est consequuntur. Sequi consequuntur mollitia adipisci ducimus eaque maiores nobis et.",
+          "rating": {
+            "avg": 3,
+            "acc": 3,
+            "com": 2,
+            "cle": 1,
+            "loc": 4,
+            "che": 3,
+            "val": 5
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 24,
+          "name": "Mary",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 24,
+          "review": "Eos voluptatem magni rerum minima iusto animi quis. Id voluptate sunt ipsum veniam ipsum odio fuga ex corrupti. Omnis quam et nulla reiciendis quod ducimus. Architecto voluptatibus hic. Voluptas vel minima sint.",
+          "date": "2018-11-15T08:28:15.015-05:00",
+          "reply": "Et optio sapiente repellendus. Enim numquam et in illum velit veniam. Facilis omnis nihil porro eveniet fugit qui libero consectetur sunt. Ipsam voluptatibus beatae nihil molestiae iusto aut cupiditate magnam et. Odio saepe numquam temporibus quas excepturi incidunt mollitia.",
+          "rating": {
+            "avg": 4.5,
+            "acc": 5,
+            "com": 5,
+            "cle": 5,
+            "loc": 4,
+            "che": 3,
+            "val": 4
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 25,
+          "name": "Percy",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 25,
+          "review": "Sed qui corporis. Quos dolorum nesciunt autem consequatur possimus. Sequi autem optio voluptatem occaecati architecto nostrum non.",
+          "date": "2018-11-07T22:06:35.173-05:00",
+          "reply": "Laborum quia molestiae rerum sunt omnis officiis at. Quas iste vel. Aut adipisci molestias corporis aspernatur omnis ducimus.",
+          "rating": {
+            "avg": 3,
+            "acc": 4,
+            "com": 3,
+            "cle": 5,
+            "loc": 1,
+            "che": 2,
+            "val": 3
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 26,
+          "name": "Trycia",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 26,
+          "review": "Qui ut voluptates rerum aut odio quia fuga pariatur ut. Eius ea molestias perspiciatis voluptate ut ut. Sed sed excepturi sint quia similique facere ipsa velit.",
+          "date": "2018-11-06T06:59:44.485-05:00",
+          "reply": "Natus similique quos porro quaerat suscipit qui. Esse enim deleniti maiores libero eum. Et nobis et dolore. Deleniti laboriosam consequuntur tempora et modi recusandae maxime magni.",
+          "rating": {
+            "avg": 3,
+            "acc": 1,
+            "com": 2,
+            "cle": 4,
+            "loc": 5,
+            "che": 5,
+            "val": 1
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 27,
+          "name": "Wilburn",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 27,
+          "review": "Nisi quidem sint. Ut accusamus nemo voluptatem voluptates dolorum non. Enim iure sint eos. Est quaerat esse nisi iure reprehenderit.",
+          "date": "2018-02-07T22:07:48.360-05:00",
+          "reply": "",
+          "rating": {
+            "avg": 3.5,
+            "acc": 3,
+            "com": 5,
+            "cle": 4,
+            "loc": 4,
+            "che": 2,
+            "val": 2
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 28,
+          "name": "Leland",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 28,
+          "review": "Et repudiandae iusto impedit quas accusantium a. Id odit dignissimos qui placeat debitis pariatur doloribus quasi hic. Repellat numquam et dignissimos eveniet alias.",
+          "date": "2018-01-31T15:06:44.664-05:00",
+          "reply": "",
+          "rating": {
+            "avg": 1.5,
+            "acc": 2,
+            "com": 2,
+            "cle": 1,
+            "loc": 2,
+            "che": 1,
+            "val": 1
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 29,
+          "name": "Nayeli",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 29,
+          "review": "Recusandae dolorum et pariatur sapiente. Qui perspiciatis laboriosam non repellat doloribus. Odio voluptatem et. Sapiente est suscipit natus et aut dolorum. Minima ab aliquam a possimus.",
+          "date": "2018-11-01T18:06:15.853-04:00",
+          "reply": "",
+          "rating": {
+            "avg": 3,
+            "acc": 5,
+            "com": 4,
+            "cle": 4,
+            "loc": 3,
+            "che": 1,
+            "val": 2
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 30,
+          "name": "Cara",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 30,
+          "review": "Aut atque explicabo quae eaque. Nihil magnam optio. Aliquid sint unde occaecati nulla. Illum et hic est quia soluta et molestiae nisi voluptatibus. Non expedita dicta dicta adipisci suscipit consequatur atque.",
+          "date": "2017-12-25T12:36:12.488-05:00",
+          "reply": "Fugit magnam voluptatibus autem doloribus asperiores qui corporis. Nemo autem eius autem. Sunt quidem rerum est ut voluptas molestiae corporis quod et. Ut aliquam sint in.",
+          "rating": {
+            "avg": 2.5,
+            "acc": 2,
+            "com": 1,
+            "cle": 5,
+            "loc": 2,
+            "che": 1,
+            "val": 3
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 31,
+          "name": "Dorian",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 31,
+          "review": "Aut odio omnis. Et deleniti a enim error ut tempore dolorem ipsam. Et qui at soluta amet numquam eum eum recusandae. Adipisci fuga omnis.",
+          "date": "2018-11-27T04:47:18.878-05:00",
+          "reply": "Voluptatem id perspiciatis dolores architecto non. Eos corporis neque deserunt animi. Totam aliquid voluptas eligendi consequatur vel est soluta.",
+          "rating": {
+            "avg": 3,
+            "acc": 1,
+            "com": 4,
+            "cle": 3,
+            "loc": 3,
+            "che": 4,
+            "val": 4
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 32,
+          "name": "Carter",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 32,
+          "review": "Natus ipsa dolorem esse doloremque consequatur illo. Nesciunt pariatur quae quae nobis minus voluptatem minus. Et adipisci et nesciunt enim quas. Mollitia qui in voluptates.",
+          "date": "2018-02-04T17:16:41.984-05:00",
+          "reply": "Quia maxime occaecati accusamus pariatur voluptatum omnis. Sunt numquam sequi odio et. Et rerum quis perferendis est facere inventore dolores.",
+          "rating": {
+            "avg": 3,
+            "acc": 3,
+            "com": 2,
+            "cle": 2,
+            "loc": 4,
+            "che": 3,
+            "val": 5
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 33,
+          "name": "Terry",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 33,
+          "review": "Veritatis perspiciatis sit voluptatem. Vel quidem aliquam illum perferendis cum corrupti aut. Consequatur ut omnis quaerat vero dolorem. A numquam voluptas harum quia.",
+          "date": "2018-06-25T12:26:34.109-04:00",
+          "reply": "",
+          "rating": {
+            "avg": 2,
+            "acc": 1,
+            "com": 2,
+            "cle": 4,
+            "loc": 1,
+            "che": 2,
+            "val": 2
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 34,
+          "name": "Sadye",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 34,
+          "review": "Consequatur laudantium ducimus eligendi aut iusto ullam fugit qui. Sunt maiores amet molestias deleniti sapiente. Temporibus eos minus totam non dolor amet consectetur odit dolore. Qui illum odit et odio ut sapiente.",
+          "date": "2018-08-10T09:46:50.281-04:00",
+          "reply": "",
+          "rating": {
+            "avg": 3,
+            "acc": 5,
+            "com": 5,
+            "cle": 1,
+            "loc": 3,
+            "che": 1,
+            "val": 3
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 35,
+          "name": "Isom",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 35,
+          "review": "Maiores totam sint sit reiciendis omnis laudantium et eum nihil. Suscipit maxime exercitationem. Pariatur quo non quas voluptatem aliquid. Quas qui labore unde vel provident placeat dolorem illum et.",
+          "date": "2018-03-02T07:30:39.067-05:00",
+          "reply": "Saepe nihil dolorem qui a sapiente. Iure sed reprehenderit officiis repellendus laboriosam. Sunt quo exercitationem quidem sint at porro sit. Dolore quasi harum dicta soluta suscipit exercitationem voluptates fuga. Pariatur minus nihil. Ducimus alias omnis laboriosam placeat ut.",
+          "rating": {
+            "avg": 2.5,
+            "acc": 2,
+            "com": 3,
+            "cle": 5,
+            "loc": 2,
+            "che": 2,
+            "val": 2
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 36,
+          "name": "Coby",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 36,
+          "review": "Aliquam animi itaque eius beatae temporibus vel. Aut mollitia et voluptatem asperiores facilis unde. Error perferendis voluptatum quasi sint quam.",
+          "date": "2018-02-21T04:47:59.967-05:00",
+          "reply": "",
+          "rating": {
+            "avg": 2.5,
+            "acc": 5,
+            "com": 2,
+            "cle": 1,
+            "loc": 1,
+            "che": 2,
+            "val": 4
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 37,
+          "name": "Lessie",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 37,
+          "review": "Eos id distinctio ipsum libero ex animi optio aspernatur. Et est dolorum quod quam officia velit eaque et dolores. Consequatur sit enim rerum consequatur dicta eligendi non. Ut temporibus distinctio quae illo velit. Maxime eum voluptates molestias est et et reprehenderit accusantium aut.",
+          "date": "2018-04-17T10:47:52.237-04:00",
+          "reply": "",
+          "rating": {
+            "avg": 3,
+            "acc": 1,
+            "com": 4,
+            "cle": 4,
+            "loc": 4,
+            "che": 3,
+            "val": 2
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 38,
+          "name": "Quinn",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 38,
+          "review": "Dolore rerum id quisquam et ut delectus. Quia optio et praesentium provident nulla repudiandae quisquam. Unde quis quidem nihil.",
+          "date": "2018-03-21T21:04:47.739-04:00",
+          "reply": "Doloremque quidem ratione repellat ut aut. Aspernatur ut vel molestiae eos consequuntur laudantium ipsam soluta aliquid. Mollitia est et incidunt perspiciatis qui sit odio. Similique harum illo corrupti eveniet assumenda laudantium. Suscipit libero nam ut nesciunt dolor mollitia.",
+          "rating": {
+            "avg": 4,
+            "acc": 5,
+            "com": 4,
+            "cle": 5,
+            "loc": 2,
+            "che": 5,
+            "val": 4
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 39,
+          "name": "Ferne",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 39,
+          "review": "Natus est autem fuga ea quia delectus. Itaque laboriosam quas molestias ea qui nihil exercitationem. Exercitationem ut laborum velit. Placeat molestiae debitis consectetur inventore quis maiores architecto minus. Tempora aut quasi molestiae quia autem repellat.",
+          "date": "2018-05-09T02:11:26.914-04:00",
+          "reply": "",
+          "rating": {
+            "avg": 3,
+            "acc": 4,
+            "com": 1,
+            "cle": 2,
+            "loc": 3,
+            "che": 4,
+            "val": 5
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 40,
+          "name": "Susie",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 40,
+          "review": "Rem et optio qui est voluptatibus. Odio sit corporis ut in reiciendis quisquam necessitatibus. Doloremque autem unde. Eum est facere ducimus laboriosam cum nesciunt sunt totam. Eos voluptatem numquam voluptatem sed. Sed pariatur fuga voluptatem magnam.",
+          "date": "2018-11-22T20:39:30.035-05:00",
+          "reply": "Tempore omnis ut aut. Et beatae enim voluptatem reiciendis. Quis iusto molestias. Rerum sunt sapiente id asperiores sequi ut libero autem voluptate.",
+          "rating": {
+            "avg": 4,
+            "acc": 5,
+            "com": 5,
+            "cle": 5,
+            "loc": 2,
+            "che": 3,
+            "val": 3
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 41,
+          "name": "Trycia",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 41,
+          "review": "Iste ipsam distinctio vel. Cumque necessitatibus ullam nulla temporibus qui tempora in. Doloribus sunt est est quisquam.",
+          "date": "2018-05-23T23:18:10.031-04:00",
+          "reply": "Reiciendis ut asperiores. Aut perferendis nulla enim. Et vel sint aut error. Et et illum quam est nam ad esse.",
+          "rating": {
+            "avg": 3,
+            "acc": 3,
+            "com": 3,
+            "cle": 1,
+            "loc": 3,
+            "che": 5,
+            "val": 3
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 42,
+          "name": "Samson",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 42,
+          "review": "In qui ad non aut. Et vel tenetur quidem at quia. Commodi doloremque et nesciunt iusto iusto. Ut delectus dolorum est. Placeat dolor labore. Commodi et aliquid consequatur ducimus ipsa nesciunt dolor qui.",
+          "date": "2018-04-23T17:27:50.836-04:00",
+          "reply": "",
+          "rating": {
+            "avg": 3.5,
+            "acc": 5,
+            "com": 3,
+            "cle": 4,
+            "loc": 3,
+            "che": 3,
+            "val": 2
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 43,
+          "name": "Kianna",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 43,
+          "review": "Rerum reprehenderit quas magnam omnis aut. Repudiandae adipisci qui et ea consequuntur ipsa aspernatur vitae modi. Magnam eveniet quis vero quibusdam repellat facere facilis dicta. Quia et praesentium quae quidem qui porro sit est. Quasi omnis placeat necessitatibus vel sed. Quis ipsum qui accusantium sint libero occaecati.",
+          "date": "2018-08-26T01:55:54.018-04:00",
+          "reply": "Aut amet nisi repudiandae reprehenderit. Reprehenderit aspernatur tempore dignissimos pariatur ut maxime quasi sit laborum. Qui magnam perferendis ullam dolorum alias tenetur exercitationem. Explicabo enim nobis delectus eum voluptate iste dolor error consequatur. Sed sit error.",
+          "rating": {
+            "avg": 3,
+            "acc": 1,
+            "com": 3,
+            "cle": 4,
+            "loc": 3,
+            "che": 5,
+            "val": 2
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 44,
+          "name": "Mylene",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 44,
+          "review": "Consequuntur enim culpa distinctio. Et recusandae officiis est officiis non vitae magni sapiente sed. Aut quis repellat soluta eveniet libero consequatur et et occaecati. Expedita rem qui voluptas placeat praesentium et placeat.",
+          "date": "2018-06-17T21:09:35.720-04:00",
+          "reply": "",
+          "rating": {
+            "avg": 3,
+            "acc": 2,
+            "com": 5,
+            "cle": 1,
+            "loc": 5,
+            "che": 4,
+            "val": 2
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 45,
+          "name": "Gordon",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 45,
+          "review": "Commodi assumenda quidem asperiores omnis omnis ad. Consequuntur alias ut est. Nobis mollitia ea consequatur at sunt quia est.",
+          "date": "2018-05-03T13:45:49.205-04:00",
+          "reply": "",
+          "rating": {
+            "avg": 3,
+            "acc": 1,
+            "com": 4,
+            "cle": 3,
+            "loc": 3,
+            "che": 3,
+            "val": 3
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 46,
+          "name": "Raegan",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 46,
+          "review": "Ut sed in non autem sunt cupiditate vel voluptas. Dolores similique et pariatur deserunt aliquid eum ipsum illo voluptatem. Voluptatibus maxime sit iusto et eos non rerum nostrum.",
+          "date": "2018-06-24T01:30:32.450-04:00",
+          "reply": "Recusandae eaque libero neque. Cum alias dolores facilis in animi tempora enim. Consequatur nulla ut dicta pariatur harum dolores maiores. Eveniet praesentium voluptatem id. Eum saepe aut accusamus aut ratione. Et in eos et ipsum sed neque ea distinctio sapiente.",
+          "rating": {
+            "avg": 3,
+            "acc": 4,
+            "com": 2,
+            "cle": 5,
+            "loc": 5,
+            "che": 1,
+            "val": 1
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 47,
+          "name": "Alexane",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 47,
+          "review": "Vitae vero itaque non. Dolorem qui ipsa enim non aut. Cupiditate omnis totam.",
+          "date": "2018-11-09T18:48:29.133-05:00",
+          "reply": "Facere officiis aut voluptatibus quasi. Ipsa doloremque sed quis dolorem nihil et ea. Esse et et.",
+          "rating": {
+            "avg": 2.5,
+            "acc": 2,
+            "com": 1,
+            "cle": 2,
+            "loc": 5,
+            "che": 3,
+            "val": 1
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 48,
+          "name": "Colleen",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 48,
+          "review": "Sapiente quae ea dolorum minima sed deleniti. Voluptatem et repudiandae doloribus sunt odit animi et consequatur. Et voluptatum est animi. Corrupti repudiandae facilis et neque animi ut quo error et. Suscipit reprehenderit est mollitia. Sapiente eos occaecati delectus.",
+          "date": "2018-09-18T08:18:08.072-04:00",
+          "reply": "",
+          "rating": {
+            "avg": 3,
+            "acc": 3,
+            "com": 4,
+            "cle": 1,
+            "loc": 5,
+            "che": 2,
+            "val": 4
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 49,
+          "name": "Major",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 49,
+          "review": "Pariatur incidunt nobis neque eum architecto cumque totam sed. Dolores cupiditate reiciendis reprehenderit nam omnis voluptas explicabo unde sunt. Qui illo dolorem veniam quisquam natus suscipit ex. Nobis sunt dolore eos ut. Sequi qui deleniti illum eligendi sunt est. Animi officia laborum tempore.",
+          "date": "2018-12-02T16:07:55.635-05:00",
+          "reply": "At qui illo neque qui reprehenderit vel repellat. Totam aliquam sunt. Id qui dolores. Quo sunt quas.",
+          "rating": {
+            "avg": 4,
+            "acc": 3,
+            "com": 5,
+            "cle": 3,
+            "loc": 5,
+            "che": 5,
+            "val": 4
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 50,
+          "name": "Nova",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 50,
+          "review": "Ut omnis quis. Est dolore rerum corporis velit sit et. Ut est quae.",
+          "date": "2018-04-26T09:46:28.919-04:00",
+          "reply": "",
+          "rating": {
+            "avg": 3,
+            "acc": 5,
+            "com": 1,
+            "cle": 3,
+            "loc": 4,
+            "che": 2,
+            "val": 2
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 51,
+          "name": "Rudolph",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 51,
+          "review": "Quia quia numquam beatae aliquam iusto reprehenderit ut. Soluta est placeat et culpa sequi sunt. Soluta tempore ut nesciunt velit qui.",
+          "date": "2018-10-14T15:17:10.072-04:00",
+          "reply": "Quam et voluptates enim possimus omnis quis saepe dolores. Itaque deserunt aperiam nobis omnis nihil libero aspernatur aut. Rerum sed molestias sint magni corrupti qui qui aut voluptates. Numquam iure saepe sit animi minima vero ipsum atque totam.",
+          "rating": {
+            "avg": 3,
+            "acc": 2,
+            "com": 5,
+            "cle": 1,
+            "loc": 5,
+            "che": 1,
+            "val": 4
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 52,
+          "name": "Gust",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 52,
+          "review": "Sed illum quos earum at labore animi dolor. Numquam vero aut aut et hic illum reprehenderit aliquam voluptatem. Reiciendis nulla eius libero deserunt temporibus.",
+          "date": "2018-08-27T14:18:47.398-04:00",
+          "reply": "Corporis ab quia non quod iste. Ratione ut est molestias voluptas ut possimus et commodi. Commodi placeat quam vel libero dolor consectetur voluptatum aut.",
+          "rating": {
+            "avg": 2.5,
+            "acc": 2,
+            "com": 3,
+            "cle": 2,
+            "loc": 4,
+            "che": 3,
+            "val": 2
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 53,
+          "name": "Warren",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 53,
+          "review": "Ut veniam explicabo quam ratione aliquam reprehenderit laudantium. Officia iusto quia. Nemo natus deserunt ut.",
+          "date": "2018-08-04T04:18:17.655-04:00",
+          "reply": "Dolorum vel aut. Rem cupiditate quis vel sit sint veritatis modi iure eaque. Eaque cupiditate debitis laboriosam quo eveniet soluta facere accusantium. Ullam ratione aut quasi. Ratione ut consequatur architecto.",
+          "rating": {
+            "avg": 3.5,
+            "acc": 4,
+            "com": 2,
+            "cle": 4,
+            "loc": 3,
+            "che": 4,
+            "val": 5
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 54,
+          "name": "Myrtis",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 54,
+          "review": "Aut nam est eaque velit nemo. Quasi perferendis culpa recusandae ipsum voluptates. Sapiente fuga repudiandae at commodi aliquam officia non suscipit.",
+          "date": "2018-04-26T06:06:04.413-04:00",
+          "reply": "Et qui ex necessitatibus quis dicta necessitatibus temporibus quo. Ratione incidunt sint alias eius nobis ipsum dolorem qui. Magnam quo sit quas numquam qui itaque accusamus architecto. Facere expedita dolores exercitationem ut sed id aut.",
+          "rating": {
+            "avg": 2.5,
+            "acc": 4,
+            "com": 3,
+            "cle": 1,
+            "loc": 3,
+            "che": 2,
+            "val": 2
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 55,
+          "name": "Gregorio",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 55,
+          "review": "Dolorem dolores fugiat qui nemo. Mollitia sit explicabo corporis fugit. Et magni dolorem animi molestias. Quas aut molestias consequatur.",
+          "date": "2018-09-09T09:09:14.655-04:00",
+          "reply": "Iste est deserunt aliquam ut accusantium sunt ad. Ut ea assumenda enim odit voluptas officiis adipisci molestias. Quia harum est neque recusandae.",
+          "rating": {
+            "avg": 3,
+            "acc": 5,
+            "com": 2,
+            "cle": 5,
+            "loc": 1,
+            "che": 4,
+            "val": 1
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 56,
+          "name": "Zola",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 56,
+          "review": "Nisi eos quo repudiandae sint non possimus fuga qui. Natus facilis occaecati. Eum voluptatem quibusdam. Error doloribus dolores alias doloremque architecto quisquam id. Facilis aliquid adipisci cupiditate aut saepe aut porro minus vel.",
+          "date": "2018-07-11T10:00:02.293-04:00",
+          "reply": "",
+          "rating": {
+            "avg": 3,
+            "acc": 3,
+            "com": 3,
+            "cle": 4,
+            "loc": 2,
+            "che": 4,
+            "val": 3
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 57,
+          "name": "Kariane",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 57,
+          "review": "Atque est qui cum dolorum aspernatur quam repellat qui molestiae. Dignissimos laborum eum quis consequuntur consequatur similique voluptatum quis ducimus. Est nesciunt alias consequatur doloremque nostrum. Fugiat libero enim recusandae deserunt excepturi.",
+          "date": "2018-09-17T14:59:19.938-04:00",
+          "reply": "Facilis modi non quo quaerat. Nobis tempora amet amet sunt recusandae natus amet. Modi veniam qui nulla omnis voluptas. Exercitationem in vitae et qui iure exercitationem nobis beatae labore. Fuga saepe illo laborum aperiam voluptas rerum culpa.",
+          "rating": {
+            "avg": 3.5,
+            "acc": 5,
+            "com": 5,
+            "cle": 4,
+            "loc": 1,
+            "che": 4,
+            "val": 3
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 58,
+          "name": "Clint",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 58,
+          "review": "Qui accusamus iste enim sed voluptatem maiores quod. Qui illo omnis illum voluptas et eum maiores iste earum. Veniam minus sed et voluptas possimus facilis.",
+          "date": "2018-10-08T16:46:54.895-04:00",
+          "reply": "",
+          "rating": {
+            "avg": 2,
+            "acc": 3,
+            "com": 2,
+            "cle": 2,
+            "loc": 4,
+            "che": 1,
+            "val": 1
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 59,
+          "name": "Anjali",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 59,
+          "review": "Mollitia consequatur blanditiis autem asperiores eligendi aliquam odit nisi est. Molestiae eaque id. Consequatur accusamus assumenda esse. Ullam non et perferendis modi quis quas sunt modi porro. Esse omnis aut minus et voluptates doloremque sint.",
+          "date": "2018-05-29T08:53:16.110-04:00",
+          "reply": "Odio occaecati ut aut. Quidem dolore tenetur cum consectetur voluptas. Magnam corporis aspernatur alias est dolores nesciunt autem molestiae. Quis omnis eligendi eius id impedit explicabo et. Aut repellat id sequi numquam dolores et deserunt qui voluptatem. Ex modi est sit eaque quia hic.",
+          "rating": {
+            "avg": 2,
+            "acc": 4,
+            "com": 1,
+            "cle": 2,
+            "loc": 1,
+            "che": 1,
+            "val": 2
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 60,
+          "name": "Elmore",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 60,
+          "review": "Dolorum reprehenderit nobis saepe. Sit nulla occaecati nobis incidunt aut rem excepturi. Quis sed eaque molestias velit est quis.",
+          "date": "2018-10-23T14:46:17.934-04:00",
+          "reply": "Libero nemo expedita qui eveniet qui temporibus sit. Recusandae quam eaque neque libero voluptatem quam eveniet sint blanditiis. Aperiam voluptates ut mollitia omnis facilis laborum perferendis et delectus.",
+          "rating": {
+            "avg": 3,
+            "acc": 3,
+            "com": 1,
+            "cle": 5,
+            "loc": 5,
+            "che": 1,
+            "val": 4
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 61,
+          "name": "Jayme",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 61,
+          "review": "Aut est ad nisi. Iste in voluptas ut ut mollitia. Vitae et ut.",
+          "date": "2018-10-21T04:09:42.248-04:00",
+          "reply": "",
+          "rating": {
+            "avg": 3,
+            "acc": 4,
+            "com": 2,
+            "cle": 2,
+            "loc": 1,
+            "che": 5,
+            "val": 3
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 62,
+          "name": "Clovis",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 62,
+          "review": "Consequatur doloribus commodi omnis. Dolores sunt cupiditate asperiores dolor illo eum iure vitae iste. Aut suscipit rerum neque non eos aut facere asperiores exercitationem. Itaque at quisquam esse id minus sit sint sit commodi.",
+          "date": "2018-08-16T19:02:30.086-04:00",
+          "reply": "",
+          "rating": {
+            "avg": 4,
+            "acc": 5,
+            "com": 4,
+            "cle": 2,
+            "loc": 4,
+            "che": 5,
+            "val": 3
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 63,
+          "name": "Gretchen",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 63,
+          "review": "Aut facere unde harum aliquam ullam ut doloribus aut. Aut debitis soluta. Fugit iure earum. Corrupti est adipisci occaecati et libero.",
+          "date": "2018-10-17T12:54:19.293-04:00",
+          "reply": "Accusantium sed eos velit iusto vitae rerum perferendis deleniti at. Tenetur sed nesciunt doloribus et. Nemo commodi asperiores vel quia in qui similique excepturi impedit. Assumenda maxime sit. Labore occaecati exercitationem nesciunt repellat enim ratione officiis perferendis.",
+          "rating": {
+            "avg": 3.5,
+            "acc": 4,
+            "com": 4,
+            "cle": 4,
+            "loc": 3,
+            "che": 2,
+            "val": 3
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 64,
+          "name": "Casimer",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 64,
+          "review": "Nam doloribus rerum harum repellat minus eum sapiente a optio. Maxime doloremque est. Iusto odio quia et est ut repudiandae officiis vitae autem.",
+          "date": "2018-01-03T22:20:10.887-05:00",
+          "reply": "",
+          "rating": {
+            "avg": 2,
+            "acc": 4,
+            "com": 1,
+            "cle": 3,
+            "loc": 1,
+            "che": 2,
+            "val": 2
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 65,
+          "name": "Neil",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 65,
+          "review": "Dolores sit voluptas consectetur fugit voluptatem sit inventore nam ut. Exercitationem rerum ratione voluptas iusto exercitationem qui deserunt sunt. Omnis voluptates ut ducimus perferendis velit ut.",
+          "date": "2018-08-05T10:39:06.782-04:00",
+          "reply": "",
+          "rating": {
+            "avg": 2,
+            "acc": 5,
+            "com": 1,
+            "cle": 1,
+            "loc": 1,
+            "che": 2,
+            "val": 3
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 66,
+          "name": "Tyree",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 66,
+          "review": "Dolor voluptas perspiciatis quia mollitia. Consequatur iusto cupiditate quo. Blanditiis eos enim sed aut quia ut omnis. Sequi provident et atque. Dolorem expedita saepe mollitia in sit accusamus sint sit aliquam. Quam repellat voluptas eius deserunt eius non voluptatem eos.",
+          "date": "2018-07-11T10:27:28.017-04:00",
+          "reply": "Et exercitationem iste fugiat aut in iure rerum ea. Consequatur sunt corporis sint omnis similique. Labore ut numquam amet rem.",
+          "rating": {
+            "avg": 4,
+            "acc": 5,
+            "com": 4,
+            "cle": 4,
+            "loc": 3,
+            "che": 4,
+            "val": 4
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 67,
+          "name": "Lauretta",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 67,
+          "review": "Architecto voluptatem ut. Eum beatae voluptates distinctio consequatur hic sequi quam accusamus et. Sint aut soluta et.",
+          "date": "2018-07-20T11:52:22.683-04:00",
+          "reply": "",
+          "rating": {
+            "avg": 4.5,
+            "acc": 5,
+            "com": 5,
+            "cle": 5,
+            "loc": 3,
+            "che": 4,
+            "val": 4
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 68,
+          "name": "Muhammad",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 68,
+          "review": "Aut voluptatum sint nihil laboriosam ab et. Dolores odit deserunt. Reprehenderit ratione sequi aliquam nihil eos. Ad nostrum eum nobis asperiores.",
+          "date": "2018-11-28T01:41:47.706-05:00",
+          "reply": "",
+          "rating": {
+            "avg": 3.5,
+            "acc": 3,
+            "com": 3,
+            "cle": 5,
+            "loc": 2,
+            "che": 3,
+            "val": 5
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 69,
+          "name": "Carmine",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 69,
+          "review": "Consequatur vel autem. Odio aliquam voluptas fugiat et provident tenetur quos et. Et aliquid aut veniam sapiente molestiae inventore eum.",
+          "date": "2018-09-15T01:34:10.607-04:00",
+          "reply": "",
+          "rating": {
+            "avg": 2.5,
+            "acc": 5,
+            "com": 3,
+            "cle": 2,
+            "loc": 1,
+            "che": 2,
+            "val": 1
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 70,
+          "name": "Amelia",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 70,
+          "review": "Necessitatibus laudantium et non exercitationem tempora quis aliquid quod et. Vel a quidem. Atque omnis dolor et labore eius adipisci aut enim consectetur. Est quidem natus. Quis magni illo provident quas esse cumque corrupti harum iusto. Repellendus adipisci rerum est natus corporis nam dolores.",
+          "date": "2018-09-06T01:21:44.528-04:00",
+          "reply": "Sunt autem distinctio est velit. Et odio aut facere recusandae ut. Qui ipsam odio omnis quibusdam id dignissimos corporis. Explicabo quis quas pariatur dolor exercitationem eligendi aliquid. Veritatis voluptas et repellendus modi id ipsa porro nostrum praesentium. Dolorem necessitatibus non ducimus similique quidem.",
+          "rating": {
+            "avg": 3.5,
+            "acc": 5,
+            "com": 2,
+            "cle": 5,
+            "loc": 4,
+            "che": 1,
+            "val": 3
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 71,
+          "name": "Bridget",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 71,
+          "review": "Excepturi nisi et minus. Et voluptas quasi ea doloremque animi quo adipisci. Et incidunt facilis eligendi fugiat repudiandae. At minima et tempora iure. Dolor officia in ea quia autem quis voluptatum quos est. Fugiat exercitationem recusandae occaecati architecto ipsa nihil totam libero voluptas.",
+          "date": "2018-10-25T19:36:51.806-04:00",
+          "reply": "",
+          "rating": {
+            "avg": 3,
+            "acc": 4,
+            "com": 2,
+            "cle": 3,
+            "loc": 3,
+            "che": 4,
+            "val": 3
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 72,
+          "name": "Rusty",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 72,
+          "review": "Soluta assumenda debitis illo. Asperiores sed amet inventore sed animi mollitia. Fuga rerum rerum quia quisquam. Quis rerum occaecati et dolorem natus consectetur accusantium quae voluptatibus. Qui saepe magni ullam modi. Veritatis totam amet et mollitia quae aut.",
+          "date": "2018-04-28T22:11:54.254-04:00",
+          "reply": "Nesciunt dolorum asperiores voluptatem et enim enim. Neque corporis perferendis similique eum est aliquid et earum dolores. Commodi quia recusandae. Quis rerum aut repellendus dolore. Ducimus non praesentium ut autem quis ea est sequi dolorum.",
+          "rating": {
+            "avg": 3.5,
+            "acc": 4,
+            "com": 4,
+            "cle": 2,
+            "loc": 5,
+            "che": 5,
+            "val": 1
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 73,
+          "name": "Paige",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 73,
+          "review": "Vel nihil quibusdam voluptatem ex explicabo debitis quo. Incidunt similique enim non. Aut doloribus sapiente impedit ea eaque nostrum quis qui. Sint excepturi sed ea voluptatem. Dolor quae eligendi hic est dolorem voluptatum nihil impedit.",
+          "date": "2018-12-05T08:50:52.846-05:00",
+          "reply": "Sunt consequatur eius aliquam laboriosam est voluptatem reiciendis. Aliquid rerum vel sit ex tenetur dolor in quasi beatae. Est magni nihil. Possimus nesciunt praesentium rerum doloremque mollitia deserunt aliquam et aut.",
+          "rating": {
+            "avg": 4,
+            "acc": 1,
+            "com": 5,
+            "cle": 5,
+            "loc": 2,
+            "che": 5,
+            "val": 5
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 74,
+          "name": "Jacinthe",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 74,
+          "review": "Beatae ullam nemo qui omnis esse impedit ab est. Maxime et molestiae veniam est dolor rerum reiciendis quae. Ut error doloribus laborum id dolorum ea.",
+          "date": "2018-01-09T03:23:43.795-05:00",
+          "reply": "Est quis accusamus eos eaque enim illo deleniti consectetur. Incidunt minima dolorem quia. In tempore maxime qui eaque similique sed quae in. Eius accusamus quia ipsa eos quibusdam ea tempora. Quis fugit vel est sunt.",
+          "rating": {
+            "avg": 2.5,
+            "acc": 5,
+            "com": 2,
+            "cle": 1,
+            "loc": 4,
+            "che": 1,
+            "val": 1
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 75,
+          "name": "Deon",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 75,
+          "review": "Enim sed ipsa voluptas delectus qui placeat. Perferendis quo dolore. Animi tenetur rerum quisquam dicta voluptatem maxime repudiandae. Ipsam consectetur consequatur incidunt ab. Corrupti iusto ut sed ea. Adipisci veniam voluptatum eum rerum voluptatem autem.",
+          "date": "2018-03-07T09:56:55.227-05:00",
+          "reply": "",
+          "rating": {
+            "avg": 3,
+            "acc": 4,
+            "com": 2,
+            "cle": 1,
+            "loc": 4,
+            "che": 1,
+            "val": 5
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 76,
+          "name": "Eveline",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 76,
+          "review": "Laboriosam molestias reiciendis perspiciatis eum nihil atque veniam ad. Et fugit dolorem tempore ipsum pariatur et. Atque assumenda saepe sed adipisci. Ea molestias sit expedita a delectus facere.",
+          "date": "2018-07-15T22:12:59.202-04:00",
+          "reply": "Dignissimos sapiente sit vitae dolor quis qui in corrupti. Et minima odio dolor. Quia sed minus fuga. Pariatur cum aperiam facere.",
+          "rating": {
+            "avg": 3,
+            "acc": 5,
+            "com": 2,
+            "cle": 2,
+            "loc": 5,
+            "che": 2,
+            "val": 3
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 77,
+          "name": "Brody",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 77,
+          "review": "Ad voluptatem maxime ducimus doloremque vel et magni nihil fuga. Ullam repellat neque ad. Ratione corrupti molestias debitis mollitia voluptatibus quia impedit earum doloremque. Ad dolorem est neque quae soluta mollitia ratione. Commodi minima eum eligendi ducimus. Exercitationem est necessitatibus quibusdam et reiciendis nisi ut consequuntur autem.",
+          "date": "2018-04-22T02:08:54.576-04:00",
+          "reply": "Consectetur ullam est ut velit deleniti at incidunt. Distinctio nobis reprehenderit nihil nihil voluptatem. Dignissimos culpa et delectus facere perspiciatis officiis quo. Architecto nobis sunt ut mollitia ex vel magnam mollitia soluta. Neque et aut sed porro facilis reprehenderit est. Ea fugiat velit sint tenetur nesciunt excepturi.",
+          "rating": {
+            "avg": 2.5,
+            "acc": 1,
+            "com": 4,
+            "cle": 2,
+            "loc": 5,
+            "che": 1,
+            "val": 1
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 78,
+          "name": "Coy",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 78,
+          "review": "Tempora dicta asperiores ipsa iste recusandae sed. Vero ut inventore rem velit labore adipisci. Enim modi provident voluptas. Provident est eaque veritatis.",
+          "date": "2017-12-25T08:30:15.348-05:00",
+          "reply": "Optio et eum voluptatem. Labore ducimus molestiae et et magni libero et quia quas. Praesentium dolorum tenetur. Eum error et tenetur. A dolores deleniti quos libero.",
+          "rating": {
+            "avg": 4,
+            "acc": 4,
+            "com": 5,
+            "cle": 4,
+            "loc": 3,
+            "che": 3,
+            "val": 5
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 79,
+          "name": "Jordi",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 79,
+          "review": "Ducimus harum at reprehenderit dolorem quos. Dolorem rerum consectetur omnis cupiditate. Ratione eaque maiores voluptatem velit et dolorem corrupti temporibus. Voluptas modi facere culpa.",
+          "date": "2017-12-29T16:13:30.559-05:00",
+          "reply": "Consequatur numquam ut quas eum rerum consequatur itaque officiis. Eveniet est ut est vel tempore veritatis fuga voluptates enim. Non animi commodi eius eveniet. Architecto et maxime dolorum. Voluptatem optio et recusandae voluptatem et quo voluptates.",
+          "rating": {
+            "avg": 3.5,
+            "acc": 5,
+            "com": 2,
+            "cle": 2,
+            "loc": 3,
+            "che": 5,
+            "val": 5
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 80,
+          "name": "Kareem",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 80,
+          "review": "Illum alias et repudiandae. Dolorem omnis voluptas aperiam error eligendi tempora. Numquam ipsa omnis ut. Assumenda molestiae debitis doloremque explicabo sed nihil cum.",
+          "date": "2018-08-09T09:19:04.176-04:00",
+          "reply": "Harum voluptatibus quos ut totam eaque qui qui consequatur optio. Nihil molestiae qui autem odio voluptas porro vel. Eius aliquam maxime quia recusandae quam perferendis quisquam. Aut ut voluptatem eum itaque ullam. Ducimus odit nostrum consequatur provident. Iusto quia voluptas aliquam dolores voluptatum numquam culpa.",
+          "rating": {
+            "avg": 3,
+            "acc": 5,
+            "com": 3,
+            "cle": 1,
+            "loc": 1,
+            "che": 5,
+            "val": 2
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 81,
+          "name": "Jermain",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 81,
+          "review": "Repellendus itaque ut at quos itaque et at voluptatem. Iusto a sunt quae soluta optio omnis. Veniam expedita delectus necessitatibus cupiditate deserunt perferendis voluptate itaque.",
+          "date": "2017-12-26T14:23:55.111-05:00",
+          "reply": "Laboriosam esse repellat unde. Molestiae pariatur asperiores earum omnis necessitatibus fugiat. Aut in fugiat hic.",
+          "rating": {
+            "avg": 4,
+            "acc": 5,
+            "com": 3,
+            "cle": 5,
+            "loc": 5,
+            "che": 1,
+            "val": 5
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 82,
+          "name": "Joe",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 82,
+          "review": "Repellendus ipsum omnis totam exercitationem sit et aliquam placeat eius. Vel iure aliquid ut voluptas illum dolorem fuga pariatur quia. Laudantium accusantium natus est ut voluptas ut quidem.",
+          "date": "2018-12-04T22:33:27.445-05:00",
+          "reply": "",
+          "rating": {
+            "avg": 3,
+            "acc": 3,
+            "com": 5,
+            "cle": 2,
+            "loc": 5,
+            "che": 2,
+            "val": 2
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 83,
+          "name": "Araceli",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 83,
+          "review": "Magni eos eos et quam. Quam hic hic voluptatum incidunt fugiat commodi alias hic. Suscipit dolorem non magni cumque est nam at aut. Neque illo voluptates voluptatem ipsam repudiandae et placeat dolorem dolorum. Ut laudantium quis molestiae similique omnis sunt quisquam placeat.",
+          "date": "2018-06-12T07:03:20.267-04:00",
+          "reply": "Nam esse totam velit magnam sed. Officiis sed sed velit similique optio aut illo. Tempore dolor velit repellat quibusdam.",
+          "rating": {
+            "avg": 3,
+            "acc": 4,
+            "com": 4,
+            "cle": 2,
+            "loc": 1,
+            "che": 5,
+            "val": 1
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 84,
+          "name": "Kameron",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 84,
+          "review": "Deleniti cum ut error voluptatem sed eos ducimus ut. Culpa ratione laborum voluptas illo magnam ex. Eius et sit et quia laborum magni excepturi. Sit quis eos dolores ut totam dolor ea adipisci. Facere quidem nostrum aut sed beatae error at voluptatem fugiat.",
+          "date": "2018-03-27T12:56:32.221-04:00",
+          "reply": "Quas ut est quia quidem. Aspernatur dolorum eum provident rerum perferendis. Aut qui ipsa. Alias nemo quisquam sit molestiae non animi omnis voluptate.",
+          "rating": {
+            "avg": 3.5,
+            "acc": 1,
+            "com": 5,
+            "cle": 1,
+            "loc": 5,
+            "che": 5,
+            "val": 5
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 85,
+          "name": "Donna",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 85,
+          "review": "Facere rem consequatur nisi ipsum tenetur saepe sapiente. Alias explicabo consequatur nostrum sed voluptatem et odio qui autem. Commodi ducimus quia quod officiis officiis. Et eos et.",
+          "date": "2018-05-25T04:43:22.612-04:00",
+          "reply": "",
+          "rating": {
+            "avg": 3,
+            "acc": 1,
+            "com": 4,
+            "cle": 3,
+            "loc": 5,
+            "che": 1,
+            "val": 4
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 86,
+          "name": "Stevie",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 86,
+          "review": "Tenetur sed tenetur suscipit dolores dolor. Sint ut error. Perspiciatis commodi aliquid amet molestias. Porro aut consectetur ut quasi. Sed ex eius et beatae blanditiis ab laudantium. Repellat quia voluptate qui expedita quas ea.",
+          "date": "2018-02-18T04:58:44.731-05:00",
+          "reply": "",
+          "rating": {
+            "avg": 1.5,
+            "acc": 1,
+            "com": 1,
+            "cle": 1,
+            "loc": 1,
+            "che": 2,
+            "val": 3
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 87,
+          "name": "Ara",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 87,
+          "review": "Quas officia deleniti natus ducimus nihil qui. Est alias qui eum voluptatibus assumenda magni et sapiente. Vel necessitatibus illum voluptatem saepe. Impedit magni voluptates ipsum debitis.",
+          "date": "2017-12-30T06:32:25.039-05:00",
+          "reply": "",
+          "rating": {
+            "avg": 4.5,
+            "acc": 5,
+            "com": 4,
+            "cle": 4,
+            "loc": 4,
+            "che": 5,
+            "val": 4
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 88,
+          "name": "Imani",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 88,
+          "review": "Laboriosam reiciendis et hic suscipit maxime nisi similique minus deserunt. Vero eum et qui ut dicta illum voluptatem. Incidunt eveniet et repellat nostrum.",
+          "date": "2018-03-01T01:25:42.732-05:00",
+          "reply": "Necessitatibus earum quia officia ut eligendi adipisci. Beatae impedit totam non voluptatibus et dicta voluptatem. Magnam ipsa et distinctio. Aut sed sint consequatur cum sapiente ullam corporis.",
+          "rating": {
+            "avg": 2,
+            "acc": 1,
+            "com": 2,
+            "cle": 1,
+            "loc": 3,
+            "che": 1,
+            "val": 4
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 89,
+          "name": "Dalton",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 89,
+          "review": "Dolorem aut qui sint. Reprehenderit aut animi consequatur officia eos eaque. Tenetur et odio et.",
+          "date": "2018-10-12T19:52:21.527-04:00",
+          "reply": "Molestiae ex architecto aliquid. Voluptatem ipsa est. Laudantium minus quidem maiores et rem similique distinctio consequatur. Illum minima sit quis sed quo quod quibusdam sapiente. Culpa quia vero facere voluptas quis temporibus et qui laboriosam. Et ut sed sit cupiditate dolor.",
+          "rating": {
+            "avg": 3.5,
+            "acc": 5,
+            "com": 5,
+            "cle": 5,
+            "loc": 3,
+            "che": 2,
+            "val": 1
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 90,
+          "name": "Finn",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 90,
+          "review": "Atque sequi qui laborum id consequatur libero vitae dolores occaecati. Laborum in et dolores placeat recusandae. Possimus ea reiciendis sequi odio. Magni ipsam exercitationem itaque. Sit veritatis et consequuntur ea.",
+          "date": "2018-01-01T00:28:39.663-05:00",
+          "reply": "",
+          "rating": {
+            "avg": 2.5,
+            "acc": 4,
+            "com": 2,
+            "cle": 1,
+            "loc": 3,
+            "che": 3,
+            "val": 1
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 91,
+          "name": "Audra",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 91,
+          "review": "Excepturi sit ut vero deleniti voluptas voluptatem enim earum. Libero perspiciatis perferendis. Fugiat et quaerat autem. Dolores possimus a ut molestias aut assumenda quasi est.",
+          "date": "2018-01-13T02:02:13.813-05:00",
+          "reply": "Totam nihil incidunt praesentium. Laborum necessitatibus aut quas ab. Natus occaecati recusandae repudiandae nemo cum animi magni. Cupiditate molestias voluptas molestias aliquid. Laudantium temporibus cupiditate nisi pariatur voluptatem. Aut omnis autem autem culpa consequatur vero beatae quos ullam.",
+          "rating": {
+            "avg": 2,
+            "acc": 3,
+            "com": 2,
+            "cle": 4,
+            "loc": 1,
+            "che": 1,
+            "val": 1
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 92,
+          "name": "Jake",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 92,
+          "review": "Ut neque qui ut debitis vel facilis. Assumenda tempore rerum repellendus maiores eos illo quasi laborum quibusdam. Aut tempore aut dolores perferendis et rerum velit sapiente delectus. Aliquam aut est architecto ipsa iure qui reiciendis.",
+          "date": "2018-11-30T06:19:07.395-05:00",
+          "reply": "",
+          "rating": {
+            "avg": 3,
+            "acc": 1,
+            "com": 4,
+            "cle": 4,
+            "loc": 2,
+            "che": 5,
+            "val": 1
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 93,
+          "name": "Alessandra",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 93,
+          "review": "Molestias et nesciunt ea. Sit et aliquid debitis cupiditate. Tempore est est omnis voluptatem reprehenderit rerum in. Modi non repudiandae voluptas est enim aliquid. Error et quod impedit saepe dolorem sed dolor qui reprehenderit. Rem rerum minima dolores numquam ipsa.",
+          "date": "2018-01-29T23:51:27.927-05:00",
+          "reply": "",
+          "rating": {
+            "avg": 3.5,
+            "acc": 3,
+            "com": 3,
+            "cle": 5,
+            "loc": 4,
+            "che": 2,
+            "val": 4
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 94,
+          "name": "Eldridge",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 94,
+          "review": "Alias velit officiis ut et et. Voluptatem consequuntur impedit eligendi corrupti ipsam. Maiores accusantium provident vitae dolore veniam. Id dolor blanditiis quia qui explicabo. Odit repellendus reiciendis. Id ut cumque modi sunt et quas blanditiis reiciendis.",
+          "date": "2018-08-24T20:10:42.909-04:00",
+          "reply": "Rerum a perferendis asperiores. Dicta quo iste ut qui aut. Beatae dolorem facere sunt qui eligendi enim vero sed. Quia quaerat mollitia voluptatem explicabo totam vel voluptas fugiat. Soluta sed ea sunt dicta consequatur. Necessitatibus error et illum reiciendis est perferendis velit occaecati.",
+          "rating": {
+            "avg": 1.5,
+            "acc": 2,
+            "com": 3,
+            "cle": 1,
+            "loc": 1,
+            "che": 1,
+            "val": 2
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 95,
+          "name": "Jaclyn",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 95,
+          "review": "Commodi quidem ratione aut aut laboriosam laudantium dolorum blanditiis. Cum facere officiis in porro exercitationem ratione tempore quia. Provident minima quis et placeat et animi laborum voluptates sunt.",
+          "date": "2018-10-23T06:04:12.613-04:00",
+          "reply": "Maxime reprehenderit perferendis ea id. Ratione atque ad rem corrupti molestiae veniam dolores. Voluptatem voluptatem occaecati rerum sit quidem aut adipisci odio sint. Voluptates id quidem vero tempora facilis deleniti ratione. Consequuntur harum enim cumque nemo est.",
+          "rating": {
+            "avg": 3,
+            "acc": 1,
+            "com": 1,
+            "cle": 5,
+            "loc": 3,
+            "che": 4,
+            "val": 3
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 96,
+          "name": "Maci",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 96,
+          "review": "Nemo sequi recusandae reprehenderit quia qui sit deserunt distinctio labore. Cum tempora consequatur officia. Doloribus id veritatis incidunt rerum et. Beatae eos accusamus velit laudantium enim ea delectus officiis.",
+          "date": "2018-03-25T14:18:20.063-04:00",
+          "reply": "Et et aut. Velit optio ad consequatur ut dignissimos sequi. Rerum voluptatem placeat est.",
+          "rating": {
+            "avg": 4,
+            "acc": 3,
+            "com": 4,
+            "cle": 4,
+            "loc": 4,
+            "che": 4,
+            "val": 5
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 97,
+          "name": "Clement",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 97,
+          "review": "Libero consequatur qui est possimus animi repudiandae sit. Quo sed velit enim. Aspernatur et voluptatem vitae culpa est maiores. Ducimus et dolores provident enim tempora quisquam non vero.",
+          "date": "2018-05-10T06:17:54.760-04:00",
+          "reply": "Qui deserunt et cumque soluta. Ut ut est quos. Ut eum nobis veniam aut ut. Ipsam pariatur similique debitis quisquam. Tenetur debitis placeat quia molestiae quia sit ut.",
+          "rating": {
+            "avg": 3.5,
+            "acc": 2,
+            "com": 5,
+            "cle": 5,
+            "loc": 4,
+            "che": 1,
+            "val": 4
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 98,
+          "name": "Jessica",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 98,
+          "review": "Aperiam rem rerum et libero alias quis. Doloribus provident laborum optio ab eius error nemo. Officia sed tempora explicabo quia et.",
+          "date": "2018-06-28T19:17:40.816-04:00",
+          "reply": "",
+          "rating": {
+            "avg": 4,
+            "acc": 4,
+            "com": 5,
+            "cle": 5,
+            "loc": 4,
+            "che": 5,
+            "val": 1
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 99,
+          "name": "Alberta",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 99,
+          "review": "Voluptas ipsum et doloremque corporis quasi aut. Dolorem assumenda fugiat animi. Dolore est aut impedit magnam ut ut vero. Laboriosam aut aut. Nam harum consectetur minima voluptatibus neque consequatur rem. Molestias voluptates minima corporis reprehenderit est quia.",
+          "date": "2018-05-22T21:43:09.307-04:00",
+          "reply": "",
+          "rating": {
+            "avg": 3,
+            "acc": 4,
+            "com": 2,
+            "cle": 4,
+            "loc": 2,
+            "che": 2,
+            "val": 4
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 100,
+          "name": "Nigel",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 100,
+          "review": "Neque ut illo reiciendis voluptates pariatur. Quae et omnis nihil et et iure tenetur. Dolores magni voluptas laborum ut. Distinctio perspiciatis error harum ut sequi.",
+          "date": "2018-10-22T21:44:11.144-04:00",
+          "reply": "Eveniet veniam tempore assumenda accusamus numquam dolorem tempore facilis ab. Dolor tempore modi natus a asperiores. Saepe commodi vel.",
+          "rating": {
+            "avg": 3.5,
+            "acc": 4,
+            "com": 5,
+            "cle": 2,
+            "loc": 2,
+            "che": 3,
+            "val": 5
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 1,
+          "name": "Zachery",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 1,
+          "review": "Quae minima non et omnis odio id odit id non. Et rerum enim. Nobis enim non. Ducimus omnis mollitia aut nobis officiis nesciunt.",
+          "date": "2018-04-22T04:50:00.384-04:00",
+          "reply": "Cumque doloribus blanditiis similique sapiente provident dicta ut sed animi. Cumque quam iusto velit dolorem voluptatum dolorem officia cupiditate voluptatem. Quam quos sint qui voluptas et perspiciatis maxime. Soluta dolorum aspernatur minima pariatur quia id magnam enim.",
+          "rating": {
+            "avg": 4,
+            "acc": 4,
+            "com": 5,
+            "cle": 4,
+            "loc": 5,
+            "che": 2,
+            "val": 5
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 2,
+          "name": "Malvina",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 2,
+          "review": "Quidem totam in temporibus aliquid quia possimus facere rerum laudantium. Similique totam officiis non illo ut autem aliquam dicta rerum. Illo nulla rerum repudiandae impedit deleniti porro ab. Sint reprehenderit distinctio qui numquam enim et. Eius aut incidunt exercitationem laboriosam similique dolor.",
+          "date": "2018-06-12T21:34:24.353-04:00",
+          "reply": "",
+          "rating": {
+            "avg": 3,
+            "acc": 2,
+            "com": 1,
+            "cle": 5,
+            "loc": 5,
+            "che": 1,
+            "val": 4
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 3,
+          "name": "Lennie",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 3,
+          "review": "Ut nostrum officiis earum facere placeat totam. Quos et perspiciatis repellendus sint. Totam quos ut neque sunt est optio ut quia. Nostrum quo minima quisquam. Recusandae nam aut facere architecto in dolorem eum officia. Excepturi cumque esse dolor ut dicta enim hic.",
+          "date": "2018-02-16T12:27:28.873-05:00",
+          "reply": "Ut asperiores et aut explicabo voluptas aut. Eius ipsum est reprehenderit rerum vero rem qui. Reiciendis quis quos. Repudiandae repellat quis ex nesciunt iure officiis.",
+          "rating": {
+            "avg": 2.5,
+            "acc": 3,
+            "com": 4,
+            "cle": 1,
+            "loc": 2,
+            "che": 3,
+            "val": 2
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 4,
+          "name": "Hilbert",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 4,
+          "review": "Assumenda voluptatem at sit porro adipisci. Enim architecto nostrum dolor accusamus molestiae molestiae non. Ut iste dolor consequatur iusto quaerat in.",
+          "date": "2018-07-18T17:46:36.671-04:00",
+          "reply": "Cum quae illo aut neque nihil. Ab ipsum id. Labore quia architecto molestiae ea sed non neque.",
+          "rating": {
+            "avg": 3,
+            "acc": 4,
+            "com": 4,
+            "cle": 3,
+            "loc": 2,
+            "che": 1,
+            "val": 5
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 5,
+          "name": "Rosalia",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 5,
+          "review": "Voluptatem iste voluptas est ex. Dolore reprehenderit delectus. Maxime voluptatem quis sint vitae voluptatibus quos. Rem rem qui voluptatem repellendus. Molestiae omnis quos nam quos. Similique hic iure non.",
+          "date": "2018-03-14T12:04:06.546-04:00",
+          "reply": "Commodi cupiditate enim. Est numquam voluptatum. Dolore reprehenderit voluptas quia amet illum et. Ut porro qui rerum tempora ut iste exercitationem quis. Et reprehenderit hic et ipsa.",
+          "rating": {
+            "avg": 2.5,
+            "acc": 4,
+            "com": 2,
+            "cle": 5,
+            "loc": 1,
+            "che": 1,
+            "val": 3
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 6,
+          "name": "Kathlyn",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 6,
+          "review": "Quibusdam veritatis harum porro et et doloremque. Ut sunt dolore necessitatibus ut optio dolores. Aut officia dolorem.",
+          "date": "2018-09-01T03:22:26.029-04:00",
+          "reply": "",
+          "rating": {
+            "avg": 3,
+            "acc": 3,
+            "com": 3,
+            "cle": 1,
+            "loc": 3,
+            "che": 4,
+            "val": 5
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 7,
+          "name": "Hertha",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 7,
+          "review": "Corporis tempore doloremque labore at nihil. Vel sunt voluptatem dolores et expedita iste corrupti et dignissimos. Sed omnis vel soluta molestias sit et.",
+          "date": "2018-06-15T16:52:13.180-04:00",
+          "reply": "",
+          "rating": {
+            "avg": 3.5,
+            "acc": 4,
+            "com": 2,
+            "cle": 4,
+            "loc": 5,
+            "che": 4,
+            "val": 3
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 8,
+          "name": "Jefferey",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 8,
+          "review": "Unde deleniti voluptas. Culpa possimus et ad. Omnis commodi soluta et quas ut rem totam. Error nostrum quia ipsum voluptate possimus reiciendis.",
+          "date": "2018-02-09T02:49:02.889-05:00",
+          "reply": "Facere voluptas eligendi. At quis est. Optio voluptatem et molestiae quia voluptates et rerum distinctio.",
+          "rating": {
+            "avg": 3,
+            "acc": 4,
+            "com": 5,
+            "cle": 2,
+            "loc": 1,
+            "che": 3,
+            "val": 3
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 9,
+          "name": "Zena",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 9,
+          "review": "Natus aperiam quia id natus ut nihil maiores aspernatur quidem. Quas qui rerum est et modi corrupti culpa. Ducimus expedita sit et numquam suscipit quisquam cupiditate.",
+          "date": "2018-03-10T22:03:57.591-05:00",
+          "reply": "",
+          "rating": {
+            "avg": 2.5,
+            "acc": 3,
+            "com": 1,
+            "cle": 2,
+            "loc": 2,
+            "che": 1,
+            "val": 5
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 10,
+          "name": "Theresa",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 10,
+          "review": "Id quae impedit facilis delectus itaque culpa laboriosam in. Ut rerum ea laborum fuga veniam maxime ex. Et veniam voluptatibus excepturi reprehenderit praesentium quis provident voluptatibus placeat.",
+          "date": "2018-07-30T05:33:29.252-04:00",
+          "reply": "",
+          "rating": {
+            "avg": 3,
+            "acc": 3,
+            "com": 5,
+            "cle": 1,
+            "loc": 1,
+            "che": 4,
+            "val": 5
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 11,
+          "name": "Chase",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 11,
+          "review": "Maxime cupiditate laboriosam qui eius. Et deleniti ut soluta aut consectetur quo. Provident rerum aut saepe repellendus et aut rerum dolorem. Culpa dolore voluptas et.",
+          "date": "2018-04-16T18:18:31.245-04:00",
+          "reply": "",
+          "rating": {
+            "avg": 3,
+            "acc": 3,
+            "com": 4,
+            "cle": 3,
+            "loc": 1,
+            "che": 5,
+            "val": 1
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 12,
+          "name": "Consuelo",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 12,
+          "review": "Eum voluptatem dolor officiis aspernatur perferendis voluptatem incidunt accusamus qui. Sit nobis voluptatem consequatur ut veniam aut. Officia explicabo velit id. Similique dolores vel dolorum consequatur. Dicta eum reprehenderit voluptatum nam.",
+          "date": "2018-03-09T16:44:54.632-05:00",
+          "reply": "",
+          "rating": {
+            "avg": 3,
+            "acc": 4,
+            "com": 2,
+            "cle": 4,
+            "loc": 3,
+            "che": 2,
+            "val": 3
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 13,
+          "name": "Quinten",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 13,
+          "review": "Consequatur in sunt quas. Eveniet veniam aut natus et ut. Quas voluptas temporibus at consequuntur. Est est ut repellendus quibusdam tempore.",
+          "date": "2018-11-23T21:59:27.587-05:00",
+          "reply": "",
+          "rating": {
+            "avg": 3.5,
+            "acc": 3,
+            "com": 5,
+            "cle": 2,
+            "loc": 3,
+            "che": 2,
+            "val": 5
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 14,
+          "name": "Omari",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 14,
+          "review": "Et aut voluptas reprehenderit. Ea atque sit. Aperiam quod quae aut amet doloremque nisi error maiores mollitia.",
+          "date": "2018-10-19T23:56:04.536-04:00",
+          "reply": "",
+          "rating": {
+            "avg": 3,
+            "acc": 4,
+            "com": 3,
+            "cle": 3,
+            "loc": 4,
+            "che": 2,
+            "val": 3
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 15,
+          "name": "Alana",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 15,
+          "review": "Fugiat cupiditate error nam et voluptas. Magnam ratione quo consequatur. Rerum quam qui sint.",
+          "date": "2018-11-06T11:52:10.631-05:00",
+          "reply": "Odio ea consequatur corporis dolores asperiores tenetur. Officiis repellendus non deserunt qui dolor aliquam. Libero voluptatem laborum ut molestiae consequatur labore dolor ea. Alias in vel totam ut omnis mollitia ut.",
+          "rating": {
+            "avg": 3,
+            "acc": 5,
+            "com": 1,
+            "cle": 3,
+            "loc": 4,
+            "che": 5,
+            "val": 1
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 16,
+          "name": "Alvis",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 16,
+          "review": "Sed dolorem eligendi maiores animi. Eius voluptatem voluptates recusandae aut rerum maiores. Consequatur voluptas vel voluptates non a omnis. Ratione commodi tenetur in ad ex consequatur ut nemo beatae. Sint consectetur dolor ullam quia libero dolores itaque. Odit ipsa hic veritatis.",
+          "date": "2018-11-16T00:09:34.788-05:00",
+          "reply": "Sunt cumque saepe nemo saepe voluptas enim deserunt. Voluptatem et placeat velit nihil ut sit. Earum quo fugit non natus animi voluptatem aperiam laudantium. Vitae tenetur vel enim omnis dolores sed ratione. Neque qui aperiam ut vel ut deleniti. Et voluptatum omnis et velit totam dolor qui suscipit.",
+          "rating": {
+            "avg": 3.5,
+            "acc": 5,
+            "com": 4,
+            "cle": 1,
+            "loc": 4,
+            "che": 5,
+            "val": 3
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 17,
+          "name": "Britney",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 17,
+          "review": "Et aut fuga et consequatur. Animi quas consequatur itaque qui. Dignissimos corporis iure. Dolores est et omnis officiis earum modi vel dolorum corrupti. Enim est beatae est eius impedit. Ipsa harum et enim voluptate maiores ea.",
+          "date": "2018-01-16T05:37:26.943-05:00",
+          "reply": "Nulla qui sit quos id delectus doloremque aut porro. Qui ducimus unde qui molestiae non qui. Fugiat rem eum laudantium sed architecto doloremque. Eligendi aut ea rem deserunt quod consequatur et aspernatur.",
+          "rating": {
+            "avg": 3,
+            "acc": 5,
+            "com": 4,
+            "cle": 1,
+            "loc": 2,
+            "che": 1,
+            "val": 4
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 18,
+          "name": "Mariela",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 18,
+          "review": "Neque placeat quaerat dolores ex. Rem maxime est nostrum modi magnam occaecati. Ipsa laborum suscipit expedita qui optio ut. Veniam quod placeat iste sit sit non minima. Tenetur ut veniam vel. Tenetur et aperiam.",
+          "date": "2018-03-17T06:30:46.777-04:00",
+          "reply": "",
+          "rating": {
+            "avg": 3.5,
+            "acc": 5,
+            "com": 5,
+            "cle": 4,
+            "loc": 2,
+            "che": 3,
+            "val": 1
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 19,
+          "name": "Delaney",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 19,
+          "review": "Non non qui officiis expedita qui qui quia alias et. Quia cum eligendi. Quia eveniet repellendus ut est et.",
+          "date": "2018-07-02T09:55:10.435-04:00",
+          "reply": "Iure aliquam sapiente doloremque aliquid. Qui possimus itaque delectus dolorem. Saepe qui eaque cum consectetur cum ut dolores. Dolorum voluptatem unde nobis ducimus.",
+          "rating": {
+            "avg": 3.5,
+            "acc": 5,
+            "com": 2,
+            "cle": 5,
+            "loc": 1,
+            "che": 3,
+            "val": 4
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 20,
+          "name": "Jaclyn",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 20,
+          "review": "Assumenda consequatur molestiae eum voluptatem ea omnis at. Corrupti voluptatem ducimus ea et est vel. Laborum reiciendis animi eligendi ea. Praesentium in perspiciatis distinctio beatae.",
+          "date": "2018-09-01T00:31:38.911-04:00",
+          "reply": "Inventore neque et et repellat. Voluptas odio id consectetur ut eum et iste. Nisi qui fugiat.",
+          "rating": {
+            "avg": 2.5,
+            "acc": 2,
+            "com": 3,
+            "cle": 1,
+            "loc": 4,
+            "che": 1,
+            "val": 3
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 21,
+          "name": "Marjolaine",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 21,
+          "review": "Adipisci et velit fugit nihil placeat dicta. Expedita est blanditiis aliquid culpa. Eligendi aspernatur aspernatur provident quam possimus sit quam. Doloremque quo aut quibusdam eius ut non nobis.",
+          "date": "2018-03-15T05:11:33.499-04:00",
+          "reply": "Praesentium deleniti sed dicta eum nobis. Sint velit eum in. Ab porro quam occaecati est id.",
+          "rating": {
+            "avg": 2.5,
+            "acc": 3,
+            "com": 3,
+            "cle": 1,
+            "loc": 4,
+            "che": 1,
+            "val": 2
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 22,
+          "name": "Benedict",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 22,
+          "review": "Vel rerum nostrum iusto dolorem itaque. Laboriosam placeat et voluptatem ipsam enim. Et ducimus tempore nobis qui suscipit. Non hic omnis. Quo autem similique cumque maxime molestias.",
+          "date": "2018-04-26T10:17:28.762-04:00",
+          "reply": "",
+          "rating": {
+            "avg": 3,
+            "acc": 1,
+            "com": 1,
+            "cle": 4,
+            "loc": 5,
+            "che": 5,
+            "val": 3
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 23,
+          "name": "Shawna",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 23,
+          "review": "Consequatur rerum fugiat sed ipsam vitae odit in ipsa. Et fugiat non. Nemo officiis voluptatem minima doloribus suscipit ullam aut numquam distinctio.",
+          "date": "2018-01-18T04:09:38.856-05:00",
+          "reply": "A ad nobis ullam consequatur distinctio blanditiis quam eveniet dolores. Adipisci consequatur omnis dolorum aut ab perspiciatis est consequuntur. Sequi consequuntur mollitia adipisci ducimus eaque maiores nobis et.",
+          "rating": {
+            "avg": 3,
+            "acc": 5,
+            "com": 1,
+            "cle": 1,
+            "loc": 5,
+            "che": 4,
+            "val": 3
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 24,
+          "name": "Mary",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 24,
+          "review": "Eos voluptatem magni rerum minima iusto animi quis. Id voluptate sunt ipsum veniam ipsum odio fuga ex corrupti. Omnis quam et nulla reiciendis quod ducimus. Architecto voluptatibus hic. Voluptas vel minima sint.",
+          "date": "2018-11-15T08:28:15.015-05:00",
+          "reply": "Et optio sapiente repellendus. Enim numquam et in illum velit veniam. Facilis omnis nihil porro eveniet fugit qui libero consectetur sunt. Ipsam voluptatibus beatae nihil molestiae iusto aut cupiditate magnam et. Odio saepe numquam temporibus quas excepturi incidunt mollitia.",
+          "rating": {
+            "avg": 2.5,
+            "acc": 2,
+            "com": 4,
+            "cle": 1,
+            "loc": 3,
+            "che": 2,
+            "val": 4
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 25,
+          "name": "Percy",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 25,
+          "review": "Sed qui corporis. Quos dolorum nesciunt autem consequatur possimus. Sequi autem optio voluptatem occaecati architecto nostrum non.",
+          "date": "2018-11-07T22:06:35.173-05:00",
+          "reply": "Laborum quia molestiae rerum sunt omnis officiis at. Quas iste vel. Aut adipisci molestias corporis aspernatur omnis ducimus.",
+          "rating": {
+            "avg": 2.5,
+            "acc": 2,
+            "com": 2,
+            "cle": 2,
+            "loc": 4,
+            "che": 1,
+            "val": 3
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 26,
+          "name": "Trycia",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 26,
+          "review": "Qui ut voluptates rerum aut odio quia fuga pariatur ut. Eius ea molestias perspiciatis voluptate ut ut. Sed sed excepturi sint quia similique facere ipsa velit.",
+          "date": "2018-11-06T06:59:44.485-05:00",
+          "reply": "Natus similique quos porro quaerat suscipit qui. Esse enim deleniti maiores libero eum. Et nobis et dolore. Deleniti laboriosam consequuntur tempora et modi recusandae maxime magni.",
+          "rating": {
+            "avg": 3,
+            "acc": 4,
+            "com": 3,
+            "cle": 3,
+            "loc": 2,
+            "che": 5,
+            "val": 2
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 27,
+          "name": "Wilburn",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 27,
+          "review": "Nisi quidem sint. Ut accusamus nemo voluptatem voluptates dolorum non. Enim iure sint eos. Est quaerat esse nisi iure reprehenderit.",
+          "date": "2018-02-07T22:07:48.360-05:00",
+          "reply": "",
+          "rating": {
+            "avg": 2,
+            "acc": 3,
+            "com": 1,
+            "cle": 1,
+            "loc": 2,
+            "che": 5,
+            "val": 1
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 28,
+          "name": "Leland",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 28,
+          "review": "Et repudiandae iusto impedit quas accusantium a. Id odit dignissimos qui placeat debitis pariatur doloribus quasi hic. Repellat numquam et dignissimos eveniet alias.",
+          "date": "2018-01-31T15:06:44.664-05:00",
+          "reply": "",
+          "rating": {
+            "avg": 2.5,
+            "acc": 3,
+            "com": 2,
+            "cle": 3,
+            "loc": 1,
+            "che": 2,
+            "val": 4
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 29,
+          "name": "Nayeli",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 29,
+          "review": "Recusandae dolorum et pariatur sapiente. Qui perspiciatis laboriosam non repellat doloribus. Odio voluptatem et. Sapiente est suscipit natus et aut dolorum. Minima ab aliquam a possimus.",
+          "date": "2018-11-01T18:06:15.853-04:00",
+          "reply": "",
+          "rating": {
+            "avg": 3.5,
+            "acc": 3,
+            "com": 4,
+            "cle": 2,
+            "loc": 4,
+            "che": 5,
+            "val": 3
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 30,
+          "name": "Cara",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 30,
+          "review": "Aut atque explicabo quae eaque. Nihil magnam optio. Aliquid sint unde occaecati nulla. Illum et hic est quia soluta et molestiae nisi voluptatibus. Non expedita dicta dicta adipisci suscipit consequatur atque.",
+          "date": "2017-12-25T12:36:12.488-05:00",
+          "reply": "Fugit magnam voluptatibus autem doloribus asperiores qui corporis. Nemo autem eius autem. Sunt quidem rerum est ut voluptas molestiae corporis quod et. Ut aliquam sint in.",
+          "rating": {
+            "avg": 2.5,
+            "acc": 1,
+            "com": 2,
+            "cle": 2,
+            "loc": 4,
+            "che": 4,
+            "val": 1
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 31,
+          "name": "Dorian",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 31,
+          "review": "Aut odio omnis. Et deleniti a enim error ut tempore dolorem ipsam. Et qui at soluta amet numquam eum eum recusandae. Adipisci fuga omnis.",
+          "date": "2018-11-27T04:47:18.878-05:00",
+          "reply": "Voluptatem id perspiciatis dolores architecto non. Eos corporis neque deserunt animi. Totam aliquid voluptas eligendi consequatur vel est soluta.",
+          "rating": {
+            "avg": 3,
+            "acc": 2,
+            "com": 4,
+            "cle": 4,
+            "loc": 4,
+            "che": 3,
+            "val": 2
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 32,
+          "name": "Carter",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 32,
+          "review": "Natus ipsa dolorem esse doloremque consequatur illo. Nesciunt pariatur quae quae nobis minus voluptatem minus. Et adipisci et nesciunt enim quas. Mollitia qui in voluptates.",
+          "date": "2018-02-04T17:16:41.984-05:00",
+          "reply": "Quia maxime occaecati accusamus pariatur voluptatum omnis. Sunt numquam sequi odio et. Et rerum quis perferendis est facere inventore dolores.",
+          "rating": {
+            "avg": 2,
+            "acc": 1,
+            "com": 5,
+            "cle": 1,
+            "loc": 3,
+            "che": 1,
+            "val": 2
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 33,
+          "name": "Terry",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 33,
+          "review": "Veritatis perspiciatis sit voluptatem. Vel quidem aliquam illum perferendis cum corrupti aut. Consequatur ut omnis quaerat vero dolorem. A numquam voluptas harum quia.",
+          "date": "2018-06-25T12:26:34.109-04:00",
+          "reply": "",
+          "rating": {
+            "avg": 2,
+            "acc": 4,
+            "com": 1,
+            "cle": 2,
+            "loc": 2,
+            "che": 1,
+            "val": 3
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 34,
+          "name": "Sadye",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 34,
+          "review": "Consequatur laudantium ducimus eligendi aut iusto ullam fugit qui. Sunt maiores amet molestias deleniti sapiente. Temporibus eos minus totam non dolor amet consectetur odit dolore. Qui illum odit et odio ut sapiente.",
+          "date": "2018-08-10T09:46:50.281-04:00",
+          "reply": "",
+          "rating": {
+            "avg": 3.5,
+            "acc": 2,
+            "com": 2,
+            "cle": 4,
+            "loc": 5,
+            "che": 5,
+            "val": 3
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 35,
+          "name": "Isom",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 35,
+          "review": "Maiores totam sint sit reiciendis omnis laudantium et eum nihil. Suscipit maxime exercitationem. Pariatur quo non quas voluptatem aliquid. Quas qui labore unde vel provident placeat dolorem illum et.",
+          "date": "2018-03-02T07:30:39.067-05:00",
+          "reply": "Saepe nihil dolorem qui a sapiente. Iure sed reprehenderit officiis repellendus laboriosam. Sunt quo exercitationem quidem sint at porro sit. Dolore quasi harum dicta soluta suscipit exercitationem voluptates fuga. Pariatur minus nihil. Ducimus alias omnis laboriosam placeat ut.",
+          "rating": {
+            "avg": 3,
+            "acc": 1,
+            "com": 5,
+            "cle": 1,
+            "loc": 5,
+            "che": 4,
+            "val": 3
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 36,
+          "name": "Coby",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 36,
+          "review": "Aliquam animi itaque eius beatae temporibus vel. Aut mollitia et voluptatem asperiores facilis unde. Error perferendis voluptatum quasi sint quam.",
+          "date": "2018-02-21T04:47:59.967-05:00",
+          "reply": "",
+          "rating": {
+            "avg": 4,
+            "acc": 4,
+            "com": 2,
+            "cle": 3,
+            "loc": 5,
+            "che": 5,
+            "val": 4
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 37,
+          "name": "Lessie",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 37,
+          "review": "Eos id distinctio ipsum libero ex animi optio aspernatur. Et est dolorum quod quam officia velit eaque et dolores. Consequatur sit enim rerum consequatur dicta eligendi non. Ut temporibus distinctio quae illo velit. Maxime eum voluptates molestias est et et reprehenderit accusantium aut.",
+          "date": "2018-04-17T10:47:52.237-04:00",
+          "reply": "",
+          "rating": {
+            "avg": 2,
+            "acc": 1,
+            "com": 2,
+            "cle": 1,
+            "loc": 3,
+            "che": 3,
+            "val": 3
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 38,
+          "name": "Quinn",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 38,
+          "review": "Dolore rerum id quisquam et ut delectus. Quia optio et praesentium provident nulla repudiandae quisquam. Unde quis quidem nihil.",
+          "date": "2018-03-21T21:04:47.739-04:00",
+          "reply": "Doloremque quidem ratione repellat ut aut. Aspernatur ut vel molestiae eos consequuntur laudantium ipsam soluta aliquid. Mollitia est et incidunt perspiciatis qui sit odio. Similique harum illo corrupti eveniet assumenda laudantium. Suscipit libero nam ut nesciunt dolor mollitia.",
+          "rating": {
+            "avg": 3,
+            "acc": 1,
+            "com": 1,
+            "cle": 3,
+            "loc": 5,
+            "che": 2,
+            "val": 5
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 39,
+          "name": "Ferne",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 39,
+          "review": "Natus est autem fuga ea quia delectus. Itaque laboriosam quas molestias ea qui nihil exercitationem. Exercitationem ut laborum velit. Placeat molestiae debitis consectetur inventore quis maiores architecto minus. Tempora aut quasi molestiae quia autem repellat.",
+          "date": "2018-05-09T02:11:26.914-04:00",
+          "reply": "",
+          "rating": {
+            "avg": 2.5,
+            "acc": 2,
+            "com": 2,
+            "cle": 2,
+            "loc": 5,
+            "che": 4,
+            "val": 1
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 40,
+          "name": "Susie",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 40,
+          "review": "Rem et optio qui est voluptatibus. Odio sit corporis ut in reiciendis quisquam necessitatibus. Doloremque autem unde. Eum est facere ducimus laboriosam cum nesciunt sunt totam. Eos voluptatem numquam voluptatem sed. Sed pariatur fuga voluptatem magnam.",
+          "date": "2018-11-22T20:39:30.035-05:00",
+          "reply": "Tempore omnis ut aut. Et beatae enim voluptatem reiciendis. Quis iusto molestias. Rerum sunt sapiente id asperiores sequi ut libero autem voluptate.",
+          "rating": {
+            "avg": 3,
+            "acc": 2,
+            "com": 4,
+            "cle": 2,
+            "loc": 5,
+            "che": 3,
+            "val": 1
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 41,
+          "name": "Trycia",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 41,
+          "review": "Iste ipsam distinctio vel. Cumque necessitatibus ullam nulla temporibus qui tempora in. Doloribus sunt est est quisquam.",
+          "date": "2018-05-23T23:18:10.031-04:00",
+          "reply": "Reiciendis ut asperiores. Aut perferendis nulla enim. Et vel sint aut error. Et et illum quam est nam ad esse.",
+          "rating": {
+            "avg": 3.5,
+            "acc": 2,
+            "com": 2,
+            "cle": 4,
+            "loc": 5,
+            "che": 4,
+            "val": 3
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 42,
+          "name": "Samson",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 42,
+          "review": "In qui ad non aut. Et vel tenetur quidem at quia. Commodi doloremque et nesciunt iusto iusto. Ut delectus dolorum est. Placeat dolor labore. Commodi et aliquid consequatur ducimus ipsa nesciunt dolor qui.",
+          "date": "2018-04-23T17:27:50.836-04:00",
+          "reply": "",
+          "rating": {
+            "avg": 2,
+            "acc": 2,
+            "com": 3,
+            "cle": 1,
+            "loc": 3,
+            "che": 3,
+            "val": 1
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 43,
+          "name": "Kianna",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 43,
+          "review": "Rerum reprehenderit quas magnam omnis aut. Repudiandae adipisci qui et ea consequuntur ipsa aspernatur vitae modi. Magnam eveniet quis vero quibusdam repellat facere facilis dicta. Quia et praesentium quae quidem qui porro sit est. Quasi omnis placeat necessitatibus vel sed. Quis ipsum qui accusantium sint libero occaecati.",
+          "date": "2018-08-26T01:55:54.018-04:00",
+          "reply": "Aut amet nisi repudiandae reprehenderit. Reprehenderit aspernatur tempore dignissimos pariatur ut maxime quasi sit laborum. Qui magnam perferendis ullam dolorum alias tenetur exercitationem. Explicabo enim nobis delectus eum voluptate iste dolor error consequatur. Sed sit error.",
+          "rating": {
+            "avg": 2.5,
+            "acc": 1,
+            "com": 1,
+            "cle": 4,
+            "loc": 2,
+            "che": 4,
+            "val": 4
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 44,
+          "name": "Mylene",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 44,
+          "review": "Consequuntur enim culpa distinctio. Et recusandae officiis est officiis non vitae magni sapiente sed. Aut quis repellat soluta eveniet libero consequatur et et occaecati. Expedita rem qui voluptas placeat praesentium et placeat.",
+          "date": "2018-06-17T21:09:35.720-04:00",
+          "reply": "",
+          "rating": {
+            "avg": 3.5,
+            "acc": 5,
+            "com": 4,
+            "cle": 4,
+            "loc": 1,
+            "che": 5,
+            "val": 1
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 45,
+          "name": "Gordon",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 45,
+          "review": "Commodi assumenda quidem asperiores omnis omnis ad. Consequuntur alias ut est. Nobis mollitia ea consequatur at sunt quia est.",
+          "date": "2018-05-03T13:45:49.205-04:00",
+          "reply": "",
+          "rating": {
+            "avg": 2,
+            "acc": 2,
+            "com": 2,
+            "cle": 1,
+            "loc": 4,
+            "che": 1,
+            "val": 1
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 46,
+          "name": "Raegan",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 46,
+          "review": "Ut sed in non autem sunt cupiditate vel voluptas. Dolores similique et pariatur deserunt aliquid eum ipsum illo voluptatem. Voluptatibus maxime sit iusto et eos non rerum nostrum.",
+          "date": "2018-06-24T01:30:32.450-04:00",
+          "reply": "Recusandae eaque libero neque. Cum alias dolores facilis in animi tempora enim. Consequatur nulla ut dicta pariatur harum dolores maiores. Eveniet praesentium voluptatem id. Eum saepe aut accusamus aut ratione. Et in eos et ipsum sed neque ea distinctio sapiente.",
+          "rating": {
+            "avg": 3.5,
+            "acc": 2,
+            "com": 4,
+            "cle": 5,
+            "loc": 3,
+            "che": 5,
+            "val": 1
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 47,
+          "name": "Alexane",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 47,
+          "review": "Vitae vero itaque non. Dolorem qui ipsa enim non aut. Cupiditate omnis totam.",
+          "date": "2018-11-09T18:48:29.133-05:00",
+          "reply": "Facere officiis aut voluptatibus quasi. Ipsa doloremque sed quis dolorem nihil et ea. Esse et et.",
+          "rating": {
+            "avg": 3,
+            "acc": 2,
+            "com": 1,
+            "cle": 5,
+            "loc": 1,
+            "che": 3,
+            "val": 5
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 48,
+          "name": "Colleen",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 48,
+          "review": "Sapiente quae ea dolorum minima sed deleniti. Voluptatem et repudiandae doloribus sunt odit animi et consequatur. Et voluptatum est animi. Corrupti repudiandae facilis et neque animi ut quo error et. Suscipit reprehenderit est mollitia. Sapiente eos occaecati delectus.",
+          "date": "2018-09-18T08:18:08.072-04:00",
+          "reply": "",
+          "rating": {
+            "avg": 3,
+            "acc": 4,
+            "com": 1,
+            "cle": 3,
+            "loc": 4,
+            "che": 2,
+            "val": 3
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 49,
+          "name": "Major",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 49,
+          "review": "Pariatur incidunt nobis neque eum architecto cumque totam sed. Dolores cupiditate reiciendis reprehenderit nam omnis voluptas explicabo unde sunt. Qui illo dolorem veniam quisquam natus suscipit ex. Nobis sunt dolore eos ut. Sequi qui deleniti illum eligendi sunt est. Animi officia laborum tempore.",
+          "date": "2018-12-02T16:07:55.635-05:00",
+          "reply": "At qui illo neque qui reprehenderit vel repellat. Totam aliquam sunt. Id qui dolores. Quo sunt quas.",
+          "rating": {
+            "avg": 3,
+            "acc": 5,
+            "com": 2,
+            "cle": 1,
+            "loc": 3,
+            "che": 3,
+            "val": 4
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 50,
+          "name": "Nova",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 50,
+          "review": "Ut omnis quis. Est dolore rerum corporis velit sit et. Ut est quae.",
+          "date": "2018-04-26T09:46:28.919-04:00",
+          "reply": "",
+          "rating": {
+            "avg": 2.5,
+            "acc": 1,
+            "com": 1,
+            "cle": 4,
+            "loc": 1,
+            "che": 4,
+            "val": 4
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 51,
+          "name": "Rudolph",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 51,
+          "review": "Quia quia numquam beatae aliquam iusto reprehenderit ut. Soluta est placeat et culpa sequi sunt. Soluta tempore ut nesciunt velit qui.",
+          "date": "2018-10-14T15:17:10.072-04:00",
+          "reply": "Quam et voluptates enim possimus omnis quis saepe dolores. Itaque deserunt aperiam nobis omnis nihil libero aspernatur aut. Rerum sed molestias sint magni corrupti qui qui aut voluptates. Numquam iure saepe sit animi minima vero ipsum atque totam.",
+          "rating": {
+            "avg": 2,
+            "acc": 1,
+            "com": 1,
+            "cle": 4,
+            "loc": 3,
+            "che": 3,
+            "val": 1
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 52,
+          "name": "Gust",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 52,
+          "review": "Sed illum quos earum at labore animi dolor. Numquam vero aut aut et hic illum reprehenderit aliquam voluptatem. Reiciendis nulla eius libero deserunt temporibus.",
+          "date": "2018-08-27T14:18:47.398-04:00",
+          "reply": "Corporis ab quia non quod iste. Ratione ut est molestias voluptas ut possimus et commodi. Commodi placeat quam vel libero dolor consectetur voluptatum aut.",
+          "rating": {
+            "avg": 2,
+            "acc": 1,
+            "com": 1,
+            "cle": 5,
+            "loc": 2,
+            "che": 1,
+            "val": 2
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 53,
+          "name": "Warren",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 53,
+          "review": "Ut veniam explicabo quam ratione aliquam reprehenderit laudantium. Officia iusto quia. Nemo natus deserunt ut.",
+          "date": "2018-08-04T04:18:17.655-04:00",
+          "reply": "Dolorum vel aut. Rem cupiditate quis vel sit sint veritatis modi iure eaque. Eaque cupiditate debitis laboriosam quo eveniet soluta facere accusantium. Ullam ratione aut quasi. Ratione ut consequatur architecto.",
+          "rating": {
+            "avg": 1.5,
+            "acc": 1,
+            "com": 1,
+            "cle": 1,
+            "loc": 1,
+            "che": 1,
+            "val": 3
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 54,
+          "name": "Myrtis",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 54,
+          "review": "Aut nam est eaque velit nemo. Quasi perferendis culpa recusandae ipsum voluptates. Sapiente fuga repudiandae at commodi aliquam officia non suscipit.",
+          "date": "2018-04-26T06:06:04.413-04:00",
+          "reply": "Et qui ex necessitatibus quis dicta necessitatibus temporibus quo. Ratione incidunt sint alias eius nobis ipsum dolorem qui. Magnam quo sit quas numquam qui itaque accusamus architecto. Facere expedita dolores exercitationem ut sed id aut.",
+          "rating": {
+            "avg": 3.5,
+            "acc": 3,
+            "com": 3,
+            "cle": 5,
+            "loc": 1,
+            "che": 4,
+            "val": 5
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 55,
+          "name": "Gregorio",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 55,
+          "review": "Dolorem dolores fugiat qui nemo. Mollitia sit explicabo corporis fugit. Et magni dolorem animi molestias. Quas aut molestias consequatur.",
+          "date": "2018-09-09T09:09:14.655-04:00",
+          "reply": "Iste est deserunt aliquam ut accusantium sunt ad. Ut ea assumenda enim odit voluptas officiis adipisci molestias. Quia harum est neque recusandae.",
+          "rating": {
+            "avg": 3,
+            "acc": 4,
+            "com": 5,
+            "cle": 4,
+            "loc": 1,
+            "che": 4,
+            "val": 1
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 56,
+          "name": "Zola",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 56,
+          "review": "Nisi eos quo repudiandae sint non possimus fuga qui. Natus facilis occaecati. Eum voluptatem quibusdam. Error doloribus dolores alias doloremque architecto quisquam id. Facilis aliquid adipisci cupiditate aut saepe aut porro minus vel.",
+          "date": "2018-07-11T10:00:02.293-04:00",
+          "reply": "",
+          "rating": {
+            "avg": 2.5,
+            "acc": 2,
+            "com": 2,
+            "cle": 1,
+            "loc": 4,
+            "che": 4,
+            "val": 1
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 57,
+          "name": "Kariane",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 57,
+          "review": "Atque est qui cum dolorum aspernatur quam repellat qui molestiae. Dignissimos laborum eum quis consequuntur consequatur similique voluptatum quis ducimus. Est nesciunt alias consequatur doloremque nostrum. Fugiat libero enim recusandae deserunt excepturi.",
+          "date": "2018-09-17T14:59:19.938-04:00",
+          "reply": "Facilis modi non quo quaerat. Nobis tempora amet amet sunt recusandae natus amet. Modi veniam qui nulla omnis voluptas. Exercitationem in vitae et qui iure exercitationem nobis beatae labore. Fuga saepe illo laborum aperiam voluptas rerum culpa.",
+          "rating": {
+            "avg": 3,
+            "acc": 4,
+            "com": 2,
+            "cle": 3,
+            "loc": 3,
+            "che": 2,
+            "val": 5
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 58,
+          "name": "Clint",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 58,
+          "review": "Qui accusamus iste enim sed voluptatem maiores quod. Qui illo omnis illum voluptas et eum maiores iste earum. Veniam minus sed et voluptas possimus facilis.",
+          "date": "2018-10-08T16:46:54.895-04:00",
+          "reply": "",
+          "rating": {
+            "avg": 3,
+            "acc": 3,
+            "com": 4,
+            "cle": 2,
+            "loc": 5,
+            "che": 1,
+            "val": 4
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 59,
+          "name": "Anjali",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 59,
+          "review": "Mollitia consequatur blanditiis autem asperiores eligendi aliquam odit nisi est. Molestiae eaque id. Consequatur accusamus assumenda esse. Ullam non et perferendis modi quis quas sunt modi porro. Esse omnis aut minus et voluptates doloremque sint.",
+          "date": "2018-05-29T08:53:16.110-04:00",
+          "reply": "Odio occaecati ut aut. Quidem dolore tenetur cum consectetur voluptas. Magnam corporis aspernatur alias est dolores nesciunt autem molestiae. Quis omnis eligendi eius id impedit explicabo et. Aut repellat id sequi numquam dolores et deserunt qui voluptatem. Ex modi est sit eaque quia hic.",
+          "rating": {
+            "avg": 3.5,
+            "acc": 4,
+            "com": 3,
+            "cle": 4,
+            "loc": 3,
+            "che": 3,
+            "val": 3
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 60,
+          "name": "Elmore",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 60,
+          "review": "Dolorum reprehenderit nobis saepe. Sit nulla occaecati nobis incidunt aut rem excepturi. Quis sed eaque molestias velit est quis.",
+          "date": "2018-10-23T14:46:17.934-04:00",
+          "reply": "Libero nemo expedita qui eveniet qui temporibus sit. Recusandae quam eaque neque libero voluptatem quam eveniet sint blanditiis. Aperiam voluptates ut mollitia omnis facilis laborum perferendis et delectus.",
+          "rating": {
+            "avg": 3,
+            "acc": 5,
+            "com": 4,
+            "cle": 1,
+            "loc": 2,
+            "che": 2,
+            "val": 3
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 61,
+          "name": "Jayme",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 61,
+          "review": "Aut est ad nisi. Iste in voluptas ut ut mollitia. Vitae et ut.",
+          "date": "2018-10-21T04:09:42.248-04:00",
+          "reply": "",
+          "rating": {
+            "avg": 2.5,
+            "acc": 2,
+            "com": 2,
+            "cle": 3,
+            "loc": 5,
+            "che": 3,
+            "val": 1
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 62,
+          "name": "Clovis",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 62,
+          "review": "Consequatur doloribus commodi omnis. Dolores sunt cupiditate asperiores dolor illo eum iure vitae iste. Aut suscipit rerum neque non eos aut facere asperiores exercitationem. Itaque at quisquam esse id minus sit sint sit commodi.",
+          "date": "2018-08-16T19:02:30.086-04:00",
+          "reply": "",
+          "rating": {
+            "avg": 2.5,
+            "acc": 2,
+            "com": 2,
+            "cle": 2,
+            "loc": 1,
+            "che": 5,
+            "val": 4
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 63,
+          "name": "Gretchen",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 63,
+          "review": "Aut facere unde harum aliquam ullam ut doloribus aut. Aut debitis soluta. Fugit iure earum. Corrupti est adipisci occaecati et libero.",
+          "date": "2018-10-17T12:54:19.293-04:00",
+          "reply": "Accusantium sed eos velit iusto vitae rerum perferendis deleniti at. Tenetur sed nesciunt doloribus et. Nemo commodi asperiores vel quia in qui similique excepturi impedit. Assumenda maxime sit. Labore occaecati exercitationem nesciunt repellat enim ratione officiis perferendis.",
+          "rating": {
+            "avg": 3.5,
+            "acc": 5,
+            "com": 3,
+            "cle": 3,
+            "loc": 2,
+            "che": 3,
+            "val": 5
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 64,
+          "name": "Casimer",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 64,
+          "review": "Nam doloribus rerum harum repellat minus eum sapiente a optio. Maxime doloremque est. Iusto odio quia et est ut repudiandae officiis vitae autem.",
+          "date": "2018-01-03T22:20:10.887-05:00",
+          "reply": "",
+          "rating": {
+            "avg": 2.5,
+            "acc": 2,
+            "com": 3,
+            "cle": 5,
+            "loc": 3,
+            "che": 1,
+            "val": 2
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 65,
+          "name": "Neil",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 65,
+          "review": "Dolores sit voluptas consectetur fugit voluptatem sit inventore nam ut. Exercitationem rerum ratione voluptas iusto exercitationem qui deserunt sunt. Omnis voluptates ut ducimus perferendis velit ut.",
+          "date": "2018-08-05T10:39:06.782-04:00",
+          "reply": "",
+          "rating": {
+            "avg": 2.5,
+            "acc": 3,
+            "com": 2,
+            "cle": 3,
+            "loc": 1,
+            "che": 3,
+            "val": 3
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 66,
+          "name": "Tyree",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 66,
+          "review": "Dolor voluptas perspiciatis quia mollitia. Consequatur iusto cupiditate quo. Blanditiis eos enim sed aut quia ut omnis. Sequi provident et atque. Dolorem expedita saepe mollitia in sit accusamus sint sit aliquam. Quam repellat voluptas eius deserunt eius non voluptatem eos.",
+          "date": "2018-07-11T10:27:28.017-04:00",
+          "reply": "Et exercitationem iste fugiat aut in iure rerum ea. Consequatur sunt corporis sint omnis similique. Labore ut numquam amet rem.",
+          "rating": {
+            "avg": 3,
+            "acc": 5,
+            "com": 1,
+            "cle": 2,
+            "loc": 5,
+            "che": 3,
+            "val": 3
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 67,
+          "name": "Lauretta",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 67,
+          "review": "Architecto voluptatem ut. Eum beatae voluptates distinctio consequatur hic sequi quam accusamus et. Sint aut soluta et.",
+          "date": "2018-07-20T11:52:22.683-04:00",
+          "reply": "",
+          "rating": {
+            "avg": 3.5,
+            "acc": 3,
+            "com": 4,
+            "cle": 1,
+            "loc": 4,
+            "che": 5,
+            "val": 5
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 68,
+          "name": "Muhammad",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 68,
+          "review": "Aut voluptatum sint nihil laboriosam ab et. Dolores odit deserunt. Reprehenderit ratione sequi aliquam nihil eos. Ad nostrum eum nobis asperiores.",
+          "date": "2018-11-28T01:41:47.706-05:00",
+          "reply": "",
+          "rating": {
+            "avg": 3.5,
+            "acc": 5,
+            "com": 1,
+            "cle": 2,
+            "loc": 4,
+            "che": 5,
+            "val": 5
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 69,
+          "name": "Carmine",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 69,
+          "review": "Consequatur vel autem. Odio aliquam voluptas fugiat et provident tenetur quos et. Et aliquid aut veniam sapiente molestiae inventore eum.",
+          "date": "2018-09-15T01:34:10.607-04:00",
+          "reply": "",
+          "rating": {
+            "avg": 2.5,
+            "acc": 4,
+            "com": 4,
+            "cle": 1,
+            "loc": 1,
+            "che": 1,
+            "val": 5
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 70,
+          "name": "Amelia",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 70,
+          "review": "Necessitatibus laudantium et non exercitationem tempora quis aliquid quod et. Vel a quidem. Atque omnis dolor et labore eius adipisci aut enim consectetur. Est quidem natus. Quis magni illo provident quas esse cumque corrupti harum iusto. Repellendus adipisci rerum est natus corporis nam dolores.",
+          "date": "2018-09-06T01:21:44.528-04:00",
+          "reply": "Sunt autem distinctio est velit. Et odio aut facere recusandae ut. Qui ipsam odio omnis quibusdam id dignissimos corporis. Explicabo quis quas pariatur dolor exercitationem eligendi aliquid. Veritatis voluptas et repellendus modi id ipsa porro nostrum praesentium. Dolorem necessitatibus non ducimus similique quidem.",
+          "rating": {
+            "avg": 3,
+            "acc": 5,
+            "com": 5,
+            "cle": 3,
+            "loc": 1,
+            "che": 2,
+            "val": 1
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 71,
+          "name": "Bridget",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 71,
+          "review": "Excepturi nisi et minus. Et voluptas quasi ea doloremque animi quo adipisci. Et incidunt facilis eligendi fugiat repudiandae. At minima et tempora iure. Dolor officia in ea quia autem quis voluptatum quos est. Fugiat exercitationem recusandae occaecati architecto ipsa nihil totam libero voluptas.",
+          "date": "2018-10-25T19:36:51.806-04:00",
+          "reply": "",
+          "rating": {
+            "avg": 2.5,
+            "acc": 1,
+            "com": 2,
+            "cle": 4,
+            "loc": 5,
+            "che": 2,
+            "val": 1
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 72,
+          "name": "Rusty",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 72,
+          "review": "Soluta assumenda debitis illo. Asperiores sed amet inventore sed animi mollitia. Fuga rerum rerum quia quisquam. Quis rerum occaecati et dolorem natus consectetur accusantium quae voluptatibus. Qui saepe magni ullam modi. Veritatis totam amet et mollitia quae aut.",
+          "date": "2018-04-28T22:11:54.254-04:00",
+          "reply": "Nesciunt dolorum asperiores voluptatem et enim enim. Neque corporis perferendis similique eum est aliquid et earum dolores. Commodi quia recusandae. Quis rerum aut repellendus dolore. Ducimus non praesentium ut autem quis ea est sequi dolorum.",
+          "rating": {
+            "avg": 2.5,
+            "acc": 1,
+            "com": 1,
+            "cle": 4,
+            "loc": 2,
+            "che": 4,
+            "val": 4
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 73,
+          "name": "Paige",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 73,
+          "review": "Vel nihil quibusdam voluptatem ex explicabo debitis quo. Incidunt similique enim non. Aut doloribus sapiente impedit ea eaque nostrum quis qui. Sint excepturi sed ea voluptatem. Dolor quae eligendi hic est dolorem voluptatum nihil impedit.",
+          "date": "2018-12-05T08:50:52.846-05:00",
+          "reply": "Sunt consequatur eius aliquam laboriosam est voluptatem reiciendis. Aliquid rerum vel sit ex tenetur dolor in quasi beatae. Est magni nihil. Possimus nesciunt praesentium rerum doloremque mollitia deserunt aliquam et aut.",
+          "rating": {
+            "avg": 2.5,
+            "acc": 4,
+            "com": 1,
+            "cle": 1,
+            "loc": 5,
+            "che": 1,
+            "val": 2
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 74,
+          "name": "Jacinthe",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 74,
+          "review": "Beatae ullam nemo qui omnis esse impedit ab est. Maxime et molestiae veniam est dolor rerum reiciendis quae. Ut error doloribus laborum id dolorum ea.",
+          "date": "2018-01-09T03:23:43.795-05:00",
+          "reply": "Est quis accusamus eos eaque enim illo deleniti consectetur. Incidunt minima dolorem quia. In tempore maxime qui eaque similique sed quae in. Eius accusamus quia ipsa eos quibusdam ea tempora. Quis fugit vel est sunt.",
+          "rating": {
+            "avg": 2.5,
+            "acc": 4,
+            "com": 1,
+            "cle": 3,
+            "loc": 2,
+            "che": 4,
+            "val": 1
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 75,
+          "name": "Deon",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 75,
+          "review": "Enim sed ipsa voluptas delectus qui placeat. Perferendis quo dolore. Animi tenetur rerum quisquam dicta voluptatem maxime repudiandae. Ipsam consectetur consequatur incidunt ab. Corrupti iusto ut sed ea. Adipisci veniam voluptatum eum rerum voluptatem autem.",
+          "date": "2018-03-07T09:56:55.227-05:00",
+          "reply": "",
+          "rating": {
+            "avg": 2.5,
+            "acc": 2,
+            "com": 3,
+            "cle": 3,
+            "loc": 3,
+            "che": 3,
+            "val": 1
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 76,
+          "name": "Eveline",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 76,
+          "review": "Laboriosam molestias reiciendis perspiciatis eum nihil atque veniam ad. Et fugit dolorem tempore ipsum pariatur et. Atque assumenda saepe sed adipisci. Ea molestias sit expedita a delectus facere.",
+          "date": "2018-07-15T22:12:59.202-04:00",
+          "reply": "Dignissimos sapiente sit vitae dolor quis qui in corrupti. Et minima odio dolor. Quia sed minus fuga. Pariatur cum aperiam facere.",
+          "rating": {
+            "avg": 2,
+            "acc": 3,
+            "com": 2,
+            "cle": 3,
+            "loc": 1,
+            "che": 1,
+            "val": 2
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 77,
+          "name": "Brody",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 77,
+          "review": "Ad voluptatem maxime ducimus doloremque vel et magni nihil fuga. Ullam repellat neque ad. Ratione corrupti molestias debitis mollitia voluptatibus quia impedit earum doloremque. Ad dolorem est neque quae soluta mollitia ratione. Commodi minima eum eligendi ducimus. Exercitationem est necessitatibus quibusdam et reiciendis nisi ut consequuntur autem.",
+          "date": "2018-04-22T02:08:54.576-04:00",
+          "reply": "Consectetur ullam est ut velit deleniti at incidunt. Distinctio nobis reprehenderit nihil nihil voluptatem. Dignissimos culpa et delectus facere perspiciatis officiis quo. Architecto nobis sunt ut mollitia ex vel magnam mollitia soluta. Neque et aut sed porro facilis reprehenderit est. Ea fugiat velit sint tenetur nesciunt excepturi.",
+          "rating": {
+            "avg": 4,
+            "acc": 5,
+            "com": 5,
+            "cle": 4,
+            "loc": 2,
+            "che": 5,
+            "val": 2
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 78,
+          "name": "Coy",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 78,
+          "review": "Tempora dicta asperiores ipsa iste recusandae sed. Vero ut inventore rem velit labore adipisci. Enim modi provident voluptas. Provident est eaque veritatis.",
+          "date": "2017-12-25T08:30:15.348-05:00",
+          "reply": "Optio et eum voluptatem. Labore ducimus molestiae et et magni libero et quia quas. Praesentium dolorum tenetur. Eum error et tenetur. A dolores deleniti quos libero.",
+          "rating": {
+            "avg": 1.5,
+            "acc": 2,
+            "com": 2,
+            "cle": 2,
+            "loc": 1,
+            "che": 1,
+            "val": 1
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 79,
+          "name": "Jordi",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 79,
+          "review": "Ducimus harum at reprehenderit dolorem quos. Dolorem rerum consectetur omnis cupiditate. Ratione eaque maiores voluptatem velit et dolorem corrupti temporibus. Voluptas modi facere culpa.",
+          "date": "2017-12-29T16:13:30.559-05:00",
+          "reply": "Consequatur numquam ut quas eum rerum consequatur itaque officiis. Eveniet est ut est vel tempore veritatis fuga voluptates enim. Non animi commodi eius eveniet. Architecto et maxime dolorum. Voluptatem optio et recusandae voluptatem et quo voluptates.",
+          "rating": {
+            "avg": 3,
+            "acc": 3,
+            "com": 5,
+            "cle": 3,
+            "loc": 1,
+            "che": 4,
+            "val": 1
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 80,
+          "name": "Kareem",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 80,
+          "review": "Illum alias et repudiandae. Dolorem omnis voluptas aperiam error eligendi tempora. Numquam ipsa omnis ut. Assumenda molestiae debitis doloremque explicabo sed nihil cum.",
+          "date": "2018-08-09T09:19:04.176-04:00",
+          "reply": "Harum voluptatibus quos ut totam eaque qui qui consequatur optio. Nihil molestiae qui autem odio voluptas porro vel. Eius aliquam maxime quia recusandae quam perferendis quisquam. Aut ut voluptatem eum itaque ullam. Ducimus odit nostrum consequatur provident. Iusto quia voluptas aliquam dolores voluptatum numquam culpa.",
+          "rating": {
+            "avg": 2.5,
+            "acc": 2,
+            "com": 3,
+            "cle": 2,
+            "loc": 2,
+            "che": 2,
+            "val": 5
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 81,
+          "name": "Jermain",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 81,
+          "review": "Repellendus itaque ut at quos itaque et at voluptatem. Iusto a sunt quae soluta optio omnis. Veniam expedita delectus necessitatibus cupiditate deserunt perferendis voluptate itaque.",
+          "date": "2017-12-26T14:23:55.111-05:00",
+          "reply": "Laboriosam esse repellat unde. Molestiae pariatur asperiores earum omnis necessitatibus fugiat. Aut in fugiat hic.",
+          "rating": {
+            "avg": 3.5,
+            "acc": 4,
+            "com": 3,
+            "cle": 5,
+            "loc": 4,
+            "che": 1,
+            "val": 5
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 82,
+          "name": "Joe",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 82,
+          "review": "Repellendus ipsum omnis totam exercitationem sit et aliquam placeat eius. Vel iure aliquid ut voluptas illum dolorem fuga pariatur quia. Laudantium accusantium natus est ut voluptas ut quidem.",
+          "date": "2018-12-04T22:33:27.445-05:00",
+          "reply": "",
+          "rating": {
+            "avg": 3,
+            "acc": 1,
+            "com": 5,
+            "cle": 5,
+            "loc": 2,
+            "che": 2,
+            "val": 4
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 83,
+          "name": "Araceli",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 83,
+          "review": "Magni eos eos et quam. Quam hic hic voluptatum incidunt fugiat commodi alias hic. Suscipit dolorem non magni cumque est nam at aut. Neque illo voluptates voluptatem ipsam repudiandae et placeat dolorem dolorum. Ut laudantium quis molestiae similique omnis sunt quisquam placeat.",
+          "date": "2018-06-12T07:03:20.267-04:00",
+          "reply": "Nam esse totam velit magnam sed. Officiis sed sed velit similique optio aut illo. Tempore dolor velit repellat quibusdam.",
+          "rating": {
+            "avg": 3,
+            "acc": 4,
+            "com": 2,
+            "cle": 2,
+            "loc": 3,
+            "che": 2,
+            "val": 5
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 84,
+          "name": "Kameron",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 84,
+          "review": "Deleniti cum ut error voluptatem sed eos ducimus ut. Culpa ratione laborum voluptas illo magnam ex. Eius et sit et quia laborum magni excepturi. Sit quis eos dolores ut totam dolor ea adipisci. Facere quidem nostrum aut sed beatae error at voluptatem fugiat.",
+          "date": "2018-03-27T12:56:32.221-04:00",
+          "reply": "Quas ut est quia quidem. Aspernatur dolorum eum provident rerum perferendis. Aut qui ipsa. Alias nemo quisquam sit molestiae non animi omnis voluptate.",
+          "rating": {
+            "avg": 3,
+            "acc": 4,
+            "com": 5,
+            "cle": 1,
+            "loc": 5,
+            "che": 3,
+            "val": 1
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 85,
+          "name": "Donna",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 85,
+          "review": "Facere rem consequatur nisi ipsum tenetur saepe sapiente. Alias explicabo consequatur nostrum sed voluptatem et odio qui autem. Commodi ducimus quia quod officiis officiis. Et eos et.",
+          "date": "2018-05-25T04:43:22.612-04:00",
+          "reply": "",
+          "rating": {
+            "avg": 3,
+            "acc": 3,
+            "com": 5,
+            "cle": 2,
+            "loc": 4,
+            "che": 4,
+            "val": 1
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 86,
+          "name": "Stevie",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 86,
+          "review": "Tenetur sed tenetur suscipit dolores dolor. Sint ut error. Perspiciatis commodi aliquid amet molestias. Porro aut consectetur ut quasi. Sed ex eius et beatae blanditiis ab laudantium. Repellat quia voluptate qui expedita quas ea.",
+          "date": "2018-02-18T04:58:44.731-05:00",
+          "reply": "",
+          "rating": {
+            "avg": 3,
+            "acc": 2,
+            "com": 3,
+            "cle": 3,
+            "loc": 5,
+            "che": 2,
+            "val": 4
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 87,
+          "name": "Ara",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 87,
+          "review": "Quas officia deleniti natus ducimus nihil qui. Est alias qui eum voluptatibus assumenda magni et sapiente. Vel necessitatibus illum voluptatem saepe. Impedit magni voluptates ipsum debitis.",
+          "date": "2017-12-30T06:32:25.039-05:00",
+          "reply": "",
+          "rating": {
+            "avg": 3,
+            "acc": 2,
+            "com": 2,
+            "cle": 2,
+            "loc": 4,
+            "che": 4,
+            "val": 4
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 88,
+          "name": "Imani",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 88,
+          "review": "Laboriosam reiciendis et hic suscipit maxime nisi similique minus deserunt. Vero eum et qui ut dicta illum voluptatem. Incidunt eveniet et repellat nostrum.",
+          "date": "2018-03-01T01:25:42.732-05:00",
+          "reply": "Necessitatibus earum quia officia ut eligendi adipisci. Beatae impedit totam non voluptatibus et dicta voluptatem. Magnam ipsa et distinctio. Aut sed sint consequatur cum sapiente ullam corporis.",
+          "rating": {
+            "avg": 3.5,
+            "acc": 2,
+            "com": 3,
+            "cle": 5,
+            "loc": 1,
+            "che": 4,
+            "val": 5
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 89,
+          "name": "Dalton",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 89,
+          "review": "Dolorem aut qui sint. Reprehenderit aut animi consequatur officia eos eaque. Tenetur et odio et.",
+          "date": "2018-10-12T19:52:21.527-04:00",
+          "reply": "Molestiae ex architecto aliquid. Voluptatem ipsa est. Laudantium minus quidem maiores et rem similique distinctio consequatur. Illum minima sit quis sed quo quod quibusdam sapiente. Culpa quia vero facere voluptas quis temporibus et qui laboriosam. Et ut sed sit cupiditate dolor.",
+          "rating": {
+            "avg": 3,
+            "acc": 5,
+            "com": 1,
+            "cle": 4,
+            "loc": 2,
+            "che": 4,
+            "val": 3
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 90,
+          "name": "Finn",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 90,
+          "review": "Atque sequi qui laborum id consequatur libero vitae dolores occaecati. Laborum in et dolores placeat recusandae. Possimus ea reiciendis sequi odio. Magni ipsam exercitationem itaque. Sit veritatis et consequuntur ea.",
+          "date": "2018-01-01T00:28:39.663-05:00",
+          "reply": "",
+          "rating": {
+            "avg": 3.5,
+            "acc": 5,
+            "com": 1,
+            "cle": 5,
+            "loc": 1,
+            "che": 5,
+            "val": 5
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 91,
+          "name": "Audra",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 91,
+          "review": "Excepturi sit ut vero deleniti voluptas voluptatem enim earum. Libero perspiciatis perferendis. Fugiat et quaerat autem. Dolores possimus a ut molestias aut assumenda quasi est.",
+          "date": "2018-01-13T02:02:13.813-05:00",
+          "reply": "Totam nihil incidunt praesentium. Laborum necessitatibus aut quas ab. Natus occaecati recusandae repudiandae nemo cum animi magni. Cupiditate molestias voluptas molestias aliquid. Laudantium temporibus cupiditate nisi pariatur voluptatem. Aut omnis autem autem culpa consequatur vero beatae quos ullam.",
+          "rating": {
+            "avg": 2,
+            "acc": 1,
+            "com": 1,
+            "cle": 3,
+            "loc": 3,
+            "che": 1,
+            "val": 4
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 92,
+          "name": "Jake",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 92,
+          "review": "Ut neque qui ut debitis vel facilis. Assumenda tempore rerum repellendus maiores eos illo quasi laborum quibusdam. Aut tempore aut dolores perferendis et rerum velit sapiente delectus. Aliquam aut est architecto ipsa iure qui reiciendis.",
+          "date": "2018-11-30T06:19:07.395-05:00",
+          "reply": "",
+          "rating": {
+            "avg": 2.5,
+            "acc": 1,
+            "com": 2,
+            "cle": 3,
+            "loc": 3,
+            "che": 2,
+            "val": 5
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 93,
+          "name": "Alessandra",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 93,
+          "review": "Molestias et nesciunt ea. Sit et aliquid debitis cupiditate. Tempore est est omnis voluptatem reprehenderit rerum in. Modi non repudiandae voluptas est enim aliquid. Error et quod impedit saepe dolorem sed dolor qui reprehenderit. Rem rerum minima dolores numquam ipsa.",
+          "date": "2018-01-29T23:51:27.927-05:00",
+          "reply": "",
+          "rating": {
+            "avg": 3,
+            "acc": 4,
+            "com": 3,
+            "cle": 4,
+            "loc": 1,
+            "che": 3,
+            "val": 3
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 94,
+          "name": "Eldridge",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 94,
+          "review": "Alias velit officiis ut et et. Voluptatem consequuntur impedit eligendi corrupti ipsam. Maiores accusantium provident vitae dolore veniam. Id dolor blanditiis quia qui explicabo. Odit repellendus reiciendis. Id ut cumque modi sunt et quas blanditiis reiciendis.",
+          "date": "2018-08-24T20:10:42.909-04:00",
+          "reply": "Rerum a perferendis asperiores. Dicta quo iste ut qui aut. Beatae dolorem facere sunt qui eligendi enim vero sed. Quia quaerat mollitia voluptatem explicabo totam vel voluptas fugiat. Soluta sed ea sunt dicta consequatur. Necessitatibus error et illum reiciendis est perferendis velit occaecati.",
+          "rating": {
+            "avg": 3.5,
+            "acc": 3,
+            "com": 3,
+            "cle": 4,
+            "loc": 5,
+            "che": 2,
+            "val": 3
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 95,
+          "name": "Jaclyn",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 95,
+          "review": "Commodi quidem ratione aut aut laboriosam laudantium dolorum blanditiis. Cum facere officiis in porro exercitationem ratione tempore quia. Provident minima quis et placeat et animi laborum voluptates sunt.",
+          "date": "2018-10-23T06:04:12.613-04:00",
+          "reply": "Maxime reprehenderit perferendis ea id. Ratione atque ad rem corrupti molestiae veniam dolores. Voluptatem voluptatem occaecati rerum sit quidem aut adipisci odio sint. Voluptates id quidem vero tempora facilis deleniti ratione. Consequuntur harum enim cumque nemo est.",
+          "rating": {
+            "avg": 2.5,
+            "acc": 1,
+            "com": 5,
+            "cle": 2,
+            "loc": 1,
+            "che": 4,
+            "val": 3
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 96,
+          "name": "Maci",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 96,
+          "review": "Nemo sequi recusandae reprehenderit quia qui sit deserunt distinctio labore. Cum tempora consequatur officia. Doloribus id veritatis incidunt rerum et. Beatae eos accusamus velit laudantium enim ea delectus officiis.",
+          "date": "2018-03-25T14:18:20.063-04:00",
+          "reply": "Et et aut. Velit optio ad consequatur ut dignissimos sequi. Rerum voluptatem placeat est.",
+          "rating": {
+            "avg": 2,
+            "acc": 1,
+            "com": 1,
+            "cle": 1,
+            "loc": 3,
+            "che": 1,
+            "val": 5
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 97,
+          "name": "Clement",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 97,
+          "review": "Libero consequatur qui est possimus animi repudiandae sit. Quo sed velit enim. Aspernatur et voluptatem vitae culpa est maiores. Ducimus et dolores provident enim tempora quisquam non vero.",
+          "date": "2018-05-10T06:17:54.760-04:00",
+          "reply": "Qui deserunt et cumque soluta. Ut ut est quos. Ut eum nobis veniam aut ut. Ipsam pariatur similique debitis quisquam. Tenetur debitis placeat quia molestiae quia sit ut.",
+          "rating": {
+            "avg": 3,
+            "acc": 2,
+            "com": 5,
+            "cle": 1,
+            "loc": 4,
+            "che": 2,
+            "val": 3
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 98,
+          "name": "Jessica",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 98,
+          "review": "Aperiam rem rerum et libero alias quis. Doloribus provident laborum optio ab eius error nemo. Officia sed tempora explicabo quia et.",
+          "date": "2018-06-28T19:17:40.816-04:00",
+          "reply": "",
+          "rating": {
+            "avg": 2.5,
+            "acc": 1,
+            "com": 1,
+            "cle": 5,
+            "loc": 3,
+            "che": 2,
+            "val": 2
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 99,
+          "name": "Alberta",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 99,
+          "review": "Voluptas ipsum et doloremque corporis quasi aut. Dolorem assumenda fugiat animi. Dolore est aut impedit magnam ut ut vero. Laboriosam aut aut. Nam harum consectetur minima voluptatibus neque consequatur rem. Molestias voluptates minima corporis reprehenderit est quia.",
+          "date": "2018-05-22T21:43:09.307-04:00",
+          "reply": "",
+          "rating": {
+            "avg": 2,
+            "acc": 2,
+            "com": 1,
+            "cle": 3,
+            "loc": 1,
+            "che": 3,
+            "val": 3
+          }
+        }
+      }
+    },
+    {
+      "r": {
+        "propertyId": 1,
+        "user": {
+          "id": 100,
+          "name": "Nigel",
+          "avatarUrl": "http://lorempixel.com/640/480"
+        },
+        "review": {
+          "id": 100,
+          "review": "Neque ut illo reiciendis voluptates pariatur. Quae et omnis nihil et et iure tenetur. Dolores magni voluptas laborum ut. Distinctio perspiciatis error harum ut sequi.",
+          "date": "2018-10-22T21:44:11.144-04:00",
+          "reply": "Eveniet veniam tempore assumenda accusamus numquam dolorem tempore facilis ab. Dolor tempore modi natus a asperiores. Saepe commodi vel.",
+          "rating": {
+            "avg": 2.5,
+            "acc": 2,
+            "com": 1,
+            "cle": 5,
+            "loc": 4,
+            "che": 2,
+            "val": 1
+          }
+        }
+      }
+    }
+  ]
+}

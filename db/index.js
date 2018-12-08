@@ -1,26 +1,12 @@
 const pg = require('pg');
-// const { Client } = require('pg');
-const { Client } = pg;
-//Setting up debugging environment and env variables
-require('dotenv').config();
-const dbDebugger = require('debug')('app:db');
+const client = require('../startup/database');
 
 // Converting numeric str type to number in postGres
 const PG_DECIMAL_OID = 1700;
-const connectionString = process.env.DB_URL;
 pg.types.setTypeParser(PG_DECIMAL_OID, parseFloat);
-
-// Connecting DB
-const client = new Client(connectionString);
-
-client.connect(() => {
-  dbDebugger('connected to db!');
-});
 
 // DB functions
 module.exports = {
-  client, 
-  dbDebugger,
   queryDB: function(query) {
     return new Promise((resolve, reject) => {
       client.query(query, (err, res) => {
@@ -44,18 +30,72 @@ module.exports = {
 
     });
   },
-  getReviews: function() {
-    const queryStr = 'select users.first as first, users.avatar as avatar, \
-    reviews.date as date, reviews.review as review, reviews.reply as reply, \
-    ratings.average as avgRate, ratings.accuracy as acc_rate, ratings.communication as commRate, \
-    ratings.cleanliness as cleanRate, ratings.location as locRate, ratings.checkin as checkinRate, \
-    ratings.value as valueRate from users \
-    join reviews \
-    on users.id = reviews.user_id \
-    join ratings \
-    on ratings.review_id = reviews.id';
+  getReviewsById: function(id) {
+    // const queryStr = `select users.first as first, users.avatar as avatar, \
+    // reviews.date as date, reviews.review as review, reviews.reply as reply, \
+    // ratings.average as avgRate, ratings.accuracy as accRate, ratings.communication as commRate, \
+    // ratings.cleanliness as cleanRate, ratings.location as locRate, ratings.checkin as checkinRate, \
+    // ratings.value as valueRate from users \
+    // join reviews \
+    // on users.id = reviews.user_id \
+    // join ratings \
+    // on ratings.review_id = reviews.id \
+    // where reviews.property_id = ${id}`;
+
+    const queryStr = `
+    select
+        json_build_object(
+          'propertyId', re.property_id,
+          'user', json_build_object(
+            'id', u.id,
+            'name', u.first,
+            'avatarUrl', u.avatar
+          ),
+          'review', json_build_object(
+            'id', re.id,
+            'review', re.review,
+            'date', re.date,
+            'reply', re.reply,
+            'rating', json_build_object(
+              'avg', round(ra.average * 2, 0) / 2,
+              'acc', ra.accuracy,
+              'com', ra.communication,
+              'cle', ra.cleanliness,
+              'loc', ra.location,
+              'che', ra.checkin,
+              'val', ra.value
+            )
+          )
+        ) r
+      from users u
+      join reviews re on u.id = re.user_id
+      join ratings ra on re.id = ra.review_id
+      where re.property_id = ${id};`
+
     const query = {
-      name: 'getReviews',
+      name: 'getReviewsById',
+      text: queryStr
+    }
+    return this.queryDB(query);
+  },
+  getAverageRating: function(id) {
+    const queryStr = `select 
+      json_build_object(
+        'avg', round(avg (average) * 2, 0) / 2,
+        'acc', round(avg (accuracy) * 2, 0) / 2,
+        'com', round(avg (communication) * 2, 0) / 2,
+        'cle', round(avg (cleanliness) * 2, 0) / 2,
+        'loc', round(avg (location) * 2, 0) / 2,
+        'che', round(avg (checkin) * 2, 0) / 2,
+        'val', round(avg (value) * 2, 0) / 2
+      ) a
+      from ratings
+      inner join reviews 
+      on ratings.review_id = reviews.id
+      where reviews.property_id = ${id}`;
+
+    const query = {
+      name: 'getSum',
       text: queryStr
     }
     return this.queryDB(query);
