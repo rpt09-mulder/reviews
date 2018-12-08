@@ -19,7 +19,14 @@ app.get('/rooms/:id/reviews', async(req, res) => {
   console.log('id: ', id);
   try {
     const reviews = await db.getReviewsById(id);
-    res.status(200).json({reviews: reviews});
+    const avgRating = await db.getAverageRating(id, 'average');
+    // const accRating = await db.getAverageRating
+    res.status(200).json({
+      ratings: {
+        average: avgRating[0],
+      },
+      reviews: reviews
+    });
   } catch(err) {
     console.log('err: ', err);
     res.status(404).json({error: `ID ${id} does not exist`});
