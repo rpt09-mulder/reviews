@@ -22,9 +22,7 @@ app.get('/rooms/:id/reviews', async(req, res) => {
     const avgRating = await db.getAverageRating(id, 'average');
     // const accRating = await db.getAverageRating
     res.status(200).json({
-      ratings: {
-        average: avgRating[0],
-      },
+      ratings: avgRating[0].a,
       reviews: reviews
     });
   } catch(err) {

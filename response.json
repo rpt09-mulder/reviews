@@ -1,16 +1,12 @@
 {
   "ratings": {
-    "average": {
-      "a": {
-        "avg": 3,
-        "acc": 3,
-        "com": 3,
-        "cle": 3,
-        "loc": 3,
-        "che": 3,
-        "val": 3
-      }
-    }
+    "avg": 3,
+    "acc": 3,
+    "com": 3,
+    "cle": 3,
+    "loc": 3,
+    "che": 3,
+    "val": 3
   },
   "reviews": [
     {
