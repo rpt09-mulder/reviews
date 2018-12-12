@@ -1,19 +1,21 @@
 const AWS = require('aws-sdk');
 const http = require('http');
-const fs = require('fs');
 const multer = require('multer');
 const multerS3 = require('multer-s3');
+const { readFile, download } = require('../utilities/utils');
 require('dotenv').config();
 
-aws.config.update({
+
+AWS.config.update({
   //AWS Keys
   secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
   accessKeyId: process.env.AWS_ACCESS_KEY_ID,
   region: 'us-east-1' // region of your bucket
 });
 
-const s3 = new aws.S3();
+// const s3 = new aws.S3();
 
+readFile('../urls.txt')
 // const upload = multer({
 //   storage: multerS3({
 //     s3: s3,
@@ -28,7 +30,9 @@ const s3 = new aws.S3();
 //   })
 // })
 
-const filepath = '../images/88.jpg'
+
+let filename;
+
 let params = {
   Bucket: 'kento-firebnb',
   Body: fs.createReadStream(filepath),

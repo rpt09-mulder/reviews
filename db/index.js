@@ -78,7 +78,7 @@ module.exports = {
     }
     return this.queryDB(query);
   },
-  getAverageRating: function(id) {
+  getAverageRatings: function(id) {
     const queryStr = `select 
       json_build_object(
         'avg', round(avg (average) * 2, 0) / 2,
@@ -95,7 +95,7 @@ module.exports = {
       where reviews.property_id = ${id}`;
 
     const query = {
-      name: 'getSum',
+      name: 'getAvgs',
       text: queryStr
     }
     return this.queryDB(query);

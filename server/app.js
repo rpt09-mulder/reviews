@@ -3,6 +3,8 @@ const app = express();
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const db = require('../db');
+const utils = require('../utilities/utils');
+const path = require('path');
 // const startupDebugger = require('debug')('app:startup');
 // const reviews = require('../router');
 
@@ -19,8 +21,13 @@ app.get('/rooms/:id/reviews', async(req, res) => {
   console.log('id: ', id);
   try {
     const reviews = await db.getReviewsById(id);
-    const avgRating = await db.getAverageRating(id, 'average');
+    const avgRating = await db.getAverageRatings(id);
     // const accRating = await db.getAverageRating
+    const urls = await utils.readFile(path.join(__dirname, '../') + '/urls.txt');
+    console.log('urls --------------')
+    const saveImages = await utils.saveImages(urls);
+
+    // /Users/kento/Code/HR/FEC/reviews/urls.txt
     res.status(200).json({
       ratings: avgRating[0].a,
       reviews: reviews
