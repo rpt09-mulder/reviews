@@ -1,14 +1,13 @@
-# Project Name
+# Firebnb
 
-> Project description
+> This is the reviews microservice for the Airbnb clone, Firebnb
 
 ## Related Projects
 
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
-
+  - https://github.com/rpt09-mulder/gallery
+  - https://github.com/rpt09-mulder/booking
+  - https://github.com/rpt09-mulder/rooms
+  
 ## Table of Contents
 
 1. [Usage](#Usage)
@@ -23,7 +22,11 @@
 
 An `nvmrc` file is included if using [nvm](https://github.com/creationix/nvm).
 
-- Node 6.13.0
+- Node 10
+- PostgreSQL
+- AWS S3
+- Express
+
 - etc
 
 ## Development

@@ -5,6 +5,12 @@ const multerS3 = require('multer-s3');
 const { readFile, download } = require('../utilities/utils');
 require('dotenv').config();
 
+aws.config.update({
+  //AWS Keys
+  secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
+  accessKeyId: process.env.AWS_ACCESS_KEY_ID,
+  region: 'us-east-1' // region of your bucket
+});
 
 AWS.config.update({
   //AWS Keys
