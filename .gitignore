@@ -28,4 +28,8 @@ dist/
 .env
 
 #images
+<<<<<<< HEAD
 /images
+=======
+images/
+>>>>>>> 7ea0f420b564a1ee93c2fa53c4c21546967eebd9
