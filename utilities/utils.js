@@ -28,20 +28,23 @@ module.exports = {
     return new Promise((resolve, reject) => {
       const images = text.split('\n');
       const dir = path.join(__dirname, '../images/');
-      for (let i = 0; i < images.length; i++) {
-        let filePath = dir + 'pet_' + (i + 1) + '.jpg';
-        this.download(images[i], filePath, () => {
-          s3Upload(filePath)
-            .then(() => {
-              if (i === images.length - 1) {
-                resolve({done: true});
-              } 
-            })
-            .catch(err => {
-              reject(err);
-            });
+      const imageInsertions = images.map((image, index) => {
+        return new Promise((resolve, reject) => {
+          let filePath = dir + 'pet_' + (index + 1) + '.jpg';
+          this.download(images[index], filePath, () => {
+            s3Upload(filePath)
+              .then(() => {
+                resolve();
+              })
+              .catch(err => {
+                reject(err);
+              })
+          });
         });
-      }
+      });
+      Promise.all(imageInsertions).then(() => {
+        resolve();
+      });
     });
   }
 }
