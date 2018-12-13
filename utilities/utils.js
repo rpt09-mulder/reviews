@@ -1,6 +1,7 @@
 const fs = require('fs');
 const request = require('request');
 const path = require('path');
+const s3Upload = require('../services/aws');
 
 module.exports = {
   readFile: function(filename) {
@@ -18,23 +19,29 @@ module.exports = {
   },
   download: function(url, filename, callback) {
     request.head(url, (err, res, body) => {
-      console.log('content-type: ', res.headers['content-type']);
-      console.log('content-length: ', res.headers['content-length']);
+      // console.log('content-type: ', res.headers['content-type']);
+      // console.log('content-length: ', res.headers['content-length']);
       request(url).pipe(fs.createWriteStream(filename)).on('close', callback)
     });
   },
-  saveImages: function(text) {
+  saveImagesAndS3Upload: function(text) {
     return new Promise((resolve, reject) => {
       const images = text.split('\n');
       const dir = path.join(__dirname, '../images/');
-      for (let i = 0; i < 2; i++) {
-        this.download(images[i], dir + 'pet_' + i + '.jpg', () => {
-          console.log('done');
-          if (i === 1) {
-            resolve();
-          } 
-        })
+      for (let i = 0; i < images.length; i++) {
+        let filePath = dir + 'pet_' + (i + 1) + '.jpg';
+        this.download(images[i], filePath, () => {
+          s3Upload(filePath)
+            .then(() => {
+              if (i === images.length - 1) {
+                resolve({done: true});
+              } 
+            })
+            .catch(err => {
+              reject(err);
+            });
+        });
       }
-    })
+    });
   }
 }

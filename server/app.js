@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 const db = require('../db');
 const path = require('path');
 const utils = require('../utilities/utils');
-const aws = require('../services/aws');
+// const aws = require('../services/aws');
 // const startupDebugger = require('debug')('app:startup');
 // const reviews = require('../router');
 
@@ -27,7 +27,7 @@ app.get('/rooms/:id/reviews', async(req, res) => {
     const urls = await utils.readFile(path.join(__dirname, '../') + '/urls.txt');
     console.log('urls --------------')
     // const saveImages = await utils.saveImages(urls);
-    
+
     res.status(200).json({
       ratings: avgRating[0].a,
       reviews: reviews

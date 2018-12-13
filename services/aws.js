@@ -30,27 +30,23 @@ const s3 = new AWS.S3();
 //   })
 // })
 
-const filepath = path.join(__dirname, '../images/') + 'pet_0.jpg';
-
-let params = {
-  Bucket: 'kento-firebnb',
-  ACL: 'public-read',
-  Body: fs.createReadStream(filepath),
-  Key: 'folder/' + Date.now() + '_' + path.basename(filepath)
-}
-
-const s3Upload = () => {
+const s3Upload = (filepath) => {
+  let params = {
+    Bucket: 'kento-firebnb',
+    Body: fs.createReadStream(filepath),
+    Key: 'folder/' + Date.now() + '_' + path.basename(filepath)
+  }
   return new Promise((resolve, reject) => {
     s3.upload(params, (err, data) => {
       if (err) {
         reject(err);
       } else {
-        console.log('upload in: ', data.location);
+        console.log('upload in: ', data.Location);
         resolve();
       }
     });
   });
 }
 
-s3Upload();
+// s3Upload();
 module.exports = s3Upload;
