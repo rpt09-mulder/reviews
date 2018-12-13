@@ -28,4 +28,4 @@ dist/
 .env
 
 #images
-.jpg
+/images
