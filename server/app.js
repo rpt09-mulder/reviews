@@ -23,10 +23,6 @@ app.get('/rooms/:id/reviews', async(req, res) => {
   try {
     const reviews = await db.getReviewsById(id);
     const avgRating = await db.getAverageRatings(id);
-    // const accRating = await db.getAverageRating
-    const urls = await utils.readFile(path.join(__dirname, '../') + '/urls.txt');
-    console.log('urls --------------')
-    // const saveImages = await utils.saveImages(urls);
 
     res.status(200).json({
       ratings: avgRating[0].a,
