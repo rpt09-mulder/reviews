@@ -17,7 +17,7 @@ app.use(express.static(__dirname + '../client/dist'));
 
 //Routing
 // app.use('/reviews', reviews);
-app.get('/rooms/:id/reviews', async(req, res) => {
+app.get('/reviews/:id', async(req, res) => {
   const id = JSON.parse(req.params.id);
   console.log('id: ', id);
   try {

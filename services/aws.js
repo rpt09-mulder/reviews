@@ -42,7 +42,7 @@ const s3Upload = (filepath) => {
         reject(err);
       } else {
         console.log('upload in: ', data.Location);
-        resolve();
+        resolve(data.Location);
       }
     });
   });
