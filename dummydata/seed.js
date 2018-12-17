@@ -82,7 +82,7 @@ const main = (async() => {
     console.log('saving images and uploading to s3...')
     const s3Urls = await utils.saveImagesAndS3Upload(urls);
     console.log('updating urls in db...');
-    await updateUrls(s3Urls, 100);
+    await updateUrls(s3Urls, reviews.length);
     console.log('done!');
   } catch (err) {
     console.log('error occured in seeding: ', err);
