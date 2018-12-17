@@ -5,8 +5,25 @@ module.exports = {
   entry: './public/src/index.js',
   output: {
     path: path.join(__dirname, '/dist'),
-    filename: 'index_bundle.js'
+    filename: 'bundle.js'
   },
+  module: {
+    rules: [
+      {
+        test: /\.js?/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env', '@babel/preset-react']
+          }
+        }
+      }
+    ]
+  }
+}
+
+/*
   module: {
     rules: [
       {
@@ -22,5 +39,5 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './public/src/index.html'
     })
-  ]
-}
+  ],
+  */

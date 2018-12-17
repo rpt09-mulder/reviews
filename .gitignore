@@ -26,3 +26,11 @@ dist/
 
 #Sensitive Data
 .env
+
+#images
+**/*.jpg
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml

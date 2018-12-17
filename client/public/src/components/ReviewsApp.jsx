@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class App extends Component {
+class ReviewsApp extends Component {
   state = {};
 
   handleChange = () => {
@@ -15,4 +15,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default ReviewsApp;

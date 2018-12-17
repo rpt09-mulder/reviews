@@ -11,7 +11,7 @@ describe('database testing', () => {
       reviews: [{review: true}]
     };
     db.getReviewsById = jest.fn().mockReturnValue(data);
-    request.get('/rooms/1/reviews').then((res) => {
+    request.get('/reviews/1').then((res) => {
       expect(db.getReviewsById).toHaveBeenCalled();
       expect(res.body).toHaveProperty('reviews');
       done();
