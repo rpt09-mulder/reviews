@@ -13,11 +13,12 @@ const utils = require('../utilities/utils');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(morgan('tiny'));
-app.use(express.static(__dirname + '../client/dist'));
+app.use(express.static(path.join(__dirname, '/../client/dist')));
 
 //Routing
 // app.use('/reviews', reviews);
 app.get('/reviews/:id', async(req, res) => {
+  console.log('inside get!!');
   const id = JSON.parse(req.params.id);
   console.log('id: ', id);
   try {

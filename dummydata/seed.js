@@ -49,6 +49,28 @@ const insertAll = (reviews) => {
   })
 }
 
+const updateUrls = (urlsObj, users) => {
+  const randomUrls = utils.getRandomUrls(urlsObj, users);
+  let queryStr = 'update users as u set \n' +
+  'avatar = c.avatar \n' + 
+  'from (values \n';
+  randomUrls.forEach((url, index) => {
+    if (index === randomUrls.length - 1) {
+      queryStr += `(${index + 1}, '${url}')\n\
+    ) as c(id, avatar)\n\
+      where c.id = u.id;`;
+    } else {
+      queryStr += `(${index + 1}, '${url}'),\n`;
+    }
+  });
+
+  const SetQuery = {
+    name: 'updateUrls',
+    text: queryStr
+  };
+  return db.queryDB(SetQuery);
+};
+
 const main = (async() => {
   try {
     console.log('Initializing...');
@@ -58,7 +80,9 @@ const main = (async() => {
     console.log('processing urls...')
     const urls = await utils.readFile(path.join(__dirname, '../') + '/urls.txt');
     console.log('saving images and uploading to s3...')
-    await utils.saveImagesAndS3Upload(urls);
+    const s3Urls = await utils.saveImagesAndS3Upload(urls);
+    console.log('updating urls in db...');
+    await updateUrls(s3Urls, 100);
     console.log('done!');
   } catch (err) {
     console.log('error occured in seeding: ', err);
