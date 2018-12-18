@@ -1,4 +1,4 @@
-const { Client } = require('pg');
+const { Pool } = require('pg');
 //Setting up debugging environment and env variables
 require('dotenv').config();
 // const dbDebugger = require('debug')('app:db');
@@ -13,10 +13,10 @@ const connection = {
 // const connectionString = process.env.DB_URL;
 
 // Connecting DB
-const client = new Client(connection);
+const pool = new Pool(connection);
 
-client.connect(() => {
-  console.log('connected to db!');
-});
+// pool.connect(() => {
+//   console.log('connected to db!');
+// });
 
-module.exports = client;
+module.exports = pool;

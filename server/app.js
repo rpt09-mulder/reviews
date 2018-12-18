@@ -5,6 +5,8 @@ const bodyParser = require('body-parser');
 const db = require('../db');
 const path = require('path');
 const utils = require('../utilities/utils');
+const pool = require('../startup/database');
+
 // const aws = require('../services/aws');
 // const startupDebugger = require('debug')('app:startup');
 // const reviews = require('../router');
@@ -22,6 +24,9 @@ app.get('/reviews/:id', async(req, res) => {
   const id = JSON.parse(req.params.id);
   
   try {
+    const pool = await pool.connection(() => {
+      console.log('connected to db!');
+    });
     const reviews = await db.getReviewsById(id);
     const avgRating = await db.getAverageRatings(id);
 
