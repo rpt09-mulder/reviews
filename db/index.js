@@ -13,6 +13,7 @@ module.exports = {
         if (err) {
           reject(err);
         } else {
+          console.log('we resolved: ', res.rows);
           resolve(res.rows);
         }
       });
@@ -41,6 +42,7 @@ module.exports = {
     // join ratings \
     // on ratings.review_id = reviews.id \
     // where reviews.property_id = ${id}`;
+    console.log('getting reviews by id: ', id);
 
     const queryStr = `
     select
@@ -79,6 +81,7 @@ module.exports = {
     return this.queryDB(query);
   },
   getAverageRatings: function(id) {
+    console.log('getting average ratingby id: ', id);
     const queryStr = `select 
       json_build_object(
         'avg', round(avg (average) * 2, 0) / 2,
