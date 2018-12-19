@@ -23,6 +23,8 @@ app.get('/reviews/:id', async(req, res) => {
   const id = JSON.parse(req.params.id);
   
   const client = await pool.connect();
+  console.log('connected to db!');
+  
   try {
     const reviews = await db.getReviewsById(id);
     console.log('reviews: ', reviews);
