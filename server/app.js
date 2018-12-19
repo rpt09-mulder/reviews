@@ -21,9 +21,8 @@ app.use(express.static(path.join(__dirname, '/../client/dist')));
 // app.use('/reviews', reviews);
 app.get('/reviews/:id', async(req, res) => {
   const id = JSON.parse(req.params.id);
-  const client = await pool.connect();
-  console.log('connected to database!!');
   
+  const client = await pool.connect();
   try {
     const reviews = await db.getReviewsById(id);
     const avgRating = await db.getAverageRatings(id);
