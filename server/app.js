@@ -25,7 +25,9 @@ app.get('/reviews/:id', async(req, res) => {
   const client = await pool.connect();
   try {
     const reviews = await db.getReviewsById(id);
+    console.log('reviews: ', reviews);
     const avgRating = await db.getAverageRatings(id);
+    console.log('avgRatings: ', avgRating);
     res.json({
       ratings: avgRating[0].a,
       reviews: reviews
