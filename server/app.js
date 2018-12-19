@@ -20,11 +20,10 @@ app.use(express.static(path.join(__dirname, '/../client/dist')));
 //Routing
 // app.use('/reviews', reviews);
 app.get('/reviews/:id', async(req, res) => {
-  console.log('this is the id ', req.params.id);
   const id = JSON.parse(req.params.id);
   
   try {
-    const pool = await pool.connection(() => {
+    const newPool = await pool.connect(() => {
       console.log('connected to db!');
     });
     const reviews = await db.getReviewsById(id);
