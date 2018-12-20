@@ -2,6 +2,7 @@ const db = require('../db');
 const reviews = require('./index');
 const utils = require('../utilities/utils');
 const path = require('path');
+const pool = require('../startup/database');
 
 const insertAll = (reviews) => {
   return new Promise((resolve, reject) => {
@@ -72,9 +73,12 @@ const updateUrls = (urlsObj, users) => {
 };
 
 const main = (async() => {
+  const client = await pool.connect(() => {
+    console.log('connected to db!');
+  });
   try {
     console.log('Initializing...');
-    console.log('Saving to db...');
+    console.log('saving to db...');
     const insertion = await insertAll(reviews);
     console.log('data saved to db');
     console.log('processing urls...')
@@ -86,5 +90,9 @@ const main = (async() => {
     console.log('done!');
   } catch (err) {
     console.log('error occured in seeding: ', err);
+  } finally {
+    await client.release(() => {
+      console.log('checked out db');
+    });
   }
 })();

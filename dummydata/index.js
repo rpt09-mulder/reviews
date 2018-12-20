@@ -1,12 +1,15 @@
 const faker = require('faker');
 const db = require('../db');
+const _ = require('lodash');
 
 const reviews = [];
 
 for (let i = 1; i < 101; i++) {
-  let replied = Math.round(Math.random());
+  // let replied = Math.round(Math.random());
+  let replied = _.random();
+  let propId = _.random(1, 101);
   reviews.push({
-    property_id: 1,
+    property_id: propId,
     user: {
       user_id: i,
       user_avatar: faker.image.imageUrl(),

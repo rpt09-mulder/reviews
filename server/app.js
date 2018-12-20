@@ -22,25 +22,24 @@ app.use(express.static(path.join(__dirname, '/../client/dist')));
 app.get('/reviews/:id', async(req, res) => {
   const id = JSON.parse(req.params.id);
   
-  const client = await pool.connect();
-  console.log('connected to db!');
+  const client = await pool.connect(() => {
+    console.log('connected to db!');
+  });
   
   try {
     const reviews = await db.getReviewsById(id);
-    console.log('reviews: ', reviews);
     const avgRating = await db.getAverageRatings(id);
-    console.log('avgRatings: ', avgRating);
     res.json({
       ratings: avgRating[0].a,
       reviews: reviews
     });
   } catch(err) {
-    console.log('err: ', err);
+    console.log('error occured in getting listing reviews: ', err);
     res.status(404).json({error: `ID ${id} does not exist`});
   } finally {
-    // console.log('client: ', client);
-    // await client.release();
-    console.log('checked out db');
+    await client.release(() => {
+      console.log('checked out db');
+    });
   }
 });
 
