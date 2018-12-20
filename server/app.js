@@ -17,30 +17,31 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(morgan('tiny'));
 app.use(express.static(path.join(__dirname, '/../client/dist')));
 
+const client = pool.connect(() => {
+  console.log('connected to db!');
+  // console.log('pool: ', pool);
+});
 //Routing
 // app.use('/reviews', reviews);
-app.get('/reviews/:id', async(req, res) => {
+app.get('/reviews/:id', async (req, res) => {
+  // console.log(pool);
   const id = JSON.parse(req.params.id);
-  
-  const client = await pool.connect(() => {
-    console.log('connected to db!');
-  });
   
   try {
     const reviews = await db.getReviewsById(id);
     const avgRating = await db.getAverageRatings(id);
-    res.json({
-      ratings: avgRating[0].a,
-      reviews: reviews
-    });
+    if (!reviews.length) {
+      res.status(404).json({error: `ID ${id} does not exist`});
+    } else {
+      res.json({
+        ratings: avgRating[0].a,
+        reviews: reviews
+      });
+    }
   } catch(err) {
-    console.log('error occured in getting listing reviews: ', err);
     res.status(404).json({error: `ID ${id} does not exist`});
-  } finally {
-    await client.release(() => {
-      console.log('checked out db');
-    });
-  }
+    console.log('err in process: ', err);
+  } 
 });
 
 module.exports = app;
