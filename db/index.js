@@ -1,4 +1,5 @@
 const pg = require('pg');
+// const client = require('../startup/database');
 const client = require('../startup/database');
 
 // Converting numeric str type to number in postGres
@@ -67,9 +68,9 @@ module.exports = {
             )
           )
         ) r
-      from users u
-      join reviews re on u.id = re.user_id
-      join ratings ra on re.id = ra.review_id
+      from public.users u
+      join public.reviews re on u.id = re.user_id
+      join public.ratings ra on re.id = ra.review_id
       where re.property_id = ${id};`
 
     const query = {
