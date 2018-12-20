@@ -39,7 +39,7 @@ app.get('/reviews/:id', async(req, res) => {
     res.status(404).json({error: `ID ${id} does not exist`});
   } finally {
     // console.log('client: ', client);
-    await client.release();
+    // await client.release();
     console.log('checked out db');
   }
 });
