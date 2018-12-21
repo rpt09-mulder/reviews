@@ -4,6 +4,7 @@
   "main": "index.js",
   "scripts": {
     "start-client": "webpack -d --watch",
+    "start": "webpack",
     "build": "webpack --mode production"
   },
   "keywords": [],
