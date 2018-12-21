@@ -16,6 +16,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(morgan('tiny'));
 app.use(express.static(path.join(__dirname, '/../client/dist')));
+app.use('/:id', express.static(path.join(__dirname, '/../client/dist')));
 
 const client = pool.connect(() => {
   console.log('connected to db!');
