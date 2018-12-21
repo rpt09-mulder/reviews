@@ -10,7 +10,7 @@ class App extends Component {
   }
   componentDidMount() {
     const ebUrl = 'http://firebnb-reviews.8di9c2yryn.us-east-1.elasticbeanstalk.com'; 
-    let id; path;
+    let id, path;
     path = window.location.pathname;
     if (path === path.match(/\//)) {
       path = '/1';
