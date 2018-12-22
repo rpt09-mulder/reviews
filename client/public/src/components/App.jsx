@@ -17,7 +17,7 @@ class App extends Component {
     //   path = '/1';
     // }
     console.log('path: ', path);
-    axios.get(`${ebUrl}${path}`)
+    axios.get(`${ebUrl}/reviews${path}`)
       .then(res => res.data)
       .then(res => {
         this.setState({
