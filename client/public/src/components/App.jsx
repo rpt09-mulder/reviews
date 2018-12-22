@@ -13,9 +13,9 @@ class App extends Component {
     let id, path;
     path = window.location.pathname;
     // const paths = new Set([]);
-    if (!path.match(/\/^[0-9]+$/)) {
-      path = '/1';
-    }
+    // if (!path.match(/\/^[0-9]+$/)) {
+    //   path = '/1';
+    // }
     console.log('path: ', path);
     axios.get(`${ebUrl}/reviews${path}`)
       .then(res => res.data)
