@@ -16,7 +16,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(morgan('tiny'));
 app.use(express.static(path.join(__dirname, '/../client/dist')));
-app.use('/:id', express.static(path.join(__dirname, '/../client/dist')));
+// app.use('/:id', express.static(path.join(__dirname, '/../client/dist')));
 
 const client = pool.connect(() => {
   console.log('connected to db!');
@@ -24,25 +24,25 @@ const client = pool.connect(() => {
 });
 //Routing
 // app.use('/reviews', reviews);
-app.get('/reviews/:id', async (req, res) => {
-  // console.log(pool);
-  const id = JSON.parse(req.params.id);
+// app.get('/reviews/:id', async (req, res) => {
+//   // console.log(pool);
+//   const id = JSON.parse(req.params.id);
   
-  try {
-    const reviews = await db.getReviewsById(id);
-    const avgRating = await db.getAverageRatings(id);
-    if (!reviews.length) {
-      res.status(404).json({error: `ID ${id} does not exist`});
-    } else {
-      res.json({
-        ratings: avgRating[0].a,
-        reviews: reviews
-      });
-    }
-  } catch(err) {
-    res.status(404).json({error: `ID ${id} does not exist`});
-    console.log('err in process: ', err);
-  } 
-});
+//   try {
+//     const reviews = await db.getReviewsById(id);
+//     const avgRating = await db.getAverageRatings(id);
+//     if (!reviews.length) {
+//       res.status(404).json({error: `ID ${id} does not exist`});
+//     } else {
+//       res.json({
+//         ratings: avgRating[0].a,
+//         reviews: reviews
+//       });
+//     }
+//   } catch(err) {
+//     res.status(404).json({error: `ID ${id} does not exist`});
+//     console.log('err in process: ', err);
+//   } 
+// });
 
 module.exports = app;
