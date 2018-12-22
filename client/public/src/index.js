@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ReviewsApp from './components/ReviewsApp.jsx';
-window.ReviewsApp = ReviewsApp;
+import App from './components/App.jsx';
 
-ReactDOM.render(<ReviewsApp />, document.getElementById('reviews'));
+ReactDOM.render(<App />, document.getElementById('reviews'));
