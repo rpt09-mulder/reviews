@@ -8,16 +8,16 @@ class App extends Component {
       data: null
     };
   }
-  componentDidMount() {
+  async componentDidMount() {
     const ebUrl = 'http://firebnb-reviews.8di9c2yryn.us-east-1.elasticbeanstalk.com'; 
-    let id, path;
-    path = window.location.pathname;
-    // const paths = new Set([]);
-    // if (!path.match(/\/^[0-9]+$/)) {
-    //   path = '/1';
-    // }
+    // const localUrl = 'http://localhost:3003'
+    let path = window.location.pathname;
+    
+    if (!path.match(/^\/[0-9]+$/)) {
+      path = '/1';
+    }
     console.log('path: ', path);
-    axios.get(`${ebUrl}/reviews${path}`)
+    axios.get(`${localUrl}/reviews${path}`)
       .then(res => res.data)
       .then(res => {
         this.setState({
