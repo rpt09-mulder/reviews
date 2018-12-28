@@ -13,8 +13,8 @@ class App extends Component {
     };
   }
   componentWillMount() {
-    // const ebUrl = 'http://firebnb-reviews.8di9c2yryn.us-east-1.elasticbeanstalk.com'; 
-    const localUrl = 'http://localhost:3003'
+    const ebUrl = 'http://firebnb-reviews.8di9c2yryn.us-east-1.elasticbeanstalk.com'; 
+    // const localUrl = 'http://localhost:3003'
     let path = window.location.pathname;
     
     if (!path.match(/^\/[0-9]+$/)) {
