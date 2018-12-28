@@ -1,10 +1,13 @@
+.ratingContainer {
+  margin-bottom: 12px !important;
+}
+
 .starsContainer {
   display: inline-block !important;
   margin-left: 16px !important;
 }
 
 .starContainer {
-  margin-left: 16px !important;
   color: var(--color-star-babu-highlight-color, #008489) !important;
   display: inline-block !important;
   font-size: 18px !important;
@@ -18,4 +21,34 @@
   width: 1em; 
   display: block; 
   fill: currentcolor;
+}
+
+.halfStarContainer {
+  color: var(--color-star-babu-highlight-color, #008489) !important;
+  display: inline-block !important;
+  position: relative !important;
+  font-size: 18px !important;
+  height: 18px !important;
+  margin-right: 6px !important;
+  width: 18px !important;
+}
+
+.greyStar {
+  color: var(--color-star-blank-color, #D8D8D8) !important;
+  left: 0px !important;
+  position: absolute !important;
+}
+
+.greyStarContainer {
+  color: var(--color-star-blank-color, #D8D8D8) !important;
+  display: inline-block !important;
+  font-size: 18px !important;
+  height: 18px !important;
+  margin-right: 6px !important;
+  width: 18px !important;
+}
+
+.halfStarGreen {
+  left: 0px !important;
+  position: absolute !important;
 }

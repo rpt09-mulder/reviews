@@ -17,7 +17,9 @@ const TotalReviews = ({ reviews, average }) => {
                 </span>
               </h2>
               <div className={starStyles.starsContainer}>
-                <Rating average={average}/>
+                <div>
+                  <Rating average={average}/>
+                </div>
               </div>
             </div>
           </div>

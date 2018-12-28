@@ -9,6 +9,7 @@
 }
 
 .numberContainer {
+  margin-bottom: 12px !important;
   display: table !important;
   width: 66.6667% !important;
   float: left !important;
