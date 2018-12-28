@@ -13,7 +13,7 @@ const cors = require('cors');
 // const reviews = require('../router');
 
 //Middleware
-app.use(cors);
+app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(morgan('tiny'));
