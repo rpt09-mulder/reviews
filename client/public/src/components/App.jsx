@@ -20,7 +20,7 @@ class App extends Component {
     if (!path.match(/^\/[0-9]+$/)) {
       path = '/1';
     }
-    axios.get(`${localUrl}/reviews${path}`)
+    axios.get(`${ebUrl}/reviews${path}`)
       .then(res => res.data)
       .then(res => {
         this.setState({ data: res });
