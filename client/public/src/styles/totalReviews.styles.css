@@ -1,0 +1,48 @@
+
+.totalContainer {
+  margin-bottom: 12px;
+}
+
+.totalContainerInner {
+  margin-left: -8px !important;
+  margin-right: -8px !important;
+}
+
+.numberContainer {
+  display: table !important;
+  width: 66.6667% !important;
+  float: left !important;
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+  min-height: 1px !important;
+  position: relative !important;
+  height: 56px !important;
+}
+
+.number {
+  display: table-cell !important;
+  vertical-align: bottom !important;
+  padding-bottom: 4px !important;
+}
+
+.text {
+  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
+  margin: 0px !important;
+  word-wrap: break-word !important;
+  font-size: 24px !important;
+  font-weight: 800 !important;
+  line-height: 1.25em !important;
+  color: #484848 !important;
+  padding-top: 2px !important;
+  padding-bottom: 2px !important;
+}
+
+.reviewsHead {
+  color: inherit !important;
+  font-size: 1em !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+  margin: 0px !important;
+  padding: 0px !important;
+  display: inline !important;
+}

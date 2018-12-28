@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import styles from '../styles/app.styles.css';
 
 import Reviews from './Reviews.jsx';
+import TotalReviews from './TotalReviews.jsx';
 
 class App extends Component {
   constructor(props) {
@@ -18,25 +20,25 @@ class App extends Component {
     if (!path.match(/^\/[0-9]+$/)) {
       path = '/1';
     }
-    console.log('path: ', path);
     axios.get(`${localUrl}/reviews${path}`)
       .then(res => res.data)
       .then(res => {
-        console.log('res: ', res);
         this.setState({ data: res });
       });
   }
 
   render() {
-    console.log('state: ', this.state);
     if (this.state.data) {
       const { reviews, ratings } = this.state.data;
-      console.log('reviews: ', reviews);
     }
     return (
       this.state.data ? (
-        <div>
-          <Reviews reviews={this.state.data.reviews}/>
+        <div className={styles.reviews}>
+          <TotalReviews 
+            reviews={this.state.data.reviews}
+            average={this.state.data.ratings.avg}
+          />
+          <Reviews reviews={this.state.data.reviews} />
         </div>
       ) : (
         <div>
