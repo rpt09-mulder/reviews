@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import styles from '../styles/app.styles.css';
+import reviewStyles from '../styles/review.styles.css';
 
 import Reviews from './Reviews.jsx';
-import TotalReviews from './TotalReviews.jsx';
+import ReviewsHeader from './ReviewsHeader.jsx';
 
 class App extends Component {
   constructor(props) {
@@ -13,14 +14,14 @@ class App extends Component {
     };
   }
   componentWillMount() {
-    const ebUrl = 'http://firebnb-reviews.8di9c2yryn.us-east-1.elasticbeanstalk.com'; 
-    // const localUrl = 'http://localhost:3003'
+    // const ebUrl = 'http://firebnb-reviews.8di9c2yryn.us-east-1.elasticbeanstalk.com'; 
+    const localUrl = 'http://localhost:3003'
     let path = window.location.pathname;
     
-    if (!path.match(/^\/[0-9]+$/)) {
+    if (!path.match(/^\/[0-9]+/)) {
       path = '/1';
     }
-    axios.get(`${ebUrl}/reviews${path}`)
+    axios.get(`${localUrl}/reviews${path}`)
       .then(res => res.data)
       .then(res => {
         this.setState({ data: res });
@@ -34,7 +35,7 @@ class App extends Component {
     return (
       this.state.data ? (
         <div className={styles.reviews}>
-          <TotalReviews 
+          <ReviewsHeader
             reviews={this.state.data.reviews}
             average={this.state.data.ratings.avg}
           />
@@ -42,7 +43,7 @@ class App extends Component {
         </div>
       ) : (
         <div>
-          reviews pending...
+          No reviews
         </div>
       )
     )

@@ -1,9 +1,10 @@
 import React from 'react';
 import Rating from './Rating.jsx';
-import styles from '../styles/totalReviews.styles.css';
+import styles from '../styles/reviewsHeader.styles.css';
 import starStyles from '../styles/rating.styles.css';
+// import reviewStyles from '../styles/review.styles.css';
 
-const TotalReviews = ({ reviews, average }) => {
+const ReviewsHeader = ({ reviews, average }) => {
 
   return (
     <div>
@@ -25,9 +26,12 @@ const TotalReviews = ({ reviews, average }) => {
           </div>
         </div>
       </div>
+      <div className={styles.lineContainer}>
+        <div className={styles.line}></div>
+      </div>
 
     </div>
   )
 };
 
-export default TotalReviews;
+export default ReviewsHeader;
