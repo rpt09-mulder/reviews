@@ -2,6 +2,8 @@ import React from 'react';
 import styles from '../styles/stars.styles.css';
 
 const Stars = ({ average }) => {
+  average = Math.round(average * 2) / 2;
+  console.log('average: ', average);
   const half = (!!((average / 0.5) % 2));
   console.log('half: ', half);
   let numStars = average;

@@ -5,6 +5,7 @@ import reviewStyles from '../styles/review.styles.css';
 
 import Reviews from './Reviews.jsx';
 import ReviewsHeader from './ReviewsHeader.jsx';
+import RatingsBox from './RatingsBox.jsx';
 
 class App extends Component {
   constructor(props) {
@@ -39,6 +40,7 @@ class App extends Component {
             reviews={this.state.data.reviews}
             average={this.state.data.ratings.avg}
           />
+          <RatingsBox avg={this.state.data.ratings}/>
           <Reviews reviews={this.state.data.reviews} />
         </div>
       ) : (
