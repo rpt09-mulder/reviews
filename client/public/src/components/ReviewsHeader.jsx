@@ -1,8 +1,8 @@
 import React from 'react';
-import Rating from './Rating.jsx';
+import Stars from './Stars.jsx';
 import Search from './Search.jsx';
 import styles from '../styles/reviewsHeader.styles.css';
-import starStyles from '../styles/rating.styles.css';
+import starStyles from '../styles/stars.styles.css';
 // import reviewStyles from '../styles/review.styles.css';
 
 const ReviewsHeader = ({ reviews, average }) => {
@@ -21,7 +21,7 @@ const ReviewsHeader = ({ reviews, average }) => {
                 </h2>
                 <div className={starStyles.starsContainer}>
                   <div>
-                    <Rating average={average}/>
+                    <Stars average={average}/>
                   </div>
                 </div>
               </div>

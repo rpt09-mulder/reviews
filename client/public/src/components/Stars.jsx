@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from '../styles/rating.styles.css';
+import styles from '../styles/stars.styles.css';
 
-const Rating = ({ average }) => {
+const Stars = ({ average }) => {
   const half = (!!((average / 0.5) % 2));
   console.log('half: ', half);
   let numStars = average;
@@ -87,4 +87,4 @@ const Rating = ({ average }) => {
   )
 };
 
-export default Rating;
+export default Stars;
