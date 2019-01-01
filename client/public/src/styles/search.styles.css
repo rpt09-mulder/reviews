@@ -1,0 +1,110 @@
+.searchContainer {
+  height: 56px !important;
+}
+
+.searchContainerInner {
+  display: table !important;
+  position: relative !important;
+  height: 100% !important;
+  width: 100% !important;
+}
+
+.searchI {
+  display: table-cell !important;
+  vertical-align: bottom !important;
+}
+
+.searchII {
+  display: block !important;
+  width: 100% !important;
+  height: 34px;
+  border-width: 1px !important;
+  border-style: solid !important;
+  border-color: rgb(235, 235, 235) !important;
+  border-radius: 4px !important;
+}
+
+.searchIII {
+  background-color: #ffffff !important;
+  margin-bottom: var(--unit, 8px) !important;
+  font-size: var(--font-form-element-small-font-size, 14px) !important;
+  line-height: var(--font-form-element-small-line-height, 22px) !important;
+  letter-spacing: var(--font-form-element-small-letter-spacing, normal) !important;
+  font-family: var(--font-form-element-small-font-family, Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif) !important;
+  text-transform: var(--font-form-element-small-text-transform, undefined) !important;
+  color: #484848 !important;
+  padding-top: var(--font-form-element-small-padding-top, undefined) !important;
+  padding-bottom: var(--font-form-element-small-padding-bottom, undefined) !important;
+}
+
+.searchSymContainer {
+  float: left !important;
+}
+
+.searchSymOuter {
+  visibility: visible;
+  height: 34px;
+  font-weight: var(--font-book-font-weight, 600) !important;
+  font-size: var(--font-form-element-small-font-size, 14px) !important;
+  line-height: var(--font-form-element-small-line-height, 22px) !important;
+  letter-spacing: var(--font-form-element-small-letter-spacing, normal) !important;
+  font-family: var(--font-form-element-small-font-family, Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif) !important;
+  text-transform: var(--font-form-element-small-text-transform, undefined) !important;
+  color: #484848 !important;
+  padding-top: var(--font-form-element-small-padding-top, undefined) !important;
+  padding-bottom: var(--font-form-element-small-padding-bottom, undefined) !important;
+  padding-left: var(--spacing-form-element-small-decorator, 7px) !important;
+}
+
+.searchSym {
+  display: table !important;
+  position: relative !important;
+  height: 100% !important;
+}
+
+.searchSymInner {
+  display: table-cell !important;
+  vertical-align: middle !important;
+}
+
+.svg {
+  height: 1em; 
+  width: 1em; 
+  display: block; 
+  fill: currentcolor;
+}
+
+.searchBarContainer {
+  position: relative;
+  overflow: hidden;
+}
+
+.form {
+  width: 100%;
+  box-sizing : border-box;
+  position: relative;
+  float: left;
+  height: 34px;
+}
+
+.input {
+  background-color: transparent !important;
+  font-size: var(--font-form-element-small-font-size, 14px) !important;
+  line-height: var(--font-form-element-small-line-height, 22px) !important;
+  letter-spacing: var(--font-form-element-small-letter-spacing, normal) !important;
+  font-family: var(--font-form-element-small-font-family, Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif) !important;
+  text-transform: var(--font-form-element-small-text-transform, undefined) !important;
+  color: #484848 !important;
+  padding-top: var(--spacing-form-element-small-vertical, 6px) !important;
+  padding-bottom: var(--spacing-form-element-small-vertical, 6px) !important;
+  font-weight: var(--font-book-font-weight, 600) !important;
+  padding-left: var(--spacing-form-element-small-horizontal, 7px) !important;
+  padding-right: var(--spacing-form-element-small-horizontal, 7px) !important;
+  width: 100%;
+  border: none;
+  border-color: transparent;
+}
+
+textarea:focus, input:focus{
+  outline: none;
+}

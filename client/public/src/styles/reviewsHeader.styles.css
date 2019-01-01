@@ -9,11 +9,14 @@
   margin-right: -8px !important;
 }
 
+.numberContainerOuter {
+  width: 66.6667% !important;
+  float: left !important;
+}
+
 .numberContainer {
   margin-bottom: 12px !important;
   display: table !important;
-  width: 66.6667% !important;
-  float: left !important;
   padding-left: 8px !important;
   padding-right: 8px !important;
   min-height: 1px !important;
@@ -58,4 +61,9 @@
   border-bottom-width: var(--border-rule-border-width, 1px) !important;
   border-bottom-color: var(--color-divider, #EBEBEB) !important;
   border-bottom-style: solid !important;
+}
+
+.searchContainerOuter {
+  width: 33.3333% !important;
+  float: left !important;
 }
