@@ -3,16 +3,13 @@ import styles from '../styles/stars.styles.css';
 
 const Stars = ({ average }) => {
   average = Math.round(average * 2) / 2;
-  console.log('average: ', average);
   const half = (!!((average / 0.5) % 2));
-  console.log('half: ', half);
   let numStars = average;
   if (half) {
     numStars = average - 0.5;
   }
   const greenStars = [...Array(numStars)];
   const greyStars = half ? [...Array(4 - numStars)] : [...Array(5 - numStars)];
-  console.log('grey stars: ', greyStars);
   return (
     <div>
       <span>
