@@ -73,6 +73,9 @@ const updateUrls = (urlsObj, users) => {
 };
 
 const main = (async() => {
+  const client = await pool.connect(() => {
+    console.log('connected to db!');
+  });
   try {
     const client = await pool.connect(() => {
       console.log('connected to db!');
