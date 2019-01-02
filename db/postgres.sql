@@ -15,6 +15,7 @@ CREATE TABLE IF NOT EXISTS reviews (
   date text,
   review text,
   reply text,
+  reply_date text,
   FOREIGN KEY (user_id) 
   REFERENCES users(id)
 );

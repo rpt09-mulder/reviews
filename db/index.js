@@ -57,6 +57,7 @@ module.exports = {
             'review', re.review,
             'date', re.date,
             'reply', re.reply,
+            'replyDate', re.reply_date,
             'rating', json_build_object(
               'avg', round(ra.average * 2, 0) / 2,
               'acc', ra.accuracy,

@@ -2,7 +2,6 @@ import React from 'react';
 import Review from './Review.jsx';
 
 const Reviews = (props) => {
-  console.log('reviews: ', props.reviews);
   return (
     <div className="reviewsContainer">
       {

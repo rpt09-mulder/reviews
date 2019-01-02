@@ -42,7 +42,7 @@ class Reply extends Component {
         </div>
         <div className={replyStyles.container}>
           <div className={replyStyles.response}>
-            {`response from ${this.state.name}`}
+            {`Response from ${this.state.name}`}
           </div>
           <div>
             <div className={replyStyles.reply}>
@@ -51,7 +51,7 @@ class Reply extends Component {
           </div>
           <div className={replyStyles.dateContainer}>
             <div className={replyStyles.date}>
-              date wip
+              {this.props.mapDateText(this.props.replyDate)}
             </div>
           </div>
         </div>
@@ -63,7 +63,28 @@ class Reply extends Component {
 const Review = (props) => {
   const { propertyId } = props.review.r;
   const { name, avatarUrl } = props.review.r.user;
-  const { date, review, reply } = props.review.r.review; 
+  const { date, review, reply, replyDate } = props.review.r.review; 
+
+  const mapDateText = (date) => {
+    const months = {
+      '01': 'January',
+      '02': 'February',
+      '03': 'March',
+      '04': 'April',
+      '05': 'May',
+      '06': 'June',
+      '07': 'July',
+      '08': 'August',
+      '09': 'September',
+      '10': 'October',
+      '11': 'November',
+      '12': 'December'
+    }
+    const splitDate = date.split('-');
+    const yearMonth = splitDate.slice(0,2);
+    return '' + months[yearMonth[1]] + ' ' + yearMonth[0];
+  };
+
   return (
     <div>
       <div className={styles.userContainer}>
@@ -80,7 +101,7 @@ const Review = (props) => {
         <div className={styles.infoContainer}>
           <div className={styles.info}>
             <div className={styles.name} >{name}</div>
-            <div className={styles.date} >{date}</div>
+            <div className={styles.date} >{mapDateText(date)} </div>
           </div>
         </div>
         <div className={styles.flagContainer}>
@@ -106,7 +127,9 @@ const Review = (props) => {
         reply ? (
           <div className={styles.replyContainer}>
             <Reply 
+              mapDateText={mapDateText}
               reply={reply} 
+              replyDate={replyDate}
               propertyId={propertyId}
             />
           </div>
