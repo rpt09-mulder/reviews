@@ -1,0 +1,42 @@
+.ratingContainer {
+  height: 22px;
+  margin-bottom: 12px;
+}
+
+.ratingContainerInner {
+  margin-left: -8px !important;
+  margin-right: -8px !important;
+}
+
+.ratingContainerInner::before {
+  content: " " !important;
+  display: table !important;
+}
+
+.ratingNameContainer {
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+  min-height: 1px !important;
+  position: relative !important;
+  width: 42% !important;
+  float: left !important;
+}
+
+.ratingName {
+  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
+  margin: 0px !important;
+  word-wrap: break-word !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  line-height: 1.375em !important;
+  color: #484848 !important;
+}
+
+.starsContainer {
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+  min-height: 1px !important;
+  position: relative !important;
+  width: 50% !important;
+  float: left !important;
+}

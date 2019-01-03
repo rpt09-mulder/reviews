@@ -16,11 +16,11 @@ const insertAll = (reviews) => {
       };
       const prop_id = review.property_id;
       const {user_id, date} = review.user;
-      const {review_text, reply_text} = review.review
+      const {review_text, reply_text, reply_date} = review.review
       const queryReview = {
         name: 'insertReview',
-        text: 'insert into reviews(property_id, user_id, date, review, reply) values ($1, $2, $3, $4, $5)',
-        values: [prop_id, user_id, date, review_text, reply_text]
+        text: 'insert into reviews(property_id, user_id, date, review, reply, reply_date) values ($1, $2, $3, $4, $5, $6)',
+        values: [prop_id, user_id, date, review_text, reply_text, reply_date]
       };
   
       const review_id = review.review.review_id;
@@ -77,22 +77,29 @@ const main = (async() => {
     console.log('connected to db!');
   });
   try {
-    console.log('Initializing...');
-    console.log('saving to db...');
-    const insertion = await insertAll(reviews);
-    console.log('data saved to db');
-    console.log('processing urls...')
-    const urls = await utils.readFile(path.join(__dirname, '../') + '/urls.txt');
-    console.log('saving images and uploading to s3...')
-    const s3Urls = await utils.saveImagesAndS3Upload(urls);
-    console.log('updating urls in db...');
-    await updateUrls(s3Urls, reviews.length);
-    console.log('done!');
-  } catch (err) {
-    console.log('error occured in seeding: ', err);
-  } finally {
-    await client.release(() => {
-      console.log('checked out db');
+    const client = await pool.connect(() => {
+      console.log('connected to db!');
     });
+    try {
+      console.log('Initializing...');
+      console.log('saving to db...');
+      const insertion = await insertAll(reviews);
+      console.log('data saved to db');
+      console.log('processing urls...')
+      const urls = await utils.readFile(path.join(__dirname, '../') + '/urls.txt');
+      console.log('saving images and uploading to s3...')
+      const s3Urls = await utils.saveImagesAndS3Upload(urls);
+      console.log('updating urls in db...');
+      await updateUrls(s3Urls, reviews.length);
+      console.log('done!');
+    } catch (err) {
+      console.log('error occured in seeding: ', err);
+    } finally {
+      await client.release(() => {
+        console.log('checked out db');
+      });
+    }
+  } catch(err) {
+    console.log('error occured in connecting: ', err);
   }
 })();

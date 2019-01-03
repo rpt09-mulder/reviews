@@ -1,0 +1,99 @@
+.userContainer {
+  display: table !important;
+  width: 100% !important;
+  border-spacing: 0px !important;
+}
+
+.avatarContainer {
+  display: table-cell !important;
+  vertical-align: top !important;
+}
+
+.avatar {
+  display: block;
+  height: 48px;
+  width: 48px;
+}
+.innerAvatar {
+  background-color: var(--color-accent-light-gray, #D8D8D8) !important;
+  border-radius: var(--border-profile-photo-border-radius, 50%) !important;
+  border-width: var(--border-profile-photo-border-width, 2px) !important;
+  border-color: var(--color-white, #ffffff) !important;
+}
+
+.infoContainer {
+  display: table-cell !important;
+  width: 100% !important;
+  vertical-align: 100% !important;
+}
+
+.info {
+  margin-left: 16px;
+}
+
+.name {
+  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
+  margin: 0px !important;
+  word-wrap: break-word !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  line-height: 1.375em !important;
+  color: #484848 !important;
+}
+
+.date {
+  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
+  margin: 0px !important;
+  word-wrap: break-word !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  line-height: 1.2857142857142858em !important;
+  color: #484848 !important;
+}
+
+.flagContainer {
+  display: table-cell !important;
+  vertical-align: top !important;
+}
+
+.flag {
+  padding: 4px;
+  margin: -4px;
+}
+
+.svg {
+  height: 1em; 
+  width: 1em; 
+  display: block; 
+  fill: rgb(118, 118, 118);
+}
+
+.textContainer {
+  margin-top: 16px;
+}
+
+.text {
+  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
+  margin: 0px !important;
+  word-wrap: break-word !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  line-height: 1.375 !important;
+  color: #484848 !important;
+}
+
+.replyContainer {
+  margin-top: 16px;
+  margin-left: 16px;
+}
+
+.lineContainer {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.line {
+  border-bottom-width: var(--border-rule-border-width, 1px) !important;
+  border-bottom-color: var(--color-divider, #EBEBEB) !important;
+  border-bottom-style: solid !important;
+}
