@@ -1,12 +1,51 @@
 import React, { Component } from 'react';
 import Review from './Review.jsx';
-import JwPagination from 'jw-react-pagination';
+// import JwPagination from 'jw-react-pagination';
+import Pagination from './Pagination.jsx';
 
 const customLabels = {
   'first': '<<',
   'last': '>>',
   'previous': '<',
   'next': '>'
+};
+
+const customStyles = {
+  ul: {
+    padding: '0px',
+    marginBottom: '32px',
+    marginTop: '0px',
+    display: 'inline-block'
+  },
+  li: {
+      border: '1px solid rgb(0, 132, 137)',
+      width: '32px',
+      height: '32px',
+      position: 'relative',
+      borderWidth: '1px',
+      borderRadius: '16px',
+      display: 'inline-block',
+      verticalAlign: 'middle',
+      marginRight: '16px',
+      marginLeft: '16px'
+  },
+  number: {
+    listStyle: 'none',
+    display: 'inline',
+    textAlign: 'center',
+    width: '32px',
+    height: '32px',
+    position: 'relative',
+    display: 'inline-block',
+    verticalAlign: 'middle',
+    marginRight: '16px',
+    marginLeft: '16px'
+  },
+  a: {
+      color: 'rgb(0, 132, 137)',
+      top: '50%',
+      left: '50%'
+  }
 };
 
 class Reviews extends Component {
@@ -27,8 +66,6 @@ class Reviews extends Component {
     /* props.reviews.map((review, index) => {
       return <Review key={index} review={review} />
     }) */
-    console.log('review items: ', this.state.reviewItems);
-    console.log('page items: ', this.state.pageOfItems);
     return (
       <div className="reviewsContainer">
         {
@@ -37,11 +74,12 @@ class Reviews extends Component {
           })
 
         }
-        <JwPagination 
+        <Pagination 
           items={this.state.reviewItems} 
           onChangePage={this.onChangePage} 
           pageSize={7}
           labels={customLabels}
+          styles={customStyles}
           />
       </div>
     );
