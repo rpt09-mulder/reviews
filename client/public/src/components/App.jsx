@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import styles from '../styles/app.styles.css';
-import reviewStyles from '../styles/review.styles.css';
+// import reviewStyles from '../styles/review.styles.css';
 
 import Reviews from './Reviews.jsx';
 import ReviewsHeader from './ReviewsHeader.jsx';
