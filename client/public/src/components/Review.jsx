@@ -8,7 +8,8 @@ class Reply extends Component {
     super(props);
     this.state = {
       name: null,
-      url: null
+      url: null,
+      readMore: false
     }
   }
   componentDidMount() {
@@ -23,6 +24,13 @@ class Reply extends Component {
         });
       })
   }
+
+  handleClick = (props) => {
+    this.setState({
+      readMore: true
+    })
+  };
+
   render() {
     return (
       <div className={replyStyles.inner}>
@@ -45,9 +53,21 @@ class Reply extends Component {
             {`Response from ${this.state.name}`}
           </div>
           <div>
-            <div className={replyStyles.reply}>
-              {this.props.reply}
-            </div>
+            {
+            this.state.readMore ? (
+              <div className={replyStyles.reply}>{this.props.reply}</div>
+            ) : (
+              this.props.reply.length > 280 ? (
+                <div className={replyStyles.reply}>
+                  {this.props.reply.slice(0, 281)}
+                  <span>...</span>
+                  <span className={styles.read} onClick={this.handleClick}>Read more</span>
+                </div>
+              ) : (
+                <div className={replyStyles.reply}>{this.props.reply}</div>
+              )
+            )
+          }
           </div>
           <div className={replyStyles.dateContainer}>
             <div className={replyStyles.date}>
