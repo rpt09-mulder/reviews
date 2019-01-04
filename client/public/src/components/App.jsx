@@ -15,14 +15,14 @@ class App extends Component {
     };
   }
   componentDidMount() {
-    const ebUrl = 'http://firebnb-reviews.8di9c2yryn.us-east-1.elasticbeanstalk.com'; 
-    // const localUrl = 'http://localhost:3003';
+    // const ebUrl = 'http://firebnb-reviews.8di9c2yryn.us-east-1.elasticbeanstalk.com'; 
+    const localUrl = 'http://localhost:3003';
     let path = window.location.pathname;
     
     if (!path.match(/^\/[0-9]+/)) {
       path = '/1';
     }
-    axios.get(`${ebUrl}/reviews${path}`)
+    axios.get(`${localUrl}/reviews${path}`)
       .then(res => res.data)
       .then(res => {
         this.setState({ data: res });

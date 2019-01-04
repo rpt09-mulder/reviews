@@ -97,3 +97,12 @@
   border-bottom-color: var(--color-divider, #EBEBEB) !important;
   border-bottom-style: solid !important;
 }
+
+.read {
+  color: var(--color-text-link, #008489) !important;
+  font-family: var(--font-font_family, Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif) !important;
+}
+
+.read:hover {
+  text-decoration: underline;
+}
