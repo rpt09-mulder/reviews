@@ -5,7 +5,7 @@
   "scripts": {
     "start-client": "webpack -d --watch",
     "start": "webpack",
-    "build": "webpack --mode production"
+    "build": "webpack -p"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +13,7 @@
   "description": "",
   "dependencies": {
     "axios": "^0.18.0",
+    "jw-paginate": "^1.0.2",
     "react": "^16.6.3",
     "react-dom": "^16.6.3"
   },
@@ -28,6 +29,6 @@
     "html-webpack-plugin": "^3.2.0",
     "webpack": "^4.25.1",
     "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "^3.1.10"
+    "webpack-dev-server": "^3.1.14"
   }
 }
