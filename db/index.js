@@ -101,5 +101,13 @@ module.exports = {
       text: queryStr
     }
     return this.queryDB(query);
+  },
+  getNumberReviewsById: function(id) {
+    const queryStr = `select count(*) from reviews where property_id = ${id}`;
+    const query = {
+      name: 'getnumReviews',
+      text: queryStr
+    }
+    return this.queryDB(query);
   }
 };

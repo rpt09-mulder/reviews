@@ -31,7 +31,6 @@ const client = pool.connect(() => {
 
 app.get('/reviews/:id', async (req, res) => {
   const id = JSON.parse(req.params.id);
-  console.log('id: ', id);
   
   try {
     const reviews = await db.getReviewsById(id);
@@ -48,6 +47,21 @@ app.get('/reviews/:id', async (req, res) => {
     res.status(404).json({error: `ID ${id} does not exist`});
     console.log('err in process: ', err);
   } 
+});
+
+app.get('/ratings/:id', async (req, res) => {
+  const id = JSON.parse(req.params.id);
+
+  try {
+    const avgRating = await db.getAverageRatings(id);
+    const numReviews = await db.getNumberReviewsById(id);
+    res.json({
+      avgRating: avgRating[0].a.avg,
+      numReviews: JSON.parse(numReviews[0].count)
+    });
+  } catch(err) {
+    res.status(404).json({error: `ID ${id} does not exist`});
+  }
 });
 
 module.exports = app;
