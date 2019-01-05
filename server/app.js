@@ -20,6 +20,7 @@ app.use(morgan('tiny'));
 app.use(express.static(path.join(__dirname, '/../client/dist'), {
   maxage: '1y'
 }));
+
 app.use('/:id', express.static(path.join(__dirname, '/../client/dist'), {
   maxage: '1y'
 }));
