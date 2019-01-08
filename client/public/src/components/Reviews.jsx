@@ -18,16 +18,16 @@ const customStyles = {
     display: 'inline-block'
   },
   li: {
-      border: '1px solid rgb(0, 132, 137)',
-      width: '32px',
-      height: '32px',
-      position: 'relative',
-      borderWidth: '1px',
-      borderRadius: '16px',
-      display: 'inline-block',
-      verticalAlign: 'middle',
-      marginRight: '16px',
-      marginLeft: '16px'
+    border: '1px solid rgb(0, 132, 137)',
+    width: '32px',
+    height: '32px',
+    position: 'relative',
+    borderWidth: '1px',
+    borderRadius: '16px',
+    display: 'inline-block',
+    verticalAlign: 'middle',
+    marginRight: '16px',
+    marginLeft: '16px'
   },
   number: {
     listStyle: 'none',
@@ -42,20 +42,20 @@ const customStyles = {
     marginLeft: '16px'
   },
   a: {
-      color: 'rgb(0, 132, 137)',
-      top: '50%',
-      left: '50%'
+    color: 'rgb(0, 132, 137)',
+    top: '50%',
+    left: '50%'
   }
 };
 
 class Reviews extends Component {
   constructor(props) {
     super(props);
-    this.onChangePage = this.onChangePage.bind(this);
     this.state = {
       pageOfItems: [],
       reviewItems: [...this.props.reviews]
-    }
+    };
+    this.onChangePage = this.onChangePage.bind(this);
   }
 
   onChangePage(pageOfItems) {
@@ -70,7 +70,7 @@ class Reviews extends Component {
       <div className="reviewsContainer">
         {
           this.state.pageOfItems.map((item, index) => {
-            return <Review key={index} review={item} />
+            return <Review key={index} review={item} />;
           })
 
         }
@@ -80,10 +80,10 @@ class Reviews extends Component {
           pageSize={7}
           labels={customLabels}
           styles={customStyles}
-          />
+        />
       </div>
     );
   }
-};
+}
 
 export default Reviews;

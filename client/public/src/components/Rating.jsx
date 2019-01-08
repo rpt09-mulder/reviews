@@ -17,6 +17,6 @@ const Rating = ({ name, avg }) => {
       </div>
     </div>
   );
-}
+};
 
 export default Rating;

@@ -37,7 +37,7 @@ const ReviewsHeader = ({ reviews, average }) => {
       </div>
 
     </div>
-  )
+  );
 };
 
 export default ReviewsHeader;

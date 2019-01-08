@@ -48,7 +48,7 @@ class App extends Component {
           No reviews
         </div>
       )
-    )
+    );
   }
 }
 

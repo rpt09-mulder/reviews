@@ -1,4 +1,4 @@
-import React, { Component }  from 'react';
+import React, { Component } from 'react';
 import styles from '../styles/review.styles.css';
 import replyStyles from '../styles/reply.styles.css';
 import axios from 'axios';
@@ -10,10 +10,11 @@ class Reply extends Component {
       name: null,
       url: null,
       readMore: false
-    }
+    };
+    this.handleClick = this.handleClick.bind(this);
   }
   componentDidMount() {
-    const propertyId  = this.props.propertyId;
+    const propertyId = this.props.propertyId;
     console.log('prop id: ', propertyId);
     axios.get(`http://rooms.4gk2mkr3wk.us-west-2.elasticbeanstalk.com/users/${propertyId}`)
       .then(res => res.data.data)
@@ -22,14 +23,14 @@ class Reply extends Component {
           name: res.user,
           url: res.avatar
         });
-      })
+      });
   }
 
-  handleClick = (props) => {
+  handleClick(props) {
     this.setState({
       readMore: true
-    })
-  };
+    });
+  }
 
   render() {
     return (
@@ -54,20 +55,20 @@ class Reply extends Component {
           </div>
           <div>
             {
-            this.state.readMore ? (
-              <div className={replyStyles.reply}>{this.props.reply}</div>
-            ) : (
-              this.props.reply.length > 280 ? (
-                <div className={replyStyles.reply}>
-                  {this.props.reply.slice(0, 281)}
-                  <span>...</span>
-                  <span className={styles.read} onClick={this.handleClick}>Read more</span>
-                </div>
-              ) : (
+              this.state.readMore ? (
                 <div className={replyStyles.reply}>{this.props.reply}</div>
+              ) : (
+                this.props.reply.length > 280 ? (
+                  <div className={replyStyles.reply}>
+                    {this.props.reply.slice(0, 281)}
+                    <span>...</span>
+                    <span className={styles.read} onClick={this.handleClick}>Read more</span>
+                  </div>
+                ) : (
+                  <div className={replyStyles.reply}>{this.props.reply}</div>
+                )
               )
-            )
-          }
+            }
           </div>
           <div className={replyStyles.dateContainer}>
             <div className={replyStyles.date}>
@@ -78,17 +79,19 @@ class Reply extends Component {
       </div>
     );
   }
-};
+}
 
 class Review extends Component {
   constructor(props) {
     super(props);
     this.state = {
       readMore: false
-    }
+    };
+    this.mapDateText = this.mapDateText.bind(this);
+    this.handleClick = this.handleClick.bind(this);
   }
 
-  mapDateText = (date) => {
+  mapDateText(date) {
     const months = {
       '01': 'January',
       '02': 'February',
@@ -102,17 +105,17 @@ class Review extends Component {
       '10': 'October',
       '11': 'November',
       '12': 'December'
-    }
+    };
     const splitDate = date.split('-');
-    const yearMonth = splitDate.slice(0,2);
+    const yearMonth = splitDate.slice(0, 2);
     return '' + months[yearMonth[1]] + ' ' + yearMonth[0];
-  };
+  }
 
-  handleClick = (props) => {
+  handleClick(props) {
     this.setState({
       readMore: true
-    })
-  };
+    });
+  }
 
   render() {
     const { propertyId } = this.props.review.r;
@@ -186,8 +189,8 @@ class Review extends Component {
           <div className={styles.line}></div>
         </div>
       </div>
-    )
+    );
   }
-};
+}
 
 export default Review;

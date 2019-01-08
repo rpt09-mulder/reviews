@@ -29,7 +29,7 @@ const client = pool.connect(() => {
   console.log('connected to db!');
 });
 
-app.get('/reviews/:id', async (req, res) => {
+app.get('/reviews/:id', async(req, res) => {
   const id = JSON.parse(req.params.id);
   
   try {
