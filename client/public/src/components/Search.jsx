@@ -21,7 +21,6 @@ class Search extends Component {
     const filteredWords = searchWords.filter(word => {
       return !stopWordsSet.has(word);
     });
-    console.log('filteredWords: ', filteredWords);
     this.props.handleState('keyWords', filteredWords);
   }
 

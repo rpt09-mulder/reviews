@@ -3,6 +3,8 @@ import styles from '../styles/review.styles.css';
 import replyStyles from '../styles/reply.styles.css';
 import axios from 'axios';
 
+import Word from './Word.jsx';
+
 class Reply extends Component {
   constructor(props) {
     super(props);
@@ -15,7 +17,6 @@ class Reply extends Component {
   }
   componentDidMount() {
     const propertyId = this.props.propertyId;
-    console.log('prop id: ', propertyId);
     axios.get(`http://rooms.4gk2mkr3wk.us-west-2.elasticbeanstalk.com/users/${propertyId}`)
       .then(res => res.data.data)
       .then(res => {
@@ -56,16 +57,50 @@ class Reply extends Component {
           <div>
             {
               this.state.readMore ? (
-                <div className={replyStyles.reply}>{this.props.reply}</div>
+                <div className={replyStyles.reply}>
+                  {
+                    this.props.reply.split(' ').map((word, index) => {
+                      return (
+                        <Word 
+                          word={word}
+                          keyWords={this.props.keyWords}
+                          key={index}
+                          index={index}/>
+                      )
+                    })
+                  }
+                </div>
               ) : (
                 this.props.reply.length > 280 ? (
                   <div className={replyStyles.reply}>
-                    {this.props.reply.slice(0, 281)}
+                    {
+                      this.props.reply.slice(0, 281).split(' ').map((word, index) => {
+                        return (
+                          <Word 
+                            word={word}
+                            keyWords={this.props.keyWords}
+                            key={index}
+                            index={index}/>
+                        )
+                      })
+                    }
                     <span>...</span>
                     <span className={styles.read} onClick={this.handleClick}>Read more</span>
                   </div>
                 ) : (
-                  <div className={replyStyles.reply}>{this.props.reply}</div>
+                  <div className={replyStyles.reply}>
+                    {
+                      this.props.reply.split(' ').map((word, index) => {
+                        return (
+                          <Word 
+                            word={word}
+                            keyWords={this.props.keyWords}
+                            key={index}
+                            index={index}/>
+                        )
+                      })
+                    }
+                  </div>
                 )
               )
             }
@@ -121,7 +156,6 @@ class Review extends Component {
     const { propertyId } = this.props.review.r;
     const { name, avatarUrl } = this.props.review.r.user;
     const { date, review, reply, replyDate } = this.props.review.r.review; 
-    const keyWords = new Set(this.props.keyWords);
 
     return (
       <div>
@@ -164,40 +198,30 @@ class Review extends Component {
               <div className={styles.text}>
                 {
                   review.split(' ').map((word, index) => {
-                    return keyWords.has(word) ? (
-                      <span className={styles.strong} key={index}>
-                        {
-                          index < 1 ? (
-                            <span>{word}</span>
-                          ) : (
-                            <span>
-                              &nbsp;
-                              {word}
-                            </span>
-                          )
-                        }
-                      </span> 
-                    ) : (
-                      <span key={index}>
-                        {
-                          index < 1 ? (
-                            <span>{word}</span>
-                          ) : (
-                            <span>
-                              &nbsp;
-                              {word}
-                            </span>
-                          )
-                        }
-                      </span>
-                    );
+                    return (
+                      <Word 
+                        word={word}
+                        keyWords={this.props.keyWords}
+                        key={index}
+                        index={index}/>
+                    )
                   })
                 }
               </div>
             ) : (
               review.length > 280 ? (
                 <div className={styles.text}>
-                  {review.slice(0, 281)}
+                  {
+                    review.slice(0, 281).split(' ').map((word, index) => {
+                      return (
+                        <Word 
+                          word={word}
+                          keyWords={this.props.keyWords}
+                          key={index}
+                          index={index}/>
+                      )
+                    })
+                  }
                   <span>...</span>
                   <span className={styles.read} onClick={this.handleClick}>Read more</span>
                 </div>
@@ -205,33 +229,13 @@ class Review extends Component {
                 <div className={styles.text}>
                   {
                     review.split(' ').map((word, index) => {
-                      return keyWords.has(word) ? (
-                        <span className={styles.strong} key={index}>
-                          {
-                            index < 1 ? (
-                              <span>{word}</span>
-                            ) : (
-                              <span>
-                                &nbsp;
-                                {word}
-                              </span>
-                            )
-                          }
-                        </span> 
-                      ) : (
-                        <span key={index}>
-                          {
-                            index < 1 ? (
-                              <span>{word}</span>
-                            ) : (
-                              <span>
-                                &nbsp;
-                                {word}
-                              </span>
-                            )
-                          }
-                        </span>
-                      );
+                      return (
+                        <Word 
+                          word={word}
+                          keyWords={this.props.keyWords}
+                          key={index}
+                          index={index}/>
+                      )
                     })
                   }
                 </div>
