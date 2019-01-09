@@ -121,6 +121,8 @@ class Review extends Component {
     const { propertyId } = this.props.review.r;
     const { name, avatarUrl } = this.props.review.r.user;
     const { date, review, reply, replyDate } = this.props.review.r.review; 
+    const keyWords = new Set(this.props.keyWords);
+
     return (
       <div>
         <div className={styles.userContainer}>
@@ -159,7 +161,39 @@ class Review extends Component {
         <div className={styles.textContainer}>
           {
             this.state.readMore ? (
-              <div className={styles.text}>{review}</div>
+              <div className={styles.text}>
+                {
+                  review.split(' ').map((word, index) => {
+                    return keyWords.has(word) ? (
+                      <span className={styles.strong} key={index}>
+                        {
+                          index < 1 ? (
+                            <span>{word}</span>
+                          ) : (
+                            <span>
+                              &nbsp;
+                              {word}
+                            </span>
+                          )
+                        }
+                      </span> 
+                    ) : (
+                      <span key={index}>
+                        {
+                          index < 1 ? (
+                            <span>{word}</span>
+                          ) : (
+                            <span>
+                              &nbsp;
+                              {word}
+                            </span>
+                          )
+                        }
+                      </span>
+                    );
+                  })
+                }
+              </div>
             ) : (
               review.length > 280 ? (
                 <div className={styles.text}>
@@ -168,7 +202,39 @@ class Review extends Component {
                   <span className={styles.read} onClick={this.handleClick}>Read more</span>
                 </div>
               ) : (
-                <div className={styles.text}>{review}</div>
+                <div className={styles.text}>
+                  {
+                    review.split(' ').map((word, index) => {
+                      return keyWords.has(word) ? (
+                        <span className={styles.strong} key={index}>
+                          {
+                            index < 1 ? (
+                              <span>{word}</span>
+                            ) : (
+                              <span>
+                                &nbsp;
+                                {word}
+                              </span>
+                            )
+                          }
+                        </span> 
+                      ) : (
+                        <span key={index}>
+                          {
+                            index < 1 ? (
+                              <span>{word}</span>
+                            ) : (
+                              <span>
+                                &nbsp;
+                                {word}
+                              </span>
+                            )
+                          }
+                        </span>
+                      );
+                    })
+                  }
+                </div>
               )
             )
           }

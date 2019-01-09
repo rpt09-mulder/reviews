@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styles from '../styles/search.styles.css';
+import stopWords from '../../../../utilities/stopWords.js';
 
 class Search extends Component {
   constructor(props) {
@@ -7,15 +8,26 @@ class Search extends Component {
     this.state = {value: ''};
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.searchWords = this.searchWords.bind(this);
   }
 
   handleChange(event) {
     this.setState({value: event.target.value});
   }
 
+  searchWords() {
+    const searchWords = this.state.value.split(' ');
+    const stopWordsSet = new Set(stopWords);
+    const filteredWords = searchWords.filter(word => {
+      return !stopWordsSet.has(word);
+    });
+    console.log('filteredWords: ', filteredWords);
+    this.props.handleState('keyWords', filteredWords);
+  }
+
   handleSubmit(event) {
-    alert('A name was submitted: ' + this.state.value);
-    event.preventDefault();
+    if (event.key !== 'Enter') return;
+    this.searchWords();
   }
 
   render() {
@@ -46,7 +58,13 @@ class Search extends Component {
                 </div>
                 <div className={styles.searchBarContainer}>
                   <div className={styles.form} onSubmit={this.handleSubmit}>
-                    <input className={styles.input} type="text" value={this.state.value} onChange={this.handleChange} placeholder="Search reviews"/>
+                    <input 
+                      className={styles.input} 
+                      type="text" 
+                      value={this.state.value}
+                      onChange={this.handleChange} 
+                      onKeyPress={this.handleSubmit} 
+                      placeholder="Search reviews"/>
                   </div>
                 </div>
               </div>

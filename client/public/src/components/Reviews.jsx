@@ -62,17 +62,20 @@ class Reviews extends Component {
     // update local state with new page of items
     this.setState({ pageOfItems });
   }
+
   render() {
-    /* props.reviews.map((review, index) => {
-      return <Review key={index} review={review} />
-    }) */
     return (
       <div className="reviewsContainer">
         {
           this.state.pageOfItems.map((item, index) => {
-            return <Review key={index} review={item} />;
+            return (
+              <Review 
+                key={index} 
+                review={item} 
+                keyWords={this.props.keyWords}
+              />
+            );
           })
-
         }
         <Pagination 
           items={this.state.reviewItems} 
