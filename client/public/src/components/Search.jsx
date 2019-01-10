@@ -5,10 +5,28 @@ import stopWords from '../../../../utilities/stopWords.js';
 class Search extends Component {
   constructor(props) {
     super(props);
-    this.state = {value: ''};
+    this.state = {
+      value: '',
+      typing: true
+    };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.searchWords = this.searchWords.bind(this);
+    this.handleState = this.handleState.bind(this);
+    this.setWrapperRef = this.setWrapperRef.bind(this);
+    this.handleClickOutside = this.handleClickOutside.bind(this);
+  }
+
+  componentDidMount() {
+    document.addEventListener('mousedown', this.handleClickOutside);
+  }
+
+  componentWillUnmount() {
+    document.removeEventListener('mousedown', this.handleClickOutside);
+  }
+
+  handleState(prop, newState) {
+    this.setState({[prop] : newState});
   }
 
   handleChange(event) {
@@ -29,12 +47,24 @@ class Search extends Component {
     this.searchWords();
   }
 
+  setWrapperRef(node) {
+    this.wrapperRef = node;
+  }
+
+  handleClickOutside(event) {
+    if (this.wrapperRef && !this.wrapperRef.contains(event.target)) {
+     this.handleState('typing', false);
+    }
+  }
+
   render() {
+    const clearContainer = this.state.typing ? styles.clearContainerOn : styles.clearContainerOff;
+    const borderColor = this.state.typing ? styles.searchIIOn : styles.searchIIOff;
     return (
-      <div className={styles.searchContainer}>
+      <div className={styles.searchContainer} ref={this.setWrapperRef}>
         <div className={styles.searchContainerInner}>
           <div className={styles.searchI}>
-            <div className={styles.searchII}>
+            <div className={`${styles.searchII} ${borderColor}`}>
               <div className={styles.searchIII}>
                 <div className={styles.searchSymContainer}>
                   <div className={styles.searchSymOuter}>
@@ -61,9 +91,30 @@ class Search extends Component {
                       className={styles.input} 
                       type="text" 
                       value={this.state.value}
-                      onChange={this.handleChange} 
+                      onChange={this.handleChange}
+                      onClick={() => this.handleState('typing', true)}
                       onKeyPress={this.handleSubmit} 
                       placeholder="Search reviews"/>
+                      <div className={clearContainer}>
+                        <div className={styles.clearContainerInner}>
+                          <button 
+                            className={styles.clearButton} 
+                            type="button"
+                            onClick={() => this.handleState('value', '')}>
+                            <svg 
+                              viewBox="0 0 24 24" 
+                              role="img" 
+                              aria-label="Clear Input" 
+                              focusable="false"
+                              className={styles.clearSvg}>
+                              <path 
+                                d="m23.25 24c-.19 0-.38-.07-.53-.22l-10.72-10.72-10.72 10.72c-.29.29-.77.29-1.06 0s-.29-.77 0-1.06l10.72-10.72-10.72-10.72c-.29-.29-.29-.77 0-1.06s.77-.29 1.06 0l10.72 10.72 10.72-10.72c.29-.29.77-.29 1.06 0s .29.77 0 1.06l-10.72 10.72 10.72 10.72c.29.29.29.77 0 1.06-.15.15-.34.22-.53.22" 
+                                fillRule="evenodd">
+                              </path>
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
                   </div>
                 </div>
               </div>
