@@ -3,6 +3,7 @@ import styles from '../styles/review.styles.css';
 import replyStyles from '../styles/reply.styles.css';
 import axios from 'axios';
 
+import Words from './Words.jsx';
 import Word from './Word.jsx';
 
 class Reply extends Component {
@@ -57,19 +58,10 @@ class Reply extends Component {
           <div>
             {
               this.state.readMore ? (
-                <div className={replyStyles.reply}>
-                  {
-                    this.props.reply.split(' ').map((word, index) => {
-                      return (
-                        <Word 
-                          word={word}
-                          keyWords={this.props.keyWords}
-                          key={index}
-                          index={index}/>
-                      )
-                    })
-                  }
-                </div>
+                <Words 
+                    text={this.props.reply}
+                    keyWords={this.props.keyWords}
+                    className={replyStyles.reply}/>
               ) : (
                 this.props.reply.length > 280 ? (
                   <div className={replyStyles.reply}>
@@ -88,19 +80,10 @@ class Reply extends Component {
                     <span className={styles.read} onClick={this.handleClick}>Read more</span>
                   </div>
                 ) : (
-                  <div className={replyStyles.reply}>
-                    {
-                      this.props.reply.split(' ').map((word, index) => {
-                        return (
-                          <Word 
-                            word={word}
-                            keyWords={this.props.keyWords}
-                            key={index}
-                            index={index}/>
-                        )
-                      })
-                    }
-                  </div>
+                  <Words 
+                    text={this.props.reply}
+                    keyWords={this.props.keyWords}
+                    className={replyStyles.reply}/>
                 )
               )
             }
@@ -195,19 +178,10 @@ class Review extends Component {
         <div className={styles.textContainer}>
           {
             this.state.readMore ? (
-              <div className={styles.text}>
-                {
-                  review.split(' ').map((word, index) => {
-                    return (
-                      <Word 
-                        word={word}
-                        keyWords={this.props.keyWords}
-                        key={index}
-                        index={index}/>
-                    )
-                  })
-                }
-              </div>
+              <Words 
+                    text={review}
+                    keyWords={this.props.keyWords}
+                    className={styles.text}/>
             ) : (
               review.length > 280 ? (
                 <div className={styles.text}>
@@ -226,19 +200,10 @@ class Review extends Component {
                   <span className={styles.read} onClick={this.handleClick}>Read more</span>
                 </div>
               ) : (
-                <div className={styles.text}>
-                  {
-                    review.split(' ').map((word, index) => {
-                      return (
-                        <Word 
-                          word={word}
-                          keyWords={this.props.keyWords}
-                          key={index}
-                          index={index}/>
-                      )
-                    })
-                  }
-                </div>
+                <Words 
+                    text={review}
+                    keyWords={this.props.keyWords}
+                    className={styles.text}/>
               )
             )
           }
