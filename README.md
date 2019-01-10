@@ -22,7 +22,7 @@ Amazon Simple Storage Service (Amazon S3) is an object storage service that offe
 ## Requirements
  - AWS account  
  - bucket created within S3.  
- - For publicly viewed bucket (edit permissioons to allow public read access.
+ - For publicly viewed bucket (edit permissions to allow public read access.
  
 ## Development
 
@@ -217,8 +217,108 @@ A few things to note here: `r` is used as the json_object for review.  This coul
 ```  
 The data is created using json_build_object.  The columns are averaged using the `avg` keyword.  
 
-### Front end
+## Front end
+Main Components: Review, Rating, Stars, Search.  
+The Reviews service is split into two sections, reviewsHeader and reviews.  
+The reviewsHeader has two main aspects: displays average rating/ total number of reviews, and search bar that searches reviews for related words (only important words.  See google stopWords for more details).  
 
+### Review / Reply Component
+keeps track of readMore state.  If readMore is false, component shows review text (if text length > 280), text + ...see more is shown.  Otherwise, full text is shown.  Review text is iterated over by word to determine if any of the words match the search bar keyWords.  keyWords are filtered using stopWords. 
+
+### Search Component
+keeps track of search text and on/Off state to toggle button and border-color.  When searching, if `key === 'Enter`, search is initialized and keyWords are passed up to App state.  keyWords are then passed down to ReviewsHeader, and then down to Reviews.  
+
+In order to toggle state by clicking inside and outsice of the Search component, a wrapperRef is required.  To add wrapper ref...  
+```
+  componentDidMount() {
+    document.addEventListener('mousedown', this.handleClickOutside);
+  }
+
+  componentWillUnmount() {
+    document.removeEventListener('mousedown', this.handleClickOutside);
+  }
+  
+  setWrapperRef(node) {
+    this.wrapperRef = node;
+  }
+
+  handleClickOutside(event) {
+    if (this.wrapperRef && !this.wrapperRef.contains(event.target)) {
+     this.handleState('typing', false);
+    }
+  }
+```
+We set ref on the outer div.
+` <div className={styles.searchContainer} ref={this.setWrapperRef}>`  
+
+### Stars Component
+Each star is individually created using svg's.  Depending on the number of stars, full or half stars are used.  Before the stars are generated, a couple of things need to take place.  We need to determine how many of each star type is required.  
+Star types: full (green), full (gray), half (green).  
+Average rating values are decimal points outside of 0.5 increments, so the average needs to be rounded to the nearest 0.5.  
+`average = Math.round(average * 2) / 2;`  
+Once this is done, to determine the number of green stars, we subtract 0.5 if this is a half value (ex 3.5, 4.5).  
+```
+ const half = (!!((average / 0.5) % 2));
+  let numStars = average;
+  if (half) {
+    numStars = average - 0.5;
+  }
+```
+Using the average rating and if 0.5 had been subtracted or not, the number of gray stars can be determined.  
+```
+const greenStars = [...Array(numStars)];
+const greyStars = half ? [...Array(4 - numStars)] : [...Array(5 - numStars)];
+```  
+Arrays with empty values are created and then mapped over to return individual stars.  
+First we map over green stars.  Then if there is a half value, we generate a half star, else return null.  Finally we map over gray stars.  
+
+### Pagination and pagination Component
+to add pagination, there are two items in state that are required.
+```
+  this.state = {
+    pageOfItems: [],
+    reviewItems: [...this.props.reviews]
+  };
+ ```  
+ `pageOfItems` will change based on the page number we are on.  Each page will display 7 items/reviews.  
+ In order to change this state, a function needs to be used:  
+ ```
+ onChangePage(pageOfItems) {
+  // update local state with new page of items
+  this.setState({ pageOfItems });
+}
+ ```
+ Each review component will be displayed within a mapping function of pageOfItems: 
+ ```
+  {
+    this.state.pageOfItems.map((item, index) => {
+      return (
+        <Review 
+          key={index} 
+          review={item} 
+          keyWords={this.props.keyWords}
+        />
+      );
+    })
+  }
+ ```
+ 
+ Finally, to activate onChangePage, a Pagination component needs to be created.  
+ The pagination component is created using `// import JwPagination from 'jw-react-pagination';`  
+ 
+ However, since the styling was not customizable using this method, the Pagination component code was copied and pasted from the npm package to a separate Pagination Component.  
+ 
+ To generate a Pagination component:  
+ ```
+ <Pagination 
+    items={this.state.reviewItems} 
+    onChangePage={this.onChangePage} 
+    pageSize={7}
+    labels={customLabels}
+    styles={customStyles}
+  />
+  ```
+ 
 ### Installing Dependencies
 
 From within the root directory:
