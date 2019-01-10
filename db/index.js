@@ -72,12 +72,12 @@ module.exports = {
       from public.users u
       join public.reviews re on u.id = re.user_id
       join public.ratings ra on re.id = ra.review_id
-      where re.property_id = ${id};`
+      where re.property_id = ${id};`;
 
     const query = {
       name: 'getReviewsById',
       text: queryStr
-    }
+    };
     return this.queryDB(query);
   },
   getAverageRatings: function(id) {
@@ -99,7 +99,15 @@ module.exports = {
     const query = {
       name: 'getAvgs',
       text: queryStr
-    }
+    };
+    return this.queryDB(query);
+  },
+  getNumberReviewsById: function(id) {
+    const queryStr = `select count(*) from reviews where property_id = ${id}`;
+    const query = {
+      name: 'getnumReviews',
+      text: queryStr
+    };
     return this.queryDB(query);
   }
 };

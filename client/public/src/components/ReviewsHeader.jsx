@@ -5,7 +5,7 @@ import styles from '../styles/reviewsHeader.styles.css';
 import starStyles from '../styles/stars.styles.css';
 // import reviewStyles from '../styles/review.styles.css';
 
-const ReviewsHeader = ({ reviews, average }) => {
+const ReviewsHeader = ({ reviews, average, handleState }) => {
 
   return (
     <div>
@@ -28,7 +28,7 @@ const ReviewsHeader = ({ reviews, average }) => {
             </div>
           </div>
           <div className={styles.searchContainerOuter}>
-            <Search />
+            <Search handleState={handleState}/>
           </div>
         </div>
       </div>
@@ -37,7 +37,7 @@ const ReviewsHeader = ({ reviews, average }) => {
       </div>
 
     </div>
-  )
+  );
 };
 
 export default ReviewsHeader;
