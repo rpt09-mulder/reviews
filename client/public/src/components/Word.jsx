@@ -7,14 +7,10 @@ const Word = ({ word, keyWords, index }) => {
   return (
     <span className={styles[className]}>
       {
-        index < 1 ? (
-          <span className={styles.word}>{word}</span>
-        ) : (
-          <span className={styles.word}>
-            &nbsp;
-            {word}
-          </span>
-        )
+        <span className={styles.word}>
+          {word}
+          &nbsp;
+        </span>
       }
     </span>
   );
