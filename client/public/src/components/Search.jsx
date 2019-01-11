@@ -15,6 +15,7 @@ class Search extends Component {
     this.handleState = this.handleState.bind(this);
     this.setWrapperRef = this.setWrapperRef.bind(this);
     this.handleClickOutside = this.handleClickOutside.bind(this);
+    this.clearSearch = this.clearSearch.bind(this);
   }
 
   componentDidMount() {
@@ -40,6 +41,11 @@ class Search extends Component {
       return !stopWordsSet.has(word);
     });
     this.props.handleState('keyWords', filteredWords);
+  }
+
+  clearSearch() {
+    this.handleState('value', '');
+    this.props.handleState('keyWords', []);
   }
 
   handleSubmit(event) {
@@ -100,7 +106,7 @@ class Search extends Component {
                           <button 
                             className={styles.clearButton} 
                             type="button"
-                            onClick={() => this.handleState('value', '')}>
+                            onClick={this.clearSearch}>
                             <svg 
                               viewBox="0 0 24 24" 
                               role="img" 

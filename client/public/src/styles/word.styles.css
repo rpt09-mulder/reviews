@@ -1,3 +1,7 @@
 .strong {
   font-weight: bold;
 }
+
+.word {
+  display: inline-block;
+}

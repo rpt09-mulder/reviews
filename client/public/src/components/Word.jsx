@@ -8,9 +8,9 @@ const Word = ({ word, keyWords, index }) => {
     <span className={styles[className]}>
       {
         index < 1 ? (
-          <span>{word}</span>
+          <span className={styles.word}>{word}</span>
         ) : (
-          <span>
+          <span className={styles.word}>
             &nbsp;
             {word}
           </span>

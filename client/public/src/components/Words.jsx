@@ -1,19 +1,24 @@
 import React from 'react';
 import Word from './Word.jsx';
 
-const Words = ({ text, keyWords, className}) => {
+const Words = (props) => {
+  const {text, keyWords, className} = props;
   return (
     <div className={className}>
       {
-        text.split(' ').map((word, index) => {
-          return (
-            <Word 
-              word={word}
-              keyWords={keyWords}
-              key={index}
-              index={index}/>
-          )
-        })
+        keyWords.length ? (
+          text.split(' ').map((word, index) => {
+            return (
+              <Word 
+                word={word}
+                keyWords={keyWords}
+                key={index}
+                index={index}/>
+            )
+          })
+        ) : (
+          text
+        )
       }
     </div>
   );
