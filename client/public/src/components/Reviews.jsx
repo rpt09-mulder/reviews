@@ -52,8 +52,7 @@ class Reviews extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      pageOfItems: [],
-      reviewItems: [...this.props.reviews]
+      pageOfItems: []
     };
     this.onChangePage = this.onChangePage.bind(this);
   }
@@ -78,7 +77,7 @@ class Reviews extends Component {
           })
         }
         <Pagination 
-          items={this.state.reviewItems} 
+          items={this.props.reviews} 
           onChangePage={this.onChangePage} 
           pageSize={7}
           labels={customLabels}

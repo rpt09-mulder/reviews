@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styles from '../styles/search.styles.css';
 import stopWords from '../../../../utilities/stopWords.js';
+import axios from 'axios';
 
 class Search extends Component {
   constructor(props) {
@@ -35,12 +36,24 @@ class Search extends Component {
   }
 
   searchWords() {
-    const searchWords = this.state.value.split(' ');
+    const searchWords = this.state.value.toLowerCase().split(' ');
     const stopWordsSet = new Set(stopWords);
     const filteredWords = searchWords.filter(word => {
       return !stopWordsSet.has(word);
     });
-    this.props.handleState('keyWords', filteredWords);
+    const id = window.location.pathname.slice(0, -1);
+    console.log('id: ', id);
+    const url = `/reviews${id}?search=true&keyWords=${filteredWords}`;
+    console.log('url: ', url);
+    axios.get(url)
+      .then(res => res.data)
+      .then(res => {
+        console.log('url: ', url);
+        console.log('res: ', res);
+        this.props.handleState('reviews', res.reviews);
+        this.props.handleState('keyWords', filteredWords);
+      });
+    // this.props.handleState('keyWords', filteredWords);
   }
 
   clearSearch() {

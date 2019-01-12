@@ -31,22 +31,37 @@ const client = pool.connect(() => {
 
 app.get('/reviews/:id', async (req, res) => {
   const id = JSON.parse(req.params.id);
-  
-  try {
-    const reviews = await db.getReviewsById(id);
-    const avgRating = await db.getAverageRatings(id);
-    if (!reviews.length) {
-      res.status(404).json({error: `ID ${id} does not exist`});
-    } else {
-      res.json({
-        ratings: avgRating[0].a,
-        reviews: reviews
-      });
+  console.log('query: ', req.query);
+  const search = JSON.parse(req.query.search);
+  let keyWords = req.query.keyWords.split(',');
+  console.log('keyWords: ', keyWords);
+  console.log('search: ', search);
+  if (search) {
+    console.log('searching');
+    try {
+      const reviews = await db.SearchReviewsByWords(keyWords, id);
+      res.json({reviews});
+    } catch(err) {
+      console.log('err: ', err);
+      res.status(404).json({error: `search ${search} does not exist`});
     }
-  } catch(err) {
-    res.status(404).json({error: `ID ${id} does not exist`});
-    console.log('err in process: ', err);
-  } 
+  } else {
+    try {
+      const reviews = await db.getReviewsById(id);
+      const avgRating = await db.getAverageRatings(id);
+      if (!reviews.length) {
+        res.status(404).json({error: `ID ${id} does not exist`});
+      } else {
+        res.json({
+          ratings: avgRating[0].a,
+          reviews: reviews
+        });
+      }
+    } catch(err) {
+      res.status(404).json({error: `ID ${id} does not exist`});
+      console.log('err in process: ', err);
+    } 
+  }
 });
 
 app.get('/ratings/:id', async (req, res) => {
