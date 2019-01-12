@@ -35,7 +35,22 @@ class Reply extends Component {
   }
 
   render() {
-    let reply;
+    let reply, splitReply;
+
+    if (this.props.keyWords.length) {
+      splitReply = this.props.reply.slice(0, 281).split(' ').map((word, index) => {
+        return (
+          <Word 
+            word={word}
+            keyWords={this.props.keyWords}
+            key={index}
+            index={index}/>
+        )
+      })
+    } else {
+      splitReply = <span>{this.props.reply.slice(0,281)}</span>
+    }
+
     if (this.state.readMore) {
       reply =  <Words 
           text={this.props.reply}
@@ -44,21 +59,7 @@ class Reply extends Component {
     } else {
       if (this.props.reply.length > 280) {
         reply = <div className={replyStyles.reply}>
-          {
-            this.props.keyWords.length ? (
-              this.props.reply.slice(0, 281).split(' ').map((word, index) => {
-                return (
-                  <Word 
-                    word={word}
-                    keyWords={this.props.keyWords}
-                    key={index}
-                    index={index}/>
-                )
-              })
-            ) : (
-              <span>{this.props.reply.slice(0,281)}</span>
-            )
-          }
+          { splitReply }
           <span>...</span>
           <span className={styles.read} onClick={this.handleClick}>Read more</span>
         </div>
@@ -144,7 +145,22 @@ class Review extends Component {
     const { name, avatarUrl } = this.props.review.r.user;
     const { date, review, reply, replyDate } = this.props.review.r.review; 
 
-    let reviewText;
+    let reviewText, splitReview;
+
+    if (this.props.keyWords.length) {
+      splitReview = review.slice(0, 281).split(' ').map((word, index) => {
+        return (
+          <Word 
+            word={word}
+            keyWords={this.props.keyWords}
+            key={index}
+            index={index}/>
+        )
+      })
+    } else {
+      splitReview = <span>{review.slice(0,281)}</span>
+    }
+
     if (this.state.readMore) {
       reviewText =  <Words 
           text={review}
@@ -153,21 +169,7 @@ class Review extends Component {
     } else {
       if (review.length > 280) {
         reviewText = <div className={styles.text}>
-          {
-            this.props.keyWords.length ? (
-              review.slice(0, 281).split(' ').map((word, index) => {
-                return (
-                  <Word 
-                    word={word}
-                    keyWords={this.props.keyWords}
-                    key={index}
-                    index={index}/>
-                )
-              })
-            ) : (
-              <span>{review.slice(0,281)}</span>
-            )
-          }
+          { splitReview }
           <span>...</span>
           <span className={styles.read} onClick={this.handleClick}>Read more</span>
         </div>
@@ -178,6 +180,7 @@ class Review extends Component {
           className={styles.text}/>
       }
     }
+
     return (
       <div>
         <div className={styles.userContainer}>
