@@ -27,7 +27,6 @@ class App extends Component {
     axios.get(`${ebUrl}/reviews${path}`)
       .then(res => res.data)
       .then(res => {
-        console.log('res: ', res);
         this.setState({ 
           ratings: res.ratings,
           reviews: res.reviews

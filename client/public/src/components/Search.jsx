@@ -42,14 +42,10 @@ class Search extends Component {
       return !stopWordsSet.has(word);
     });
     const id = window.location.pathname.slice(0, -1) || '/1';
-    console.log('id: ', id);
     const url = `/reviews${id}?search=true&keyWords=${filteredWords}`;
-    console.log('url: ', url);
     axios.get(url)
       .then(res => res.data)
       .then(res => {
-        console.log('url: ', url);
-        console.log('res: ', res);
         this.props.handleState('reviews', res.reviews);
         this.props.handleState('keyWords', filteredWords);
       });
