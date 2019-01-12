@@ -10,7 +10,8 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: null,
+      ratings: null,
+      reviews: null,
       keyWords: []
     };
     this.handleState = this.handleState.bind(this);
@@ -26,7 +27,11 @@ class App extends Component {
     axios.get(`${ebUrl}/reviews${path}`)
       .then(res => res.data)
       .then(res => {
-        this.setState({ data: res });
+        console.log('res: ', res);
+        this.setState({ 
+          ratings: res.ratings,
+          reviews: res.reviews
+        });
       });
   }
 
@@ -36,18 +41,18 @@ class App extends Component {
 
   render() {
     if (this.state.data) {
-      const { reviews, ratings } = this.state.data;
+      const { reviews, ratings } = this.state;
     }
     return (
-      this.state.data ? (
+      this.state.reviews ? (
         <div className={styles.reviews}>
           <ReviewsHeader
-            reviews={this.state.data.reviews}
-            average={this.state.data.ratings.avg}
+            reviews={this.state.reviews}
+            average={this.state.ratings.avg}
             handleState={this.handleState}/>
-          <RatingsBox avg={this.state.data.ratings}/>
+          <RatingsBox avg={this.state.ratings}/>
           <Reviews 
-            reviews={this.state.data.reviews} 
+            reviews={this.state.reviews} 
             keyWords={this.state.keyWords}/>
         </div>
       ) : (
