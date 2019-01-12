@@ -30,12 +30,13 @@ const client = pool.connect(() => {
 });
 
 app.get('/reviews/:id', async (req, res) => {
-  const id = JSON.parse(req.params.id);
+  const id = JSON.parse(req.params.id) || 1;
   console.log('query: ', req.query);
-  const search = JSON.parse(req.query.search);
-  let keyWords = req.query.keyWords.split(',');
-  console.log('keyWords: ', keyWords);
-  console.log('search: ', search);
+  let search, keyWords;
+  if (req.query.search) {
+    search = JSON.parse(req.query.search);
+    keyWords = req.query.keyWords.split(',');
+  }
   if (search) {
     console.log('searching');
     try {

@@ -41,7 +41,7 @@ class Search extends Component {
     const filteredWords = searchWords.filter(word => {
       return !stopWordsSet.has(word);
     });
-    const id = window.location.pathname.slice(0, -1);
+    const id = window.location.pathname.slice(0, -1) || '/1';
     console.log('id: ', id);
     const url = `/reviews${id}?search=true&keyWords=${filteredWords}`;
     console.log('url: ', url);
