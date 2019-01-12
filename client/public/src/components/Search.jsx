@@ -53,8 +53,15 @@ class Search extends Component {
   }
 
   clearSearch() {
-    this.handleState('value', '');
-    this.props.handleState('keyWords', []);
+    const id = window.location.pathname.slice(0, -1) || '/1';
+    const url = `/reviews${id}?search=false`;
+    axios.get(url)
+      .then(res => res.data)
+      .then(res => {
+        this.handleState('value', '');
+        this.props.handleState('reviews', res.reviews);
+        this.props.handleState('keyWords', []);
+      });
   }
 
   handleSubmit(event) {

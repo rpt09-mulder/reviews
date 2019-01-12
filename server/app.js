@@ -35,18 +35,27 @@ app.get('/reviews/:id', async (req, res) => {
   let search, keyWords;
   if (req.query.search) {
     search = JSON.parse(req.query.search);
-    keyWords = req.query.keyWords.split(',');
-  }
-  if (search) {
-    console.log('searching');
+
+    if (req.query.keyWords) {
+      keyWords = req.query.keyWords.split(',');
+    }
+
     try {
-      const reviews = await db.SearchReviewsByWords(keyWords, id);
+      let reviews;
+      if (search) {
+        //Returns reviews only with keyWords 
+        reviews = await db.SearchReviewsByWords(keyWords, id);
+      } else {
+        //Returns all reviews
+        reviews = await db.getReviewsById(id);
+      }
       res.json({reviews});
     } catch(err) {
       console.log('err: ', err);
       res.status(404).json({error: `search ${search} does not exist`});
     }
   } else {
+    // Original get request.  Gets all data
     try {
       const reviews = await db.getReviewsById(id);
       const avgRating = await db.getAverageRatings(id);
