@@ -9,7 +9,7 @@ const RatingsBox = ({ avg }) => {
         <div>
           <Rating name="Accuracy" avg={avg.acc}/>
           <Rating name="Communication" avg={avg.com}/>
-          <Rating name="Communication" avg={avg.cle}/>
+          <Rating name="Cleanliness" avg={avg.cle}/>
         </div>
       </div>
       <div className={styles.ratingsContainerInner}>
