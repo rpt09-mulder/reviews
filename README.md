@@ -10,13 +10,24 @@
   
 ## Table of Contents
 
-1. [Usage](#Usage)
-1. [Requirements](#requirements)
-1. [Development](#development)
+- 1.1 [Usage](#Usage)
+  - API endpoints
+  - component 
+- 1.2 Development Setup
+- 1.3 Log
+  - 1.3.1 Seeding the DB
+  - 1.3.2 Setting up API
+  - 1.3.3 Unit/ Integration tests
+  - 1.3.4 Page layout
+  - 1.3.5 React Setup
+  - 1.3.6 Proxy service 
+  - 1.3.7 AWS RDS (Relational Database Service)
+  - 1.3.8 AWS S3 (Simple Storage Service)
+  - 1.3.9 Performance
+
 
 ## Usage
-AWS S3 (Simple Storage service)  
-Amazon Simple Storage Service (Amazon S3) is an object storage service that offers industry-leading scalability, data availability, security, and performance. This means customers of all sizes and industries can use it to store and protect any amount of data for a range of use cases, such as websites, mobile applications, backup and restore, archive, enterprise applications, IoT devices, and big data analytics. Amazon S3 provides easy-to-use management features so you can organize your data and configure finely-tuned access controls to meet your specific business, organizational, and compliance requirements. Amazon S3 is designed for 99.999999999% (11 9's) of durability, and stores data for millions of applications for companies all around the world.
+
 
 
 ## Requirements
@@ -27,6 +38,9 @@ Amazon Simple Storage Service (Amazon S3) is an object storage service that offe
 ## Development
 
 ### Setting up aws s3 with node
+AWS S3 (Simple Storage service)  
+Amazon Simple Storage Service (Amazon S3) is an object storage service that offers industry-leading scalability, data availability, security, and performance. This means customers of all sizes and industries can use it to store and protect any amount of data for a range of use cases, such as websites, mobile applications, backup and restore, archive, enterprise applications, IoT devices, and big data analytics. Amazon S3 provides easy-to-use management features so you can organize your data and configure finely-tuned access controls to meet your specific business, organizational, and compliance requirements. Amazon S3 is designed for 99.999999999% (11 9's) of durability, and stores data for millions of applications for companies all around the world.
+
 ``` const AWS = require('aws-sdk'); ```
 
 Add account information from AWS: access key and secret access key.  
