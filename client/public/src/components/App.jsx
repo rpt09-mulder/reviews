@@ -5,19 +5,22 @@ import styles from '../styles/app.styles.css';
 import Reviews from './Reviews.jsx';
 import ReviewsHeader from './ReviewsHeader.jsx';
 import RatingsBox from './RatingsBox.jsx';
+import SearchStatement from './SearchStatement.jsx';
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: null,
-      keyWords: []
+      ratings: null,
+      reviews: null,
+      keyWords: [],
+      totalReviews: null,
+      searchText: ''
     };
     this.handleState = this.handleState.bind(this);
   }
   componentDidMount() {
     const ebUrl = 'http://firebnb-reviews.8di9c2yryn.us-east-1.elasticbeanstalk.com'; 
-    // const localUrl = 'http://localhost:3003';
     let path = window.location.pathname;
     
     if (!path.match(/^\/[0-9]+/)) {
@@ -26,7 +29,11 @@ class App extends Component {
     axios.get(`${ebUrl}/reviews${path}`)
       .then(res => res.data)
       .then(res => {
-        this.setState({ data: res });
+        this.setState({ 
+          ratings: res.ratings,
+          reviews: res.reviews,
+          totalReviews: res.reviews.length
+        });
       });
   }
 
@@ -35,19 +42,32 @@ class App extends Component {
   }
 
   render() {
-    if (this.state.data) {
-      const { reviews, ratings } = this.state.data;
+    let searchStatement;
+    if (this.state.keyWords.length) {
+      searchStatement = (
+        <SearchStatement 
+          reviews={this.state.reviews}
+          keyWords={this.state.keyWords}
+          handleState={this.handleState}
+        />
+      )
+    } else {
+      searchStatement = (
+        <RatingsBox avg={this.state.ratings}/>
+      );
     }
+
     return (
-      this.state.data ? (
+      this.state.reviews ? (
         <div className={styles.reviews}>
           <ReviewsHeader
-            reviews={this.state.data.reviews}
-            average={this.state.data.ratings.avg}
+            reviews={this.state.totalReviews}
+            average={this.state.ratings.avg}
+            searchText={this.state.searchText}
             handleState={this.handleState}/>
-          <RatingsBox avg={this.state.data.ratings}/>
+          { searchStatement }
           <Reviews 
-            reviews={this.state.data.reviews} 
+            reviews={this.state.reviews} 
             keyWords={this.state.keyWords}/>
         </div>
       ) : (

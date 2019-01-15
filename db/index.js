@@ -109,5 +109,59 @@ module.exports = {
       text: queryStr
     };
     return this.queryDB(query);
+  },
+  SearchReviewsByWords: function(words, id) {
+    console.log('searching words');
+    let likeText = '';
+    if (!words.length) {
+      likeText += " ' '";
+    } else {
+      words.forEach((word, index) => {
+        if (!index) {
+          likeText += ` re.review ilike '%${word}%' or re.reply ilike '%${word}%'`;
+        } else {
+          likeText += ` or re.review ilike '%${word}%' or re.reply ilike '%${word}%'`;
+        }
+      })
+    }
+
+    const queryStr = `
+    select
+        json_build_object(
+          'propertyId', re.property_id,
+          'user', json_build_object(
+            'id', u.id,
+            'name', u.first,
+            'avatarUrl', u.avatar
+          ),
+          'review', json_build_object(
+            'id', re.id,
+            'review', re.review,
+            'date', re.date,
+            'reply', re.reply,
+            'replyDate', re.reply_date,
+            'rating', json_build_object(
+              'avg', round(ra.average * 2, 0) / 2,
+              'acc', ra.accuracy,
+              'com', ra.communication,
+              'cle', ra.cleanliness,
+              'loc', ra.location,
+              'che', ra.checkin,
+              'val', ra.value
+            )
+          )
+        ) r
+      from public.users u
+      join public.reviews re on u.id = re.user_id
+      join public.ratings ra on re.id = ra.review_id
+      where re.property_id = ${id}
+      and (${likeText});`;
+
+    console.log('queryStr: ', queryStr);
+    const query = {
+      name: 'searchReviewsByWords',
+      text: queryStr
+    };
+    return this.queryDB(query);
   }
 };

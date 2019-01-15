@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import styles from '../styles/search.styles.css';
 import stopWords from '../../../../utilities/stopWords.js';
+import axios from 'axios';
 
 class Search extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      value: '',
       typing: true
     };
     this.handleChange = this.handleChange.bind(this);
@@ -15,6 +15,7 @@ class Search extends Component {
     this.handleState = this.handleState.bind(this);
     this.setWrapperRef = this.setWrapperRef.bind(this);
     this.handleClickOutside = this.handleClickOutside.bind(this);
+    this.clearSearch = this.clearSearch.bind(this);
   }
 
   componentDidMount() {
@@ -30,16 +31,36 @@ class Search extends Component {
   }
 
   handleChange(event) {
-    this.setState({value: event.target.value});
+    this.props.handleState('searchText', event.target.value);
   }
 
   searchWords() {
-    const searchWords = this.state.value.split(' ');
+    const searchWords = this.props.searchText.toLowerCase().split(' ');
     const stopWordsSet = new Set(stopWords);
     const filteredWords = searchWords.filter(word => {
       return !stopWordsSet.has(word);
     });
-    this.props.handleState('keyWords', filteredWords);
+    const id = window.location.pathname.slice(0, -1) || '/1';
+    const url = `/reviews${id}?search=true&keyWords=${filteredWords}`;
+    axios.get(url)
+      .then(res => res.data)
+      .then(res => {
+        this.props.handleState('reviews', res.reviews);
+        this.props.handleState('keyWords', filteredWords);
+      });
+    // this.props.handleState('keyWords', filteredWords);
+  }
+
+  clearSearch() {
+    const id = window.location.pathname.slice(0, -1) || '/1';
+    const url = `/reviews${id}?search=false`;
+    axios.get(url)
+      .then(res => res.data)
+      .then(res => {
+        this.props.handleState('searchText', '');
+        this.props.handleState('reviews', res.reviews);
+        this.props.handleState('keyWords', []);
+      });
   }
 
   handleSubmit(event) {
@@ -90,7 +111,7 @@ class Search extends Component {
                     <input 
                       className={styles.input} 
                       type="text" 
-                      value={this.state.value}
+                      value={this.props.searchText}
                       onChange={this.handleChange}
                       onClick={() => this.handleState('typing', true)}
                       onKeyPress={this.handleSubmit} 
@@ -100,7 +121,7 @@ class Search extends Component {
                           <button 
                             className={styles.clearButton} 
                             type="button"
-                            onClick={() => this.handleState('value', '')}>
+                            onClick={this.clearSearch}>
                             <svg 
                               viewBox="0 0 24 24" 
                               role="img" 

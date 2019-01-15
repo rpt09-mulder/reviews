@@ -3,18 +3,20 @@ import styles from '../styles/word.styles.css';
 
 const Word = ({ word, keyWords, index }) => {
   const keyWordSet = new Set(keyWords);
-  const className = keyWordSet.has(word) ? 'strong' : ''
+  let className = '';
+  keyWords.forEach(keyWord => {
+    let regex = new RegExp('/' + keyWord + '/');
+    if (word.toLowerCase().match(keyWord)) {
+      className = 'strong';
+    }
+  });
   return (
     <span className={styles[className]}>
       {
-        index < 1 ? (
-          <span>{word}</span>
-        ) : (
-          <span>
-            &nbsp;
-            {word}
-          </span>
-        )
+        <span className={styles.word}>
+          {word}
+          &nbsp;
+        </span>
       }
     </span>
   );
