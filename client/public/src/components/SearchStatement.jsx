@@ -4,9 +4,8 @@ import styles from '../styles/searchStatement.styles.css';
 
 const SearchStatement = (props) => {
   const { reviews, handleState , searchText} = props;
-  const guests = reviews.length;
   let line, guestStatement;
-
+  const guests = reviews.length;
   const searchSpan = <span className={styles.searchWords}>{searchText}</span>;
 
   const handleClick = () => {
