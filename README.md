@@ -11,31 +11,102 @@
 ## Table of Contents
 
 - 1.1 [Usage](#Usage)
-  - API endpoints
-  - component 
+  - 1.1.1 [API endpoints](#API endpoints)
+  - 1.1.2 [Component](#Component)
 - 1.2 Development Setup
-- 1.3 Log
-  - 1.3.1 Seeding the DB
-  - 1.3.2 Setting up API
-  - 1.3.3 Unit/ Integration tests
-  - 1.3.4 Page layout
-  - 1.3.5 React Setup
-  - 1.3.6 Proxy service 
-  - 1.3.7 AWS RDS (Relational Database Service)
-  - 1.3.8 AWS S3 (Simple Storage Service)
-  - 1.3.9 Performance
+- 1.3 Online requirements
+- 1.4 Log
+  - 1.4.1 Seeding the DB
+  - 1.4.2 Setting up API
+  - 1.4.3 Unit/ Integration tests
+  - 1.4.4 Page layout
+  - 1.4.5 React Setup
+  - 1.4.6 Proxy service 
+  - 1.4.7 AWS RDS (Relational Database Service)
+  - 1.4.8 AWS S3 (Simple Storage Service)
+  - 1.4.9 Performance
 
 
-## Usage
+## 1.1 Usage
+This App is part of an Airbnb clone.  
+This service/ component is the reviews service, which consists of two main aspects: displaying reviews, and searching for reviews.  
+In order to display the proper data to the user, the endpoints below are used:
 
+### 1.1.1 API endpoints
+- `/reviews/:id` 
+  - returns all data (reviews, users, ratings)
+- `/reviews/:id?search=true&keyWords=word1,word2...` 
+  - returns reviews with included keyWords
+- `/reviews/:id?search=false` 
+  - returns all reviews
+- `/ratings/:id` 
+  - returns average rating and number of reviews.  
 
+### 1.1.2 Component
+The Reviews component has the two main features (displaying reviews and allows searching).  Secondary features includes displaying a ...see more for text with 280 characters or greater, and pagination for quanities of reviews of greater than 7.  
 
-## Requirements
+## 1.2 Development Setup
+This service uses the following dev stack:
+
+ - Server: node / NPM
+ - Deployment: docker on ec2 aws
+ - Client: react
+ - DB: PostgreSQL (installed via brew)
+ - Testing: jest
+ - Important Libs:
+   - faker.js
+   - jw-react-pagination
+   - aws-sdk
+ 
+Postgres can be installed through homebrew.  For more information, see [postgres install guide](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-18-04)
+
+```
+## install npm dependencies
+$> cd /path/to/reviews-service
+$> npm install
+# install and start service (if no brew, see above note!)
+$> brew install PostgreSQL
+$> brew services start postgresql
+# create the db with `createdb` command
+$> createdb firebnb-reviews
+# seed  db
+$> npm run seed-database
+$> pql firebnb-reviews #to enter psql repl,  to confirm creation
+$ (repl)> \dt; #to show all tables (should see 'paths now)
+$ (repl)> \q; #to exit repl
+```  
+Inside `.env` place your Server + SQL credentials and/or AWS credentials
+```
+HOST=localhost
+PORT=3003
+DB_HOST=localhost
+DB_PORT=3005
+DB_USER=user
+DB_PASS=password
+```  
+To test:
+
+```
+$> npm test #synonymous with jest ./test
+# To execute:
+$> npm run server-dev #should be running on 3003
+# To build in react:
+$> npm run start (builds once to /dist)
+$> npm run build (builds once to /dist with minified version)
+# or for watching file changes
+$> npm run start-client (builds to /dist with --watch flag)
+```
+
+## 1.3 Online Requirements
  - AWS account  
  - bucket created within S3.  
  - For publicly viewed bucket (edit permissions to allow public read access.
- 
-## Development
+
+## 1.4 Log
+### 1.4.1 Seeding the DB
+This required postgreSQL to be installed. As a convenience, the package.json script can be ran to replicate the act of doing the `psql [database] < [sqlFile]` routine.  This command creates the schema for the postgres db.  This does not populate the tables with data.  
+
+In order to populate the data, the following npm command is run: `npm run seed-database` || node /path/to/<seed-file.js>
 
 ### Setting up aws s3 with node
 AWS S3 (Simple Storage service)  
