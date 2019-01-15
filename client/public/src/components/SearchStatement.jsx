@@ -3,12 +3,11 @@ import axios from 'axios';
 import styles from '../styles/searchStatement.styles.css';
 
 const SearchStatement = (props) => {
-  const { reviews, keyWords, handleState } = props;
+  const { reviews, handleState , searchText} = props;
   const guests = reviews.length;
-  const searchStr = keyWords.join(' ');
   let line, guestStatement;
 
-  const searchSpan = <span className={styles.searchWords}>{searchStr}</span>;
+  const searchSpan = <span className={styles.searchWords}>{searchText}</span>;
 
   const handleClick = () => {
     handleState('searchText', '');
@@ -48,7 +47,7 @@ const SearchStatement = (props) => {
         <div className={styles.statement}>
           <span className={styles.statementText}>
           { guestStatement }
-          <span className={styles.searchWords}>{searchStr}</span>
+          "<span className={styles.searchWords}>{searchText}</span>"
           </span>
         </div>
         <div className={styles.backStatement}>

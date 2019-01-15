@@ -46,8 +46,8 @@ class App extends Component {
     if (this.state.keyWords.length) {
       searchStatement = (
         <SearchStatement 
+          searchText={this.state.searchText}
           reviews={this.state.reviews}
-          keyWords={this.state.keyWords}
           handleState={this.handleState}
         />
       )
