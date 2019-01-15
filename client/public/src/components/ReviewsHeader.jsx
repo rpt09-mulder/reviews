@@ -5,8 +5,8 @@ import styles from '../styles/reviewsHeader.styles.css';
 import starStyles from '../styles/stars.styles.css';
 // import reviewStyles from '../styles/review.styles.css';
 
-const ReviewsHeader = ({ reviews, average, handleState }) => {
-
+const ReviewsHeader = (props) => {
+  const { reviews, average, searchText, handleState } = props;
   return (
     <div>
       <div className={styles.totalContainer}>
@@ -16,7 +16,7 @@ const ReviewsHeader = ({ reviews, average, handleState }) => {
               <div className={styles.number}>
                 <h2 className={styles.reviewsHead}>
                   <span className={styles.text}>
-                    {reviews.length} {reviews.length > 1 || reviews.length < 1 ? 'Reviews' : 'Review'} 
+                    {reviews} {reviews > 1 || reviews < 1 ? 'Reviews' : 'Review'} 
                   </span>
                 </h2>
                 <div className={starStyles.starsContainer}>
@@ -28,7 +28,9 @@ const ReviewsHeader = ({ reviews, average, handleState }) => {
             </div>
           </div>
           <div className={styles.searchContainerOuter}>
-            <Search handleState={handleState}/>
+            <Search 
+              handleState={handleState}
+              searchText={searchText}/>
           </div>
         </div>
       </div>

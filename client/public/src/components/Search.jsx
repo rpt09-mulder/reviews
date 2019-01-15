@@ -7,7 +7,6 @@ class Search extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      value: '',
       typing: true
     };
     this.handleChange = this.handleChange.bind(this);
@@ -32,11 +31,11 @@ class Search extends Component {
   }
 
   handleChange(event) {
-    this.setState({value: event.target.value});
+    this.props.handleState('searchText', event.target.value);
   }
 
   searchWords() {
-    const searchWords = this.state.value.toLowerCase().split(' ');
+    const searchWords = this.props.searchText.toLowerCase().split(' ');
     const stopWordsSet = new Set(stopWords);
     const filteredWords = searchWords.filter(word => {
       return !stopWordsSet.has(word);
@@ -58,7 +57,7 @@ class Search extends Component {
     axios.get(url)
       .then(res => res.data)
       .then(res => {
-        this.handleState('value', '');
+        this.props.handleState('searchText', '');
         this.props.handleState('reviews', res.reviews);
         this.props.handleState('keyWords', []);
       });
@@ -112,7 +111,7 @@ class Search extends Component {
                     <input 
                       className={styles.input} 
                       type="text" 
-                      value={this.state.value}
+                      value={this.props.searchText}
                       onChange={this.handleChange}
                       onClick={() => this.handleState('typing', true)}
                       onKeyPress={this.handleSubmit} 

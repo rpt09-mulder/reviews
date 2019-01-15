@@ -5,6 +5,7 @@ import styles from '../styles/app.styles.css';
 import Reviews from './Reviews.jsx';
 import ReviewsHeader from './ReviewsHeader.jsx';
 import RatingsBox from './RatingsBox.jsx';
+import SearchStatement from './SearchStatement.jsx';
 
 class App extends Component {
   constructor(props) {
@@ -12,13 +13,14 @@ class App extends Component {
     this.state = {
       ratings: null,
       reviews: null,
-      keyWords: []
+      keyWords: [],
+      totalReviews: null,
+      searchText: ''
     };
     this.handleState = this.handleState.bind(this);
   }
   componentDidMount() {
     const ebUrl = 'http://firebnb-reviews.8di9c2yryn.us-east-1.elasticbeanstalk.com'; 
-    // const localUrl = 'http://localhost:3003';
     let path = window.location.pathname;
     
     if (!path.match(/^\/[0-9]+/)) {
@@ -29,7 +31,8 @@ class App extends Component {
       .then(res => {
         this.setState({ 
           ratings: res.ratings,
-          reviews: res.reviews
+          reviews: res.reviews,
+          totalReviews: res.reviews.length
         });
       });
   }
@@ -39,17 +42,30 @@ class App extends Component {
   }
 
   render() {
-    if (this.state.data) {
-      const { reviews, ratings } = this.state;
+    let searchStatement;
+    if (this.state.keyWords.length) {
+      searchStatement = (
+        <SearchStatement 
+          reviews={this.state.reviews}
+          keyWords={this.state.keyWords}
+          handleState={this.handleState}
+        />
+      )
+    } else {
+      searchStatement = (
+        <RatingsBox avg={this.state.ratings}/>
+      );
     }
+
     return (
       this.state.reviews ? (
         <div className={styles.reviews}>
           <ReviewsHeader
-            reviews={this.state.reviews}
+            reviews={this.state.totalReviews}
             average={this.state.ratings.avg}
+            searchText={this.state.searchText}
             handleState={this.handleState}/>
-          <RatingsBox avg={this.state.ratings}/>
+          { searchStatement }
           <Reviews 
             reviews={this.state.reviews} 
             keyWords={this.state.keyWords}/>
